@@ -5,11 +5,8 @@
 בהמשך נציג שאילתות שונות שיעזרו לנו לדלות מידע מהנתונים וכן לערוך שינויים על הטבלאות הקיימות..
 
 ## דיאגרמת ERD
-<img src="https://github.com/EsterNadler/DataBase-Project/assets/116155777/de443e95-a57c-4d41-88a5-dcb1c1d90259" alt="דיאגרמה" width="800">
+<img src="https://github.com/EsterNadler/DataBase-Project/assets/116155777/de443e95-a57c-4d41-88a5-dcb1c1d90259" alt="1דיאגרמה" width="1000">
 
-## Usage
-To utilize this application effectively, follow these steps:
+## דיאגרמת DSD
+<img src="https://github.com/EsterNadler/DataBase-Project/assets/116155777/fa3853e6-03e0-4cd3-9fcc-9a499d9eaa72" alt="2דיאגרמה" width="1000">
 
-1. **Installation**:
-   - Clone the repository to your local machine.
-   - Ensure you have the necessary dependencies installed. This may include .NET Core SDK, Entity Framework Core, and any required packages specified in the project's `csproj` file.
