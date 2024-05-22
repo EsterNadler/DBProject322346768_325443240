@@ -10,10 +10,9 @@
 - [שלב א](#שלב-א)
   - [דיאגרמת ERD](#דיאגרמת-erd)
   - [דיאגרמת DSD](#דיאגרמת-dsd)
-  - [תוכן קובץ ה-CreateTables](#תוכן-קובץ-ה-createtables:)
+  - [תוכן קובץ ה-CreateTables](#תוכן-קובץ-ה-createtables)
   - [הפעלת פקודות DESC](#הפעלת-פקודות-description)
  
-
 ## שלב א 
 
 ### דיאגרמת ERD
