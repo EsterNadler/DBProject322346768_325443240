@@ -1,0 +1,10 @@
+drop table Takes_Lesson;
+drop table Lesson;
+drop table Gym_Class_Medical_Constrains;
+drop table Gym_Member_Medical_Constrains;
+drop table Person_Phone;
+drop table Gym_Member;
+drop table Trainer;
+drop table Person;
+drop table Room;
+drop table Gym_Class;
