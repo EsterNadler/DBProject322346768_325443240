@@ -4,7 +4,7 @@ Version=1
 
 [Preferences]
 Username=
-Password=2278
+Password=2538
 Database=
 DateFormat=
 CommitCount=0
@@ -14,20 +14,13 @@ InitScript=
 [Table]
 Owner=
 Name=LESSON
-Count=500
+Count=700
 
 [Record]
-Name=LESSONDAY
+Name=LESSONDATE
 Type=DATE
 Size=
-Data=Random(01/01/2000,01/01/2025)
-Master=
-
-[Record]
-Name=LESSONHOUR
-Type=DATE
-Size=
-Data=SELECT CURTIME();
+Data=Random(01/01/2000 00:00:00, 01/01/2025 23:59:59)
 Master=
 
 [Record]
@@ -40,8 +33,8 @@ Master=
 [Record]
 Name=RATING
 Type=FLOAT
-Size=22
-Data=Random(1,10)
+Size=4
+Data=Random(5,10)
 Master=
 
 [Record]
@@ -62,6 +55,6 @@ Master=
 Name=PERSONID
 Type=NUMBER
 Size=
-Data=list(select personId from Trainer)
+Data=list(select PersonId from Person)
 Master=
 
