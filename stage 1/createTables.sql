@@ -42,7 +42,7 @@ CREATE TABLE Trainer
 CREATE TABLE Gym_Member
 (
   JoinDate DATE NOT NULL,
-  LeaveDate DATE NOT NULL,
+  LeaveDate DATE,
   PersonId INT NOT NULL,
   PRIMARY KEY (PersonId),
   FOREIGN KEY (PersonId) REFERENCES Person(PersonId)
@@ -74,8 +74,7 @@ CREATE TABLE Gym_Member_Medical_Constrains
 
 CREATE TABLE Lesson
 (
-  LessonDay DATE NOT NULL,
-  LessonHour DATE NOT NULL,
+  LessonDate DATE NOT NULL,
   LessonId INT NOT NULL,
   Rating FLOAT NOT NULL,
   ClassId INT NOT NULL,
