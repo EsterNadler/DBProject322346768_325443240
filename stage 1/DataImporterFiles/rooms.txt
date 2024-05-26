@@ -1,0 +1,100 @@
+115, 726, Cardio Room
+111, 129, HIIT Room
+12, 651, Dance Studio
+49, 612, Outdoor Training Area
+196, 932, Weightlifting Room
+173, 363, Spa
+12, 674, Outdoor Training Area
+31, 658, Conference Hall
+110, 924, Lecture Room
+146, 255, Boxing Ring
+79, 661, Cardio Room
+76, 879, Outdoor Training Area
+45, 10, Personal Training Room
+92, 83, Swimming Pool
+52, 864, Massage Room
+155, 294, Seminar Room
+178, 94, Cardio Room
+42, 564, Conference Hall
+11, 519, HIIT Room
+26, 707, Lecture Room
+41, 577, Outdoor Training Area
+144, 502, Boxing Ring
+48, 252, Weightlifting Room
+193, 930, CrossFit Area
+85, 391, Martial Arts Room
+190, 591, Aerobics Room
+72, 396, CrossFit Area
+85, 659, Personal Training Room
+26, 610, Cardio Room
+75, 298, Outdoor Training Area
+95, 498, Pilates Studio
+106, 195, Indoor Track
+106, 570, Boxing Ring
+131, 530, Steam Room
+113, 371, Martial Arts Room
+17, 517, Indoor Track
+96, 830, Outdoor Training Area
+135, 390, Dance Studio
+32, 11, Personal Training Room
+44, 954, Boxing Ring
+51, 257, Weightlifting Room
+184, 522, Steam Room
+78, 967, Boxing Ring
+36, 748, Gymnasium
+90, 3, Yoga Room
+173, 254, Spa
+19, 698, Swimming Pool
+67, 188, CrossFit Area
+79, 213, Pilates Studio
+146, 226, Massage Room
+27, 865, Spa
+55, 336, Yoga Room
+150, 500, Yoga Room
+149, 647, Steam Room
+107, 45, Spinning Room
+32, 972, Steam Room
+175, 177, Swimming Pool
+197, 253, Cycling Room
+33, 582, Aerobics Room
+114, 244, Spinning Room
+10, 402, HIIT Room
+56, 901, Spa
+61, 532, CrossFit Area
+100, 389, Conference Hall
+60, 164, Martial Arts Room
+111, 914, Boxing Ring
+185, 806, Sauna
+88, 183, Conference Hall
+56, 787, Spa
+128, 421, Cardio Room
+30, 73, Spinning Room
+143, 65, Lecture Room
+163, 431, Seminar Room
+198, 750, Weightlifting Room
+192, 815, Spa
+172, 249, Seminar Room
+63, 732, Conference Hall
+45, 196, Cardio Room
+118, 137, Swimming Pool
+74, 246, Weightlifting Room
+56, 703, Lecture Room
+84, 555, Cycling Room
+70, 946, Sauna
+26, 763, Sauna
+56, 96, Pilates Studio
+52, 766, Weightlifting Room
+134, 764, Outdoor Training Area
+71, 939, HIIT Room
+130, 653, CrossFit Area
+46, 20, Martial Arts Room
+28, 758, Spinning Room
+162, 907, Sauna
+13, 941, Spa
+167, 626, Steam Room
+140, 324, Personal Training Room
+19, 409, CrossFit Area
+158, 296, HIIT Room
+73, 834, Functional Training Room
+135, 854, Aerobics Room
+30, 193, Cardio Room
