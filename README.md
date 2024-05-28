@@ -168,12 +168,25 @@ CREATE TABLE Takes_Lesson
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/7f21812f-00c4-4696-a005-d84c2d4d92bb)
 
 
-### הכנסת נתונים ע"י תוכנית Python:
+### הכנסת נתונים ע"י תוכנית Python: 
+-------עבור הטבלה COURSES--------- 
 הרצת התוכנית שמייצרת את פקודות הINSERT:
 ![צילום מסך 2024-05-27 121645](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/66d30f73-ac43-48a6-86f2-0552557f4b57)
 הקובץ המתקבל:
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/352a4cd5-d879-4266-8ae0-8eb4a4fa6b2b)
 
+------עבור הטבלה TAKES_LESSON--------- 
+הרצת התוכנית שמייצרת את פקודות הINSERT: 
+(עבור המפתחות הזרים השתמשנו בייבוא נתונים מקבצי CSV שיצרנו באמצעות שאילתות מתאימות)
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/37e8a0ee-e29e-4785-86a2-80afd130334f)
+הקובץ המתקבל:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/7bfa5519-f637-4edd-98ca-3edab6d8c6d9)
+
+------עבור הטבלה ROOMS--------- 
+הרצת התוכנית שמייצרת את קובץ הטקסט:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/6afad479-1dfc-4e1e-9b19-3bdd07e9032c)
+הקובץ המתקבל:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/cd101a78-b3ac-4c18-9b45-cea699627da9)
 
 ## יצירת קובץ הגיבוי:
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/fa4fd4b3-460e-429b-8d52-57647c84bab3)
