@@ -2,9 +2,7 @@
 מגישות: אסתר נדלר-איצקוביץ וצפורה מארוקו
 
 ## תיאור כללי 
-המערכת שלנו עוסקת בניהול מערכת המידע של קורסים ושיעורים במכון כושר, וכוללת את הישויות הבאות:
-מדריכים, מתאמנים, קורסים (כגון פילאטיס, אירובי), שיעורים (שיהוו מפגש של קורס מסוים) וכן את החדר הפיזי אליו משויך השיעור.
-בהמשך נציג שאילתות שונות שיעזרו לנו לדלות מידע מהנתונים וכן לערוך שינויים על הטבלאות הקיימות..
+המערכת שלנו עוסקת בניהול מערכת המידע של קורסים ושיעורים במכון כושר, וכוללת את הישויות הבאות: מדריכים, מתאמנים, קורסים (כגון פילאטיס, אירובי), שיעורים (שיהוו מפגש של קורס מסוים) וכן את החדר הפיזי אליו משויך השיעור. בהמשך נציג שאילתות שונות שיעזרו לנו לדלות מידע מהנתונים וכן לערוך שינויים על הטבלאות הקיימות.
 
 ## תוכן עניינים
 - [שלב א](#שלב-א)
@@ -18,17 +16,16 @@
     - [הכנסת נתונים ע"י תוכנית Python](#הכנסת-נתונים-עי-תוכנית-python)
   - [יצירת קובץ הגיבוי](#יצירת-קובץ-הגיבוי)
 
-
 ## שלב א 
 
 ### דיאגרמת ERD
-<img src="https://github.com/EsterNadler/DataBase-Project/assets/116155777/736b99a2-40f8-4dab-8653-52c03f412ab9" alt="1דיאגרמה" width="1000">
+![1דיאגרמה](https://github.com/EsterNadler/DataBase-Project/assets/116155777/736b99a2-40f8-4dab-8653-52c03f412ab9)
 
 ### דיאגרמת DSD
-<img src="https://github.com/EsterNadler/DataBase-Project/assets/116155777/1d3dc8c2-b440-410f-8765-046a4418abf9" alt="2דיאגרמה" width="1000">
+![2דיאגרמה](https://github.com/EsterNadler/DataBase-Project/assets/116155777/1d3dc8c2-b440-410f-8765-046a4418abf9)
 
 ### תוכן קובץ ה CreateTables:
-```sh
+```sql
 CREATE TABLE Gym_Class
 (
   ClassId INT NOT NULL,
@@ -128,6 +125,7 @@ CREATE TABLE Takes_Lesson
   FOREIGN KEY (PersonId) REFERENCES Gym_Member(PersonId)
 );
 ```
+
 ### הפעלת פקודות Description:
 ![image](https://github.com/EsterNadler/DataBase-Project/assets/116155777/4e0e344e-bda2-47ca-b6b3-353eadf30069)
 ![image](https://github.com/EsterNadler/DataBase-Project/assets/116155777/ff488dbe-5bb9-4308-b4eb-fe552bcc0c5a)
@@ -142,62 +140,57 @@ CREATE TABLE Takes_Lesson
 
 ## ייבוא נתונים
 ### ייבוא נתונים מקובץ טקסט:
---------------------------------------------------------------------------לטבלה ROOM------------------------------------------------------------------
-קובץ הטקסט:
+-----------לטבלה ROOM-----------
+קובץ הטקסט:  
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/31001be1-07ee-4318-9499-d582967315dc)
-קובץ ה Importer:
+
+קובץ ה Importer:  
 ![צילום מסך 2024-05-25 210951](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/6d1ea58d-35c0-404f-bf9c-cb8b73f6bab6)
 
 ### הכנסת נתונים ע"י Data Generator:
---------לטבלה PERSON----------
+--------לטבלה PERSON----------  
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/c32fe676-113e-4802-a2a6-df156c4e62e7)
 
---------לטבלה TRAINER---------
+--------לטבלה TRAINER---------  
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/b99c730b-8fdb-4ce4-b348-0d534b4191db)
 
--------לטבלה MEMBER_MEDICAL_CONSTRAINS--------
+-------לטבלה MEMBER_MEDICAL_CONSTRAINS--------  
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/31689c49-fcb4-4c2f-b1e4-8c221113c65c)
 
--------לטבלה CLASS_MEDICAL_CONSTRAINS--------
-
+-------לטבלה CLASS_MEDICAL_CONSTRAINS--------  
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/cba7355f-c2ba-4474-be33-a78923ba4baa)
----------------לטבלה LESSON---------------
-![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/8d855673-c46b-4b05-bac2-27e7de0c57ec)
 
--------לטבלה PERSON_PHONE--------
+---------------לטבלה LESSON---------------  
+![צילום מסך 2024-05-27 201635](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/6f3a01c9-a32c-45f0-9d4a-9caf970ab202)
+
+-------לטבלה PERSON_PHONE--------  
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/7f21812f-00c4-4696-a005-d84c2d4d92bb)
 
-
 ### הכנסת נתונים ע"י תוכנית Python: 
--------עבור הטבלה COURSES--------- 
-הרצת התוכנית שמייצרת את פקודות הINSERT:
+-------עבור הטבלה COURSES---------  
+הרצת התוכנית שמייצרת את פקודות הINSERT:  
 ![צילום מסך 2024-05-27 121645](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/66d30f73-ac43-48a6-86f2-0552557f4b57)
-הקובץ המתקבל:
+
+הקובץ המתקבל:  
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/352a4cd5-d879-4266-8ae0-8eb4a4fa6b2b)
 
-------עבור הטבלה TAKES_LESSON--------- 
-הרצת התוכנית שמייצרת את פקודות הINSERT: 
-(עבור המפתחות הזרים השתמשנו בייבוא נתונים מקבצי CSV שיצרנו באמצעות שאילתות מתאימות)
+------עבור הטבלה TAKES_LESSON---------  
+הרצת התוכנית שמייצרת את פקודות הINSERT:  
+(עבור המפתחות הזרים השתמשנו בייבוא נתונים מקבצי CSV שיצרנו באמצעות שאילתות מתאימות)  
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/37e8a0ee-e29e-4785-86a2-80afd130334f)
-הקובץ המתקבל:
+
+הקובץ המתקבל:  
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/7bfa5519-f637-4edd-98ca-3edab6d8c6d9)
 
-------עבור הטבלה ROOMS--------- 
-הרצת התוכנית שמייצרת את קובץ הטקסט:
+------עבור הטבלה ROOMS---------  
+הרצת התוכנית שמייצרת את קובץ הטקסט:  
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/6afad479-1dfc-4e1e-9b19-3bdd07e9032c)
-הקובץ המתקבל:
+
+הקובץ המתקבל:  
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/cd101a78-b3ac-4c18-9b45-cea699627da9)
 
 ## יצירת קובץ הגיבוי:
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/fa4fd4b3-460e-429b-8d52-57647c84bab3)
+
 ### שחזור קובץ הגיבוי:
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/87d94d92-8f1f-4896-a6c3-470c4eaf2699)
-
-
-
-
-
-
-
-
-
