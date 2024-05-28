@@ -175,14 +175,14 @@ alter table GYM_MEMBER_MEDICAL_CONSTRAINS disable constraint SYS_C00709992;
 prompt Disabling foreign key constraints for TRAINER...
 alter table TRAINER disable constraint SYS_C00706149;
 prompt Disabling foreign key constraints for LESSON...
-alter table LESSON disable constraint SYS_C00710010;
-alter table LESSON disable constraint SYS_C00710011;
-alter table LESSON disable constraint SYS_C00710012;
+alter table LESSON disable constraint SYS_C00711879;
+alter table LESSON disable constraint SYS_C00711880;
+alter table LESSON disable constraint SYS_C00711881;
 prompt Disabling foreign key constraints for PERSON_PHONE...
 alter table PERSON_PHONE disable constraint SYS_C00706162;
 prompt Disabling foreign key constraints for TAKES_LESSON...
-alter table TAKES_LESSON disable constraint SYS_C00710017;
-alter table TAKES_LESSON disable constraint SYS_C00710018;
+alter table TAKES_LESSON disable constraint SYS_C00711886;
+alter table TAKES_LESSON disable constraint SYS_C00711887;
 prompt Deleting TAKES_LESSON...
 delete from TAKES_LESSON;
 commit;
@@ -5112,741 +5112,1419 @@ commit;
 prompt 137 records loaded
 prompt Loading LESSON...
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('01-01-2016 19:50:26', 'dd-mm-yyyy hh24:mi:ss'), 4, 9, 43, 73, 67015963);
+values (to_date('09-08-2019 15:56:26', 'dd-mm-yyyy hh24:mi:ss'), 225, 7, 37, 758, 43217671);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('28-09-2014 01:41:57', 'dd-mm-yyyy hh24:mi:ss'), 7, 9, 53, 750, 25112977);
+values (to_date('13-06-2010 16:42:57', 'dd-mm-yyyy hh24:mi:ss'), 226, 7, 72, 363, 27719925);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('30-09-2004 20:51:21', 'dd-mm-yyyy hh24:mi:ss'), 8, 6, 78, 3, 7673525);
+values (to_date('24-01-2017 22:38:03', 'dd-mm-yyyy hh24:mi:ss'), 227, 7, 96, 65, 39725987);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('08-11-2007 06:24:28', 'dd-mm-yyyy hh24:mi:ss'), 14, 7, 41, 396, 30463411);
+values (to_date('23-12-2002 16:01:46', 'dd-mm-yyyy hh24:mi:ss'), 228, 9, 81, 865, 40091598);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('24-10-2009 04:52:45', 'dd-mm-yyyy hh24:mi:ss'), 17, 5, 59, 610, 8796425);
+values (to_date('05-04-2003 18:07:55', 'dd-mm-yyyy hh24:mi:ss'), 229, 7, 59, 257, 38125788);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('30-11-2007 04:57:47', 'dd-mm-yyyy hh24:mi:ss'), 18, 8, 36, 213, 26290962);
+values (to_date('17-10-2022 13:35:45', 'dd-mm-yyyy hh24:mi:ss'), 230, 9, 60, 787, 87218298);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('06-12-2016 11:17:13', 'dd-mm-yyyy hh24:mi:ss'), 19, 10, 69, 954, 43436957);
+values (to_date('20-10-2014 13:46:33', 'dd-mm-yyyy hh24:mi:ss'), 231, 9, 95, 946, 43049144);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('28-03-2020 05:06:34', 'dd-mm-yyyy hh24:mi:ss'), 23, 8, 4, 252, 49053838);
+values (to_date('25-03-2023 00:54:51', 'dd-mm-yyyy hh24:mi:ss'), 232, 10, 52, 815, 73434651);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('20-07-2000 08:05:34', 'dd-mm-yyyy hh24:mi:ss'), 25, 5, 67, 244, 88726887);
+values (to_date('27-07-2009 03:57:18', 'dd-mm-yyyy hh24:mi:ss'), 233, 8, 53, 707, 2376368);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('22-02-2014 20:26:52', 'dd-mm-yyyy hh24:mi:ss'), 29, 9, 11, 626, 50029824);
+values (to_date('28-10-2011 23:12:20', 'dd-mm-yyyy hh24:mi:ss'), 234, 6, 33, 591, 83376974);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('21-07-2010 10:29:25', 'dd-mm-yyyy hh24:mi:ss'), 31, 7, 34, 188, 42322889);
+values (to_date('02-04-2019 20:11:36', 'dd-mm-yyyy hh24:mi:ss'), 235, 10, 41, 932, 91089992);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('13-06-2023 19:22:04', 'dd-mm-yyyy hh24:mi:ss'), 32, 8, 13, 932, 31661429);
+values (to_date('01-11-2006 23:42:17', 'dd-mm-yyyy hh24:mi:ss'), 236, 5, 35, 530, 58647622);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('15-08-2011 10:38:03', 'dd-mm-yyyy hh24:mi:ss'), 49, 5, 52, 647, 10951186);
+values (to_date('26-11-2023 18:18:00', 'dd-mm-yyyy hh24:mi:ss'), 237, 5, 87, 658, 79910635);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('23-07-2011 03:25:55', 'dd-mm-yyyy hh24:mi:ss'), 50, 6, 89, 901, 27719925);
+values (to_date('23-06-2008 18:07:20', 'dd-mm-yyyy hh24:mi:ss'), 238, 8, 82, 854, 57601580);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('05-12-2013 16:10:33', 'dd-mm-yyyy hh24:mi:ss'), 51, 8, 5, 930, 20114821);
+values (to_date('07-04-2018 05:01:14', 'dd-mm-yyyy hh24:mi:ss'), 239, 10, 33, 932, 32128888);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('01-04-2015 14:48:11', 'dd-mm-yyyy hh24:mi:ss'), 55, 6, 64, 707, 79260141);
+values (to_date('26-08-2004 10:37:55', 'dd-mm-yyyy hh24:mi:ss'), 240, 6, 87, 257, 8081255);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('23-02-2008 18:24:11', 'dd-mm-yyyy hh24:mi:ss'), 64, 7, 47, 530, 42253574);
+values (to_date('17-11-2013 23:05:34', 'dd-mm-yyyy hh24:mi:ss'), 241, 8, 32, 626, 49478035);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('23-01-2015 10:43:06', 'dd-mm-yyyy hh24:mi:ss'), 68, 5, 100, 591, 66242981);
+values (to_date('25-11-2020 22:31:43', 'dd-mm-yyyy hh24:mi:ss'), 242, 5, 66, 409, 6603015);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('19-02-2002 14:54:57', 'dd-mm-yyyy hh24:mi:ss'), 70, 6, 34, 177, 29742651);
+values (to_date('05-06-2019 07:57:38', 'dd-mm-yyyy hh24:mi:ss'), 243, 7, 71, 65, 42322889);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('31-01-2004 19:19:55', 'dd-mm-yyyy hh24:mi:ss'), 75, 5, 18, 698, 46339943);
+values (to_date('19-08-2012 00:26:47', 'dd-mm-yyyy hh24:mi:ss'), 244, 10, 43, 94, 89122501);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('03-11-2000 04:44:32', 'dd-mm-yyyy hh24:mi:ss'), 76, 9, 14, 193, 88649232);
+values (to_date('11-11-2021 03:05:19', 'dd-mm-yyyy hh24:mi:ss'), 245, 10, 54, 732, 1055314);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('13-02-2010 19:25:32', 'dd-mm-yyyy hh24:mi:ss'), 79, 10, 88, 363, 19067900);
+values (to_date('04-05-2023 18:26:55', 'dd-mm-yyyy hh24:mi:ss'), 246, 10, 93, 726, 58647622);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('26-07-2023 10:47:34', 'dd-mm-yyyy hh24:mi:ss'), 80, 10, 55, 707, 1282269);
+values (to_date('28-05-2023 11:12:54', 'dd-mm-yyyy hh24:mi:ss'), 247, 5, 24, 10, 88634045);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('02-01-2005 23:39:15', 'dd-mm-yyyy hh24:mi:ss'), 82, 5, 17, 732, 88726887);
+values (to_date('03-12-2021 10:42:57', 'dd-mm-yyyy hh24:mi:ss'), 248, 8, 14, 830, 99375320);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('23-07-2013 21:55:00', 'dd-mm-yyyy hh24:mi:ss'), 83, 9, 25, 610, 2505457);
+values (to_date('18-07-2006 19:43:14', 'dd-mm-yyyy hh24:mi:ss'), 249, 8, 10, 193, 24290738);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('22-07-2012 05:48:46', 'dd-mm-yyyy hh24:mi:ss'), 92, 7, 17, 196, 41060366);
+values (to_date('23-09-2024 04:31:00', 'dd-mm-yyyy hh24:mi:ss'), 250, 9, 60, 390, 2450269);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('17-12-2009 20:45:53', 'dd-mm-yyyy hh24:mi:ss'), 99, 8, 62, 65, 39997409);
+values (to_date('12-01-2022 18:48:57', 'dd-mm-yyyy hh24:mi:ss'), 251, 5, 81, 517, 61751644);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-01-2020 11:03:41', 'dd-mm-yyyy hh24:mi:ss'), 101, 8, 25, 651, 29742651);
+values (to_date('15-09-2004 06:14:49', 'dd-mm-yyyy hh24:mi:ss'), 252, 7, 52, 748, 63595783);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('13-07-2005 20:46:19', 'dd-mm-yyyy hh24:mi:ss'), 104, 7, 45, 517, 54638372);
+values (to_date('02-04-2005 13:11:34', 'dd-mm-yyyy hh24:mi:ss'), 253, 8, 13, 748, 64027261);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('16-02-2003 04:28:33', 'dd-mm-yyyy hh24:mi:ss'), 107, 5, 56, 298, 14725165);
+values (to_date('06-09-2005 05:56:24', 'dd-mm-yyyy hh24:mi:ss'), 254, 7, 42, 653, 39725987);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('18-02-2009 17:31:12', 'dd-mm-yyyy hh24:mi:ss'), 110, 8, 69, 612, 46339943);
+values (to_date('26-09-2020 20:28:53', 'dd-mm-yyyy hh24:mi:ss'), 255, 9, 27, 865, 87218298);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('24-03-2010 05:03:59', 'dd-mm-yyyy hh24:mi:ss'), 114, 9, 91, 653, 48536850);
+values (to_date('16-02-2015 11:14:29', 'dd-mm-yyyy hh24:mi:ss'), 256, 8, 37, 939, 53737541);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('01-04-2017 12:11:57', 'dd-mm-yyyy hh24:mi:ss'), 118, 6, 12, 830, 96970243);
+values (to_date('10-07-2019 22:52:19', 'dd-mm-yyyy hh24:mi:ss'), 257, 10, 31, 253, 73434651);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('22-05-2001 19:53:54', 'dd-mm-yyyy hh24:mi:ss'), 128, 7, 32, 806, 1055314);
+values (to_date('13-10-2018 08:16:04', 'dd-mm-yyyy hh24:mi:ss'), 258, 10, 8, 389, 2591817);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('06-05-2018 13:34:10', 'dd-mm-yyyy hh24:mi:ss'), 133, 6, 60, 854, 15992467);
+values (to_date('26-02-2016 21:06:28', 'dd-mm-yyyy hh24:mi:ss'), 259, 5, 43, 391, 46344277);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('24-12-2017 23:28:53', 'dd-mm-yyyy hh24:mi:ss'), 144, 5, 78, 517, 51397792);
+values (to_date('11-10-2015 04:49:17', 'dd-mm-yyyy hh24:mi:ss'), 260, 9, 8, 129, 14725165);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-07-2008 01:49:00', 'dd-mm-yyyy hh24:mi:ss'), 149, 9, 38, 500, 67015963);
+values (to_date('31-01-2008 14:10:27', 'dd-mm-yyyy hh24:mi:ss'), 261, 10, 20, 758, 22432753);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('28-02-2023 22:23:57', 'dd-mm-yyyy hh24:mi:ss'), 161, 5, 64, 577, 45412385);
+values (to_date('26-04-2003 09:34:42', 'dd-mm-yyyy hh24:mi:ss'), 262, 7, 86, 431, 66242981);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('26-08-2003 09:51:41', 'dd-mm-yyyy hh24:mi:ss'), 165, 8, 85, 954, 27719925);
+values (to_date('25-01-2016 11:02:49', 'dd-mm-yyyy hh24:mi:ss'), 263, 10, 41, 500, 14658929);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('30-06-2012 15:25:03', 'dd-mm-yyyy hh24:mi:ss'), 167, 7, 79, 253, 40091598);
+values (to_date('22-08-2021 13:32:44', 'dd-mm-yyyy hh24:mi:ss'), 264, 6, 49, 188, 25039816);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('14-06-2015 05:48:54', 'dd-mm-yyyy hh24:mi:ss'), 171, 8, 86, 532, 49537257);
+values (to_date('01-06-2002 18:00:43', 'dd-mm-yyyy hh24:mi:ss'), 265, 6, 17, 519, 87891090);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-07-2003 13:25:58', 'dd-mm-yyyy hh24:mi:ss'), 179, 8, 68, 612, 79910635);
+values (to_date('23-12-2021 07:44:15', 'dd-mm-yyyy hh24:mi:ss'), 266, 8, 12, 612, 32128888);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('26-09-2007 20:31:37', 'dd-mm-yyyy hh24:mi:ss'), 186, 10, 67, 698, 32128888);
+values (to_date('31-12-2019 22:17:02', 'dd-mm-yyyy hh24:mi:ss'), 267, 6, 55, 555, 14725165);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-03-2008 10:16:36', 'dd-mm-yyyy hh24:mi:ss'), 187, 9, 66, 336, 45505216);
+values (to_date('23-06-2009 04:32:44', 'dd-mm-yyyy hh24:mi:ss'), 268, 10, 11, 213, 87218298);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('16-10-2021 11:59:42', 'dd-mm-yyyy hh24:mi:ss'), 190, 5, 67, 213, 53737541);
+values (to_date('12-05-2016 22:58:04', 'dd-mm-yyyy hh24:mi:ss'), 269, 10, 41, 371, 7673525);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('28-06-2012 04:24:23', 'dd-mm-yyyy hh24:mi:ss'), 192, 8, 13, 177, 99375320);
+values (to_date('20-01-2008 09:18:43', 'dd-mm-yyyy hh24:mi:ss'), 270, 8, 46, 213, 9077728);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('11-06-2001 05:01:06', 'dd-mm-yyyy hh24:mi:ss'), 193, 8, 32, 766, 19067900);
+values (to_date('07-02-2010 13:37:37', 'dd-mm-yyyy hh24:mi:ss'), 271, 8, 72, 294, 79910635);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('09-01-2001 13:23:57', 'dd-mm-yyyy hh24:mi:ss'), 197, 8, 87, 137, 54757032);
+values (to_date('11-12-2021 04:54:37', 'dd-mm-yyyy hh24:mi:ss'), 272, 10, 16, 254, 97813459);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('27-11-2021 19:21:04', 'dd-mm-yyyy hh24:mi:ss'), 198, 10, 72, 252, 34375443);
+values (to_date('15-07-2002 02:17:48', 'dd-mm-yyyy hh24:mi:ss'), 273, 9, 70, 336, 46339943);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('21-09-2021 17:46:36', 'dd-mm-yyyy hh24:mi:ss'), 199, 5, 73, 519, 35042992);
+values (to_date('14-03-2018 08:48:46', 'dd-mm-yyyy hh24:mi:ss'), 274, 6, 31, 391, 83376974);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('17-01-2015 16:28:33', 'dd-mm-yyyy hh24:mi:ss'), 202, 6, 64, 834, 29742651);
+values (to_date('07-03-2008 06:02:52', 'dd-mm-yyyy hh24:mi:ss'), 275, 7, 67, 653, 37865911);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('29-03-2005 11:04:42', 'dd-mm-yyyy hh24:mi:ss'), 204, 10, 20, 907, 99887779);
+values (to_date('07-01-2002 14:55:14', 'dd-mm-yyyy hh24:mi:ss'), 276, 6, 83, 532, 88310865);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('16-05-2013 15:04:27', 'dd-mm-yyyy hh24:mi:ss'), 205, 8, 51, 658, 22432753);
+values (to_date('19-07-2014 07:53:54', 'dd-mm-yyyy hh24:mi:ss'), 277, 9, 1, 764, 40293735);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('14-07-2012 14:54:48', 'dd-mm-yyyy hh24:mi:ss'), 210, 8, 48, 249, 88310865);
+values (to_date('16-10-2016 12:51:24', 'dd-mm-yyyy hh24:mi:ss'), 278, 5, 16, 653, 35965202);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('26-11-2018 06:35:16', 'dd-mm-yyyy hh24:mi:ss'), 227, 5, 16, 257, 88239853);
+values (to_date('08-12-2010 07:18:54', 'dd-mm-yyyy hh24:mi:ss'), 279, 8, 71, 674, 41518918);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('08-07-2012 02:01:23', 'dd-mm-yyyy hh24:mi:ss'), 229, 7, 44, 164, 67015963);
+values (to_date('20-07-2024 08:47:19', 'dd-mm-yyyy hh24:mi:ss'), 280, 10, 70, 907, 15992467);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('01-07-2001 12:24:37', 'dd-mm-yyyy hh24:mi:ss'), 230, 5, 57, 698, 32128888);
+values (to_date('18-03-2015 05:21:15', 'dd-mm-yyyy hh24:mi:ss'), 281, 10, 9, 865, 74889890);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('28-11-2020 05:52:48', 'dd-mm-yyyy hh24:mi:ss'), 231, 5, 7, 707, 52313162);
+values (to_date('07-06-2024 21:52:50', 'dd-mm-yyyy hh24:mi:ss'), 282, 8, 98, 703, 22657272);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('16-06-2019 14:31:37', 'dd-mm-yyyy hh24:mi:ss'), 238, 6, 54, 402, 53483220);
+values (to_date('07-11-2021 14:59:25', 'dd-mm-yyyy hh24:mi:ss'), 283, 6, 94, 20, 41518918);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('28-03-2020 06:41:54', 'dd-mm-yyyy hh24:mi:ss'), 245, 10, 34, 698, 7673525);
+values (to_date('17-11-2022 10:31:00', 'dd-mm-yyyy hh24:mi:ss'), 284, 8, 31, 577, 91891117);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('28-12-2012 11:26:18', 'dd-mm-yyyy hh24:mi:ss'), 251, 10, 42, 409, 8796425);
+values (to_date('13-04-2002 18:12:05', 'dd-mm-yyyy hh24:mi:ss'), 285, 10, 58, 651, 39997409);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-10-2014 21:17:25', 'dd-mm-yyyy hh24:mi:ss'), 254, 8, 59, 371, 38125788);
+values (to_date('05-03-2019 08:02:32', 'dd-mm-yyyy hh24:mi:ss'), 286, 6, 25, 363, 25039816);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('09-03-2005 04:43:14', 'dd-mm-yyyy hh24:mi:ss'), 256, 7, 63, 244, 1282269);
+values (to_date('10-04-2004 08:58:50', 'dd-mm-yyyy hh24:mi:ss'), 287, 8, 69, 967, 53483220);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('16-06-2023 12:59:45', 'dd-mm-yyyy hh24:mi:ss'), 263, 6, 93, 555, 38125788);
+values (to_date('22-12-2014 22:29:16', 'dd-mm-yyyy hh24:mi:ss'), 288, 6, 8, 391, 34375443);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('29-11-2014 05:26:18', 'dd-mm-yyyy hh24:mi:ss'), 274, 9, 94, 930, 82804437);
+values (to_date('12-06-2004 03:31:49', 'dd-mm-yyyy hh24:mi:ss'), 289, 8, 35, 11, 2591817);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('19-10-2020 03:44:29', 'dd-mm-yyyy hh24:mi:ss'), 293, 9, 19, 11, 31471077);
+values (to_date('08-06-2010 05:55:06', 'dd-mm-yyyy hh24:mi:ss'), 290, 7, 84, 564, 44623593);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('13-02-2002 03:06:11', 'dd-mm-yyyy hh24:mi:ss'), 299, 7, 70, 653, 49537257);
+values (to_date('04-08-2011 18:43:29', 'dd-mm-yyyy hh24:mi:ss'), 291, 8, 9, 195, 87891090);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('15-09-2001 15:29:57', 'dd-mm-yyyy hh24:mi:ss'), 1, 6, 31, 967, 44715352);
+values (to_date('10-07-2014 22:26:06', 'dd-mm-yyyy hh24:mi:ss'), 292, 10, 30, 591, 37865911);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('13-11-2020 06:38:26', 'dd-mm-yyyy hh24:mi:ss'), 3, 9, 4, 830, 10854394);
+values (to_date('24-06-2006 15:02:18', 'dd-mm-yyyy hh24:mi:ss'), 293, 9, 7, 254, 73434651);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('13-06-2004 14:21:59', 'dd-mm-yyyy hh24:mi:ss'), 9, 5, 98, 294, 13611451);
+values (to_date('14-10-2011 06:38:18', 'dd-mm-yyyy hh24:mi:ss'), 294, 5, 59, 834, 22657272);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('20-11-2024 18:09:21', 'dd-mm-yyyy hh24:mi:ss'), 29, 5, 59, 396, 23041511);
+values (to_date('19-07-2006 20:09:10', 'dd-mm-yyyy hh24:mi:ss'), 295, 5, 77, 94, 96970243);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('21-01-2012 05:46:53', 'dd-mm-yyyy hh24:mi:ss'), 34, 7, 30, 296, 50968404);
+values (to_date('12-10-2018 10:23:13', 'dd-mm-yyyy hh24:mi:ss'), 296, 5, 89, 946, 41060366);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('19-02-2003 01:43:06', 'dd-mm-yyyy hh24:mi:ss'), 38, 6, 84, 577, 43217671);
+values (to_date('03-12-2018 15:40:27', 'dd-mm-yyyy hh24:mi:ss'), 297, 10, 24, 409, 26290962);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('28-01-2011 11:34:56', 'dd-mm-yyyy hh24:mi:ss'), 44, 8, 66, 612, 2376368);
+values (to_date('23-12-2019 00:04:01', 'dd-mm-yyyy hh24:mi:ss'), 298, 6, 26, 196, 43049144);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('12-10-2013 09:17:34', 'dd-mm-yyyy hh24:mi:ss'), 65, 5, 89, 45, 39997409);
+values (to_date('02-03-2013 23:32:29', 'dd-mm-yyyy hh24:mi:ss'), 299, 10, 14, 371, 79910635);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('09-12-2014 04:17:45', 'dd-mm-yyyy hh24:mi:ss'), 74, 8, 81, 932, 79693276);
+values (to_date('11-04-2021 21:15:15', 'dd-mm-yyyy hh24:mi:ss'), 300, 5, 96, 674, 51397792);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('03-05-2010 15:04:19', 'dd-mm-yyyy hh24:mi:ss'), 77, 5, 89, 164, 94625728);
+values (to_date('31-08-2013 04:00:11', 'dd-mm-yyyy hh24:mi:ss'), 301, 9, 16, 626, 14725165);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-06-2007 03:42:02', 'dd-mm-yyyy hh24:mi:ss'), 79, 9, 61, 787, 13663159);
+values (to_date('07-12-2013 11:40:33', 'dd-mm-yyyy hh24:mi:ss'), 302, 6, 40, 409, 7673525);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('10-02-2022 03:21:27', 'dd-mm-yyyy hh24:mi:ss'), 81, 6, 62, 246, 13611451);
+values (to_date('09-10-2000 23:24:25', 'dd-mm-yyyy hh24:mi:ss'), 303, 9, 80, 763, 15992467);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('01-06-2002 20:38:49', 'dd-mm-yyyy hh24:mi:ss'), 87, 5, 72, 294, 88239853);
+values (to_date('28-08-2003 00:38:00', 'dd-mm-yyyy hh24:mi:ss'), 304, 5, 52, 252, 2505457);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('09-03-2001 13:22:39', 'dd-mm-yyyy hh24:mi:ss'), 88, 7, 61, 763, 22657272);
+values (to_date('23-03-2003 20:23:16', 'dd-mm-yyyy hh24:mi:ss'), 305, 7, 58, 758, 79910635);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('18-07-2000 06:10:04', 'dd-mm-yyyy hh24:mi:ss'), 92, 10, 39, 183, 30463411);
+values (to_date('20-08-2018 10:42:31', 'dd-mm-yyyy hh24:mi:ss'), 306, 10, 4, 193, 43049144);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('21-12-2013 22:35:54', 'dd-mm-yyyy hh24:mi:ss'), 93, 5, 99, 246, 27803037);
+values (to_date('24-01-2006 15:32:06', 'dd-mm-yyyy hh24:mi:ss'), 307, 6, 96, 391, 67015963);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('01-01-2005 08:47:02', 'dd-mm-yyyy hh24:mi:ss'), 95, 5, 7, 659, 44715352);
+values (to_date('28-02-2017 23:29:19', 'dd-mm-yyyy hh24:mi:ss'), 308, 8, 84, 244, 10951186);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('01-02-2024 06:40:01', 'dd-mm-yyyy hh24:mi:ss'), 100, 5, 68, 750, 22432753);
+values (to_date('06-09-2022 13:08:58', 'dd-mm-yyyy hh24:mi:ss'), 309, 6, 100, 564, 27719925);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('15-05-2004 16:41:57', 'dd-mm-yyyy hh24:mi:ss'), 101, 8, 75, 707, 14725165);
+values (to_date('24-12-2009 04:16:53', 'dd-mm-yyyy hh24:mi:ss'), 310, 8, 55, 854, 24414730);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('18-11-2003 21:02:00', 'dd-mm-yyyy hh24:mi:ss'), 109, 6, 40, 864, 34375443);
+values (to_date('11-04-2005 04:16:19', 'dd-mm-yyyy hh24:mi:ss'), 311, 9, 4, 252, 53483220);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('15-04-2000 06:44:38', 'dd-mm-yyyy hh24:mi:ss'), 115, 8, 69, 522, 10951186);
+values (to_date('10-08-2020 21:20:26', 'dd-mm-yyyy hh24:mi:ss'), 312, 8, 29, 20, 46339943);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('12-08-2007 03:02:09', 'dd-mm-yyyy hh24:mi:ss'), 122, 5, 95, 555, 48536850);
+values (to_date('24-06-2004 06:48:05', 'dd-mm-yyyy hh24:mi:ss'), 313, 7, 86, 815, 46339943);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('01-04-2010 14:22:50', 'dd-mm-yyyy hh24:mi:ss'), 127, 6, 12, 298, 91703316);
+values (to_date('07-03-2018 14:02:32', 'dd-mm-yyyy hh24:mi:ss'), 314, 7, 78, 129, 51397792);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('27-08-2023 07:22:30', 'dd-mm-yyyy hh24:mi:ss'), 131, 10, 41, 324, 23041511);
+values (to_date('06-11-2004 01:15:10', 'dd-mm-yyyy hh24:mi:ss'), 315, 7, 64, 431, 33915414);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('28-01-2022 14:03:24', 'dd-mm-yyyy hh24:mi:ss'), 132, 9, 59, 582, 30463411);
+values (to_date('13-11-2022 13:32:18', 'dd-mm-yyyy hh24:mi:ss'), 316, 10, 73, 555, 2938480);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('26-09-2015 07:52:36', 'dd-mm-yyyy hh24:mi:ss'), 138, 8, 25, 941, 91891117);
+values (to_date('05-09-2017 12:29:57', 'dd-mm-yyyy hh24:mi:ss'), 317, 10, 15, 967, 79192786);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('14-09-2013 13:40:13', 'dd-mm-yyyy hh24:mi:ss'), 144, 10, 87, 806, 82804437);
+values (to_date('26-03-2018 22:00:02', 'dd-mm-yyyy hh24:mi:ss'), 318, 5, 51, 806, 96970243);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('30-11-2014 09:38:52', 'dd-mm-yyyy hh24:mi:ss'), 145, 8, 94, 570, 30062117);
+values (to_date('06-03-2000 22:36:11', 'dd-mm-yyyy hh24:mi:ss'), 319, 5, 71, 732, 40293735);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('29-11-2000 10:11:16', 'dd-mm-yyyy hh24:mi:ss'), 146, 5, 42, 402, 2505457);
+values (to_date('27-02-2009 20:18:23', 'dd-mm-yyyy hh24:mi:ss'), 320, 8, 64, 502, 73434651);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('12-07-2000 14:34:04', 'dd-mm-yyyy hh24:mi:ss'), 155, 8, 60, 324, 32846918);
+values (to_date('26-03-2024 14:49:55', 'dd-mm-yyyy hh24:mi:ss'), 321, 8, 9, 924, 2591817);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('23-07-2024 13:42:57', 'dd-mm-yyyy hh24:mi:ss'), 157, 10, 49, 65, 87891090);
+values (to_date('26-06-2002 02:10:10', 'dd-mm-yyyy hh24:mi:ss'), 322, 10, 82, 371, 99887779);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('30-07-2001 05:13:37', 'dd-mm-yyyy hh24:mi:ss'), 173, 7, 85, 555, 63990543);
+values (to_date('30-04-2008 01:50:09', 'dd-mm-yyyy hh24:mi:ss'), 323, 10, 62, 830, 65058862);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('20-11-2005 16:56:38', 'dd-mm-yyyy hh24:mi:ss'), 177, 6, 79, 703, 54638372);
+values (to_date('25-09-2011 17:08:18', 'dd-mm-yyyy hh24:mi:ss'), 324, 10, 72, 930, 35965202);
 commit;
 prompt 100 records committed...
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('09-08-2005 08:40:50', 'dd-mm-yyyy hh24:mi:ss'), 180, 6, 43, 502, 10854394);
+values (to_date('08-06-2011 15:03:36', 'dd-mm-yyyy hh24:mi:ss'), 325, 7, 93, 389, 30411578);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('17-04-2019 17:03:24', 'dd-mm-yyyy hh24:mi:ss'), 185, 6, 84, 522, 31661429);
+values (to_date('29-05-2011 16:37:55', 'dd-mm-yyyy hh24:mi:ss'), 326, 10, 78, 226, 10854394);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-09-2008 03:59:28', 'dd-mm-yyyy hh24:mi:ss'), 186, 10, 60, 941, 46339943);
+values (to_date('05-10-2011 21:28:56', 'dd-mm-yyyy hh24:mi:ss'), 327, 5, 27, 45, 24290738);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-07-2000 05:45:36', 'dd-mm-yyyy hh24:mi:ss'), 188, 9, 63, 188, 88634045);
+values (to_date('27-08-2016 08:11:54', 'dd-mm-yyyy hh24:mi:ss'), 328, 10, 49, 431, 25112977);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('10-04-2018 00:52:16', 'dd-mm-yyyy hh24:mi:ss'), 193, 6, 28, 83, 2938480);
+values (to_date('01-09-2015 20:57:24', 'dd-mm-yyyy hh24:mi:ss'), 329, 10, 8, 45, 32846918);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('20-09-2003 23:02:24', 'dd-mm-yyyy hh24:mi:ss'), 196, 5, 73, 865, 49478035);
+values (to_date('08-01-2005 00:39:53', 'dd-mm-yyyy hh24:mi:ss'), 330, 7, 72, 502, 87891090);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-12-2018 06:30:05', 'dd-mm-yyyy hh24:mi:ss'), 201, 9, 34, 830, 730279);
+values (to_date('19-07-2006 00:39:10', 'dd-mm-yyyy hh24:mi:ss'), 331, 7, 70, 967, 7673525);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('28-04-2024 21:57:27', 'dd-mm-yyyy hh24:mi:ss'), 206, 6, 41, 193, 34375443);
+values (to_date('03-11-2004 14:19:23', 'dd-mm-yyyy hh24:mi:ss'), 332, 8, 27, 129, 52313162);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('19-05-2024 14:24:34', 'dd-mm-yyyy hh24:mi:ss'), 209, 9, 90, 972, 88634045);
+values (to_date('18-12-2008 23:20:32', 'dd-mm-yyyy hh24:mi:ss'), 333, 6, 4, 787, 50029824);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-03-2003 08:22:50', 'dd-mm-yyyy hh24:mi:ss'), 214, 5, 95, 865, 66242981);
+values (to_date('26-08-2013 19:32:44', 'dd-mm-yyyy hh24:mi:ss'), 334, 7, 90, 294, 40293735);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('19-07-2011 21:50:06', 'dd-mm-yyyy hh24:mi:ss'), 223, 9, 3, 519, 50900940);
+values (to_date('22-07-2004 21:36:08', 'dd-mm-yyyy hh24:mi:ss'), 335, 6, 60, 391, 79910635);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('13-05-2013 18:09:12', 'dd-mm-yyyy hh24:mi:ss'), 224, 8, 96, 498, 40091598);
+values (to_date('04-08-2006 17:16:22', 'dd-mm-yyyy hh24:mi:ss'), 336, 8, 51, 336, 54638372);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('27-01-2014 07:14:18', 'dd-mm-yyyy hh24:mi:ss'), 231, 8, 49, 732, 99375320);
+values (to_date('23-02-2001 05:28:19', 'dd-mm-yyyy hh24:mi:ss'), 337, 9, 92, 530, 1055314);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('26-06-2013 12:26:12', 'dd-mm-yyyy hh24:mi:ss'), 234, 9, 86, 930, 43049144);
+values (to_date('30-11-2012 09:39:18', 'dd-mm-yyyy hh24:mi:ss'), 338, 10, 32, 396, 10951186);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('21-11-2001 05:58:24', 'dd-mm-yyyy hh24:mi:ss'), 238, 7, 57, 196, 30463411);
+values (to_date('28-07-2020 12:26:55', 'dd-mm-yyyy hh24:mi:ss'), 339, 7, 83, 402, 34375443);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('29-08-2023 21:03:36', 'dd-mm-yyyy hh24:mi:ss'), 242, 10, 25, 674, 74889890);
+values (to_date('18-02-2005 03:51:50', 'dd-mm-yyyy hh24:mi:ss'), 340, 5, 30, 726, 8796425);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-12-2020 04:49:43', 'dd-mm-yyyy hh24:mi:ss'), 243, 5, 16, 532, 87218298);
+values (to_date('21-06-2016 13:22:13', 'dd-mm-yyyy hh24:mi:ss'), 341, 7, 45, 707, 27719925);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('21-01-2008 11:29:02', 'dd-mm-yyyy hh24:mi:ss'), 246, 10, 25, 577, 94625728);
+values (to_date('17-02-2024 14:31:20', 'dd-mm-yyyy hh24:mi:ss'), 342, 8, 6, 612, 32128888);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('11-03-2005 14:33:47', 'dd-mm-yyyy hh24:mi:ss'), 253, 6, 76, 522, 89122501);
+values (to_date('08-05-2006 05:10:01', 'dd-mm-yyyy hh24:mi:ss'), 343, 9, 90, 941, 7673525);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('10-09-2013 11:19:23', 'dd-mm-yyyy hh24:mi:ss'), 255, 7, 28, 298, 91703316);
+values (to_date('20-01-2006 19:34:01', 'dd-mm-yyyy hh24:mi:ss'), 344, 6, 60, 183, 44715352);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('20-07-2011 10:16:36', 'dd-mm-yyyy hh24:mi:ss'), 268, 9, 78, 967, 40293735);
+values (to_date('20-01-2010 09:15:41', 'dd-mm-yyyy hh24:mi:ss'), 345, 7, 83, 83, 24290738);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-04-2015 19:58:13', 'dd-mm-yyyy hh24:mi:ss'), 272, 8, 94, 336, 6603015);
+values (to_date('22-07-2022 12:24:20', 'dd-mm-yyyy hh24:mi:ss'), 346, 7, 35, 659, 41518918);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('24-07-2017 17:51:30', 'dd-mm-yyyy hh24:mi:ss'), 280, 6, 45, 939, 45412385);
+values (to_date('07-02-2000 09:58:45', 'dd-mm-yyyy hh24:mi:ss'), 347, 5, 74, 698, 67015963);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('01-05-2024 14:03:15', 'dd-mm-yyyy hh24:mi:ss'), 281, 8, 34, 498, 4370439);
+values (to_date('09-08-2020 03:14:32', 'dd-mm-yyyy hh24:mi:ss'), 348, 9, 45, 402, 57601580);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-08-2004 05:21:41', 'dd-mm-yyyy hh24:mi:ss'), 293, 6, 58, 726, 49908274);
+values (to_date('29-07-2020 04:12:17', 'dd-mm-yyyy hh24:mi:ss'), 349, 7, 72, 129, 79260141);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-07-2013 04:31:17', 'dd-mm-yyyy hh24:mi:ss'), 294, 8, 74, 674, 2591817);
+values (to_date('25-02-2017 22:04:39', 'dd-mm-yyyy hh24:mi:ss'), 350, 7, 23, 612, 39997409);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('11-01-2020 23:44:44', 'dd-mm-yyyy hh24:mi:ss'), 297, 7, 28, 129, 63595783);
+values (to_date('25-11-2015 17:16:22', 'dd-mm-yyyy hh24:mi:ss'), 351, 8, 53, 914, 79192786);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('18-03-2014 11:39:07', 'dd-mm-yyyy hh24:mi:ss'), 298, 10, 50, 129, 24414730);
+values (to_date('05-03-2017 20:36:23', 'dd-mm-yyyy hh24:mi:ss'), 352, 10, 32, 750, 58647622);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('13-06-2014 13:49:43', 'dd-mm-yyyy hh24:mi:ss'), 301, 9, 53, 564, 31661429);
+values (to_date('05-12-2011 12:03:53', 'dd-mm-yyyy hh24:mi:ss'), 353, 5, 34, 834, 50900940);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('13-08-2000 08:53:48', 'dd-mm-yyyy hh24:mi:ss'), 308, 10, 79, 901, 54757032);
+values (to_date('10-10-2021 03:23:19', 'dd-mm-yyyy hh24:mi:ss'), 354, 10, 61, 188, 1282269);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('27-12-2005 18:49:32', 'dd-mm-yyyy hh24:mi:ss'), 309, 6, 93, 659, 20103782);
+values (to_date('24-11-2003 20:09:18', 'dd-mm-yyyy hh24:mi:ss'), 355, 6, 31, 647, 91089992);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('19-09-2021 02:46:10', 'dd-mm-yyyy hh24:mi:ss'), 310, 9, 58, 252, 23041511);
+values (to_date('21-07-2001 08:04:50', 'dd-mm-yyyy hh24:mi:ss'), 356, 6, 25, 45, 35548775);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('26-01-2016 07:15:53', 'dd-mm-yyyy hh24:mi:ss'), 318, 7, 24, 257, 2450269);
+values (to_date('19-11-2012 20:57:07', 'dd-mm-yyyy hh24:mi:ss'), 357, 10, 49, 390, 64027261);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('21-09-2010 16:04:30', 'dd-mm-yyyy hh24:mi:ss'), 321, 7, 54, 226, 96970243);
+values (to_date('03-12-2018 11:17:13', 'dd-mm-yyyy hh24:mi:ss'), 358, 7, 89, 324, 31661429);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('23-06-2004 19:44:32', 'dd-mm-yyyy hh24:mi:ss'), 326, 6, 37, 371, 49478035);
+values (to_date('17-07-2018 04:48:08', 'dd-mm-yyyy hh24:mi:ss'), 359, 6, 52, 183, 30062117);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('02-02-2006 08:00:14', 'dd-mm-yyyy hh24:mi:ss'), 337, 6, 53, 254, 96970243);
+values (to_date('01-09-2017 16:36:28', 'dd-mm-yyyy hh24:mi:ss'), 360, 9, 44, 698, 10854394);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('14-09-2017 22:59:57', 'dd-mm-yyyy hh24:mi:ss'), 341, 7, 63, 252, 79910635);
+values (to_date('13-12-2019 16:14:18', 'dd-mm-yyyy hh24:mi:ss'), 361, 6, 74, 519, 96970243);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('14-02-2010 18:14:41', 'dd-mm-yyyy hh24:mi:ss'), 344, 5, 31, 253, 88649232);
+values (to_date('05-08-2023 11:51:56', 'dd-mm-yyyy hh24:mi:ss'), 362, 10, 71, 924, 67015963);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('28-06-2010 17:06:43', 'dd-mm-yyyy hh24:mi:ss'), 353, 5, 18, 65, 94625728);
+values (to_date('30-12-2012 05:40:50', 'dd-mm-yyyy hh24:mi:ss'), 363, 10, 85, 371, 97813459);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('16-12-2000 22:59:57', 'dd-mm-yyyy hh24:mi:ss'), 369, 5, 99, 254, 31471077);
+values (to_date('04-12-2016 07:06:40', 'dd-mm-yyyy hh24:mi:ss'), 364, 5, 51, 363, 10854394);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('24-09-2011 03:31:32', 'dd-mm-yyyy hh24:mi:ss'), 379, 10, 81, 865, 20114821);
+values (to_date('18-11-2009 23:17:05', 'dd-mm-yyyy hh24:mi:ss'), 365, 9, 41, 658, 27719925);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('10-07-2006 15:41:54', 'dd-mm-yyyy hh24:mi:ss'), 385, 6, 46, 522, 4370439);
+values (to_date('04-10-2010 23:06:51', 'dd-mm-yyyy hh24:mi:ss'), 366, 10, 26, 707, 40293735);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('23-11-2013 23:41:51', 'dd-mm-yyyy hh24:mi:ss'), 386, 8, 54, 3, 54638372);
+values (to_date('23-07-2009 16:49:09', 'dd-mm-yyyy hh24:mi:ss'), 367, 7, 97, 294, 99887779);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('14-03-2006 23:17:05', 'dd-mm-yyyy hh24:mi:ss'), 389, 7, 80, 45, 23041511);
+values (to_date('08-06-2000 07:10:50', 'dd-mm-yyyy hh24:mi:ss'), 368, 8, 56, 129, 46639839);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('26-02-2011 10:26:49', 'dd-mm-yyyy hh24:mi:ss'), 391, 6, 9, 226, 10854394);
+values (to_date('18-09-2014 00:01:17', 'dd-mm-yyyy hh24:mi:ss'), 369, 6, 86, 246, 63595783);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('17-01-2024 17:50:38', 'dd-mm-yyyy hh24:mi:ss'), 394, 10, 22, 244, 30062117);
+values (to_date('07-07-2001 00:57:36', 'dd-mm-yyyy hh24:mi:ss'), 370, 8, 36, 610, 9077728);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('21-09-2007 15:24:28', 'dd-mm-yyyy hh24:mi:ss'), 397, 6, 6, 96, 50900940);
+values (to_date('06-10-2001 12:11:57', 'dd-mm-yyyy hh24:mi:ss'), 371, 8, 10, 661, 42322889);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('23-10-2009 00:41:36', 'dd-mm-yyyy hh24:mi:ss'), 399, 10, 17, 193, 92566199);
+values (to_date('30-08-2019 04:37:37', 'dd-mm-yyyy hh24:mi:ss'), 372, 9, 69, 758, 31471077);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('31-07-2010 02:48:54', 'dd-mm-yyyy hh24:mi:ss'), 404, 9, 33, 658, 42322889);
+values (to_date('01-02-2018 15:27:21', 'dd-mm-yyyy hh24:mi:ss'), 373, 8, 30, 732, 7673525);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('11-03-2016 13:26:32', 'dd-mm-yyyy hh24:mi:ss'), 405, 6, 47, 658, 1055314);
+values (to_date('22-12-2008 01:14:44', 'dd-mm-yyyy hh24:mi:ss'), 374, 9, 18, 726, 64660127);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('12-09-2011 17:02:41', 'dd-mm-yyyy hh24:mi:ss'), 406, 8, 46, 830, 73434651);
+values (to_date('27-05-2000 22:26:58', 'dd-mm-yyyy hh24:mi:ss'), 375, 8, 30, 707, 45505216);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('13-01-2007 02:21:33', 'dd-mm-yyyy hh24:mi:ss'), 407, 10, 86, 226, 2938480);
+values (to_date('28-03-2002 15:32:06', 'dd-mm-yyyy hh24:mi:ss'), 376, 8, 74, 96, 29207505);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('18-06-2007 19:43:32', 'dd-mm-yyyy hh24:mi:ss'), 412, 7, 46, 83, 27719925);
+values (to_date('28-04-2013 04:18:20', 'dd-mm-yyyy hh24:mi:ss'), 377, 10, 15, 249, 19067900);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-08-2001 11:21:59', 'dd-mm-yyyy hh24:mi:ss'), 420, 10, 92, 11, 10854394);
+values (to_date('28-05-2001 02:14:55', 'dd-mm-yyyy hh24:mi:ss'), 378, 7, 28, 750, 44715352);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('19-03-2009 00:21:18', 'dd-mm-yyyy hh24:mi:ss'), 421, 5, 36, 626, 44623593);
+values (to_date('07-10-2016 04:55:12', 'dd-mm-yyyy hh24:mi:ss'), 379, 5, 14, 193, 94625728);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('24-08-2015 01:25:40', 'dd-mm-yyyy hh24:mi:ss'), 424, 7, 95, 226, 26290962);
+values (to_date('26-02-2001 02:25:43', 'dd-mm-yyyy hh24:mi:ss'), 380, 8, 29, 674, 6603015);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('24-04-2024 14:04:24', 'dd-mm-yyyy hh24:mi:ss'), 427, 7, 86, 253, 25039816);
+values (to_date('25-07-2019 01:48:25', 'dd-mm-yyyy hh24:mi:ss'), 381, 10, 63, 591, 61751644);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('20-08-2002 19:51:53', 'dd-mm-yyyy hh24:mi:ss'), 428, 8, 77, 787, 99375320);
+values (to_date('31-03-2021 02:24:34', 'dd-mm-yyyy hh24:mi:ss'), 382, 7, 48, 391, 70178481);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('13-01-2007 21:20:44', 'dd-mm-yyyy hh24:mi:ss'), 431, 8, 74, 941, 39725987);
+values (to_date('12-09-2007 18:16:59', 'dd-mm-yyyy hh24:mi:ss'), 383, 6, 17, 555, 2505457);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('23-05-2012 18:30:31', 'dd-mm-yyyy hh24:mi:ss'), 432, 6, 40, 612, 54638372);
+values (to_date('27-05-2021 20:10:36', 'dd-mm-yyyy hh24:mi:ss'), 384, 6, 23, 257, 20103782);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('17-04-2000 14:40:33', 'dd-mm-yyyy hh24:mi:ss'), 442, 5, 65, 591, 30062117);
+values (to_date('15-10-2008 16:53:45', 'dd-mm-yyyy hh24:mi:ss'), 385, 7, 11, 698, 54638372);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('22-03-2001 12:51:41', 'dd-mm-yyyy hh24:mi:ss'), 443, 5, 40, 402, 2591817);
+values (to_date('25-11-2004 05:49:37', 'dd-mm-yyyy hh24:mi:ss'), 386, 5, 56, 94, 25039816);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('12-07-2018 02:24:08', 'dd-mm-yyyy hh24:mi:ss'), 445, 9, 90, 879, 41003550);
+values (to_date('30-05-2013 18:46:48', 'dd-mm-yyyy hh24:mi:ss'), 387, 8, 3, 707, 54638372);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('12-11-2006 14:02:32', 'dd-mm-yyyy hh24:mi:ss'), 446, 10, 17, 396, 35965202);
+values (to_date('11-10-2009 13:16:45', 'dd-mm-yyyy hh24:mi:ss'), 388, 5, 42, 3, 51948030);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('10-06-2011 07:08:24', 'dd-mm-yyyy hh24:mi:ss'), 447, 5, 1, 129, 86272100);
+values (to_date('22-09-2002 03:48:05', 'dd-mm-yyyy hh24:mi:ss'), 389, 6, 37, 389, 81276702);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('22-07-2001 02:41:51', 'dd-mm-yyyy hh24:mi:ss'), 451, 5, 39, 941, 24290738);
+values (to_date('27-07-2004 18:12:40', 'dd-mm-yyyy hh24:mi:ss'), 390, 6, 93, 591, 48536850);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('17-10-2004 16:07:23', 'dd-mm-yyyy hh24:mi:ss'), 452, 6, 72, 188, 730279);
+values (to_date('18-01-2000 17:15:21', 'dd-mm-yyyy hh24:mi:ss'), 391, 5, 42, 830, 88310865);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('15-04-2017 23:02:41', 'dd-mm-yyyy hh24:mi:ss'), 457, 5, 40, 972, 46344277);
+values (to_date('12-08-2024 14:07:09', 'dd-mm-yyyy hh24:mi:ss'), 392, 7, 29, 815, 37921065);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('19-07-2008 23:28:53', 'dd-mm-yyyy hh24:mi:ss'), 460, 8, 97, 864, 50900940);
+values (to_date('03-10-2004 14:16:48', 'dd-mm-yyyy hh24:mi:ss'), 393, 9, 97, 298, 44623593);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('29-04-2005 21:27:04', 'dd-mm-yyyy hh24:mi:ss'), 465, 10, 59, 517, 49908274);
+values (to_date('01-06-2019 13:53:19', 'dd-mm-yyyy hh24:mi:ss'), 394, 8, 70, 363, 99887779);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('31-05-2012 03:04:45', 'dd-mm-yyyy hh24:mi:ss'), 469, 5, 90, 96, 10951186);
+values (to_date('15-06-2000 22:04:04', 'dd-mm-yyyy hh24:mi:ss'), 395, 5, 27, 787, 49478035);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('01-08-2007 00:35:34', 'dd-mm-yyyy hh24:mi:ss'), 477, 8, 12, 391, 51397792);
+values (to_date('29-05-2008 09:51:50', 'dd-mm-yyyy hh24:mi:ss'), 396, 10, 35, 946, 63990543);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('27-12-2024 23:43:00', 'dd-mm-yyyy hh24:mi:ss'), 488, 7, 68, 177, 4370439);
+values (to_date('25-06-2013 18:30:57', 'dd-mm-yyyy hh24:mi:ss'), 397, 8, 9, 129, 31471077);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('06-10-2004 10:57:56', 'dd-mm-yyyy hh24:mi:ss'), 490, 5, 84, 914, 50029824);
+values (to_date('27-10-2024 08:27:36', 'dd-mm-yyyy hh24:mi:ss'), 398, 7, 81, 612, 54968773);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-07-2021 17:32:21', 'dd-mm-yyyy hh24:mi:ss'), 492, 6, 20, 532, 40293735);
+values (to_date('17-09-2002 15:02:35', 'dd-mm-yyyy hh24:mi:ss'), 399, 9, 62, 806, 49053838);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('14-08-2008 19:07:06', 'dd-mm-yyyy hh24:mi:ss'), 493, 8, 19, 137, 22657272);
+values (to_date('08-10-2017 23:34:48', 'dd-mm-yyyy hh24:mi:ss'), 400, 5, 100, 582, 50900940);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('03-06-2003 08:21:15', 'dd-mm-yyyy hh24:mi:ss'), 495, 5, 2, 336, 54757032);
+values (to_date('10-07-2020 16:53:28', 'dd-mm-yyyy hh24:mi:ss'), 401, 5, 78, 612, 53483220);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('07-05-2015 08:26:09', 'dd-mm-yyyy hh24:mi:ss'), 496, 7, 11, 591, 91703316);
+values (to_date('04-09-2019 17:48:37', 'dd-mm-yyyy hh24:mi:ss'), 402, 7, 16, 20, 88310865);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('16-08-2020 07:01:46', 'dd-mm-yyyy hh24:mi:ss'), 499, 9, 34, 653, 29742651);
+values (to_date('19-04-2017 21:33:59', 'dd-mm-yyyy hh24:mi:ss'), 403, 6, 16, 11, 74889890);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('16-03-2000 03:37:09', 'dd-mm-yyyy hh24:mi:ss'), 508, 6, 52, 879, 44623593);
+values (to_date('05-02-2021 01:14:09', 'dd-mm-yyyy hh24:mi:ss'), 404, 5, 10, 249, 30463411);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('23-09-2006 01:32:35', 'dd-mm-yyyy hh24:mi:ss'), 510, 9, 42, 703, 32128888);
+values (to_date('22-08-2001 14:40:59', 'dd-mm-yyyy hh24:mi:ss'), 405, 6, 40, 815, 14658929);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('11-08-2017 12:14:41', 'dd-mm-yyyy hh24:mi:ss'), 512, 9, 26, 298, 41518918);
+values (to_date('12-10-2017 01:59:39', 'dd-mm-yyyy hh24:mi:ss'), 406, 10, 93, 647, 32846918);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('05-11-2019 03:18:17', 'dd-mm-yyyy hh24:mi:ss'), 517, 10, 16, 226, 39997409);
+values (to_date('10-01-2010 05:57:07', 'dd-mm-yyyy hh24:mi:ss'), 407, 9, 55, 3, 99887779);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('03-02-2000 11:42:08', 'dd-mm-yyyy hh24:mi:ss'), 519, 7, 97, 907, 91703316);
+values (to_date('23-11-2005 14:11:11', 'dd-mm-yyyy hh24:mi:ss'), 408, 7, 18, 703, 67015963);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('28-04-2005 06:33:59', 'dd-mm-yyyy hh24:mi:ss'), 523, 5, 98, 188, 730279);
+values (to_date('19-05-2016 13:52:36', 'dd-mm-yyyy hh24:mi:ss'), 409, 5, 67, 421, 30062117);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('10-10-2009 19:19:46', 'dd-mm-yyyy hh24:mi:ss'), 527, 10, 43, 183, 10951186);
+values (to_date('09-11-2015 18:43:29', 'dd-mm-yyyy hh24:mi:ss'), 410, 5, 44, 83, 24290738);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-05-2012 00:48:14', 'dd-mm-yyyy hh24:mi:ss'), 531, 10, 93, 336, 34375443);
+values (to_date('25-01-2019 01:12:17', 'dd-mm-yyyy hh24:mi:ss'), 411, 10, 82, 658, 25039816);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('09-07-2011 07:18:54', 'dd-mm-yyyy hh24:mi:ss'), 532, 9, 98, 941, 41003550);
+values (to_date('26-09-2018 20:46:27', 'dd-mm-yyyy hh24:mi:ss'), 412, 9, 21, 519, 88310865);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-06-2005 18:11:05', 'dd-mm-yyyy hh24:mi:ss'), 536, 7, 93, 409, 57601580);
+values (to_date('06-09-2012 14:10:53', 'dd-mm-yyyy hh24:mi:ss'), 413, 10, 68, 249, 8081255);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('16-08-2021 04:46:50', 'dd-mm-yyyy hh24:mi:ss'), 554, 8, 64, 954, 13611451);
+values (to_date('28-10-2001 01:00:28', 'dd-mm-yyyy hh24:mi:ss'), 414, 10, 32, 914, 49053838);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('22-12-2004 05:38:58', 'dd-mm-yyyy hh24:mi:ss'), 555, 6, 87, 402, 78118267);
+values (to_date('05-09-2005 00:18:43', 'dd-mm-yyyy hh24:mi:ss'), 415, 5, 48, 703, 11221464);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('22-12-2000 22:49:17', 'dd-mm-yyyy hh24:mi:ss'), 559, 9, 76, 249, 44623593);
+values (to_date('10-02-2017 20:40:42', 'dd-mm-yyyy hh24:mi:ss'), 416, 9, 40, 577, 45505216);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('10-02-2006 12:57:53', 'dd-mm-yyyy hh24:mi:ss'), 561, 9, 6, 177, 49478035);
+values (to_date('13-04-2014 21:21:44', 'dd-mm-yyyy hh24:mi:ss'), 417, 6, 59, 396, 23041511);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-08-2018 05:21:07', 'dd-mm-yyyy hh24:mi:ss'), 562, 5, 100, 612, 43049144);
+values (to_date('01-04-2023 19:36:11', 'dd-mm-yyyy hh24:mi:ss'), 418, 7, 80, 177, 38125788);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('18-09-2020 16:22:04', 'dd-mm-yyyy hh24:mi:ss'), 567, 7, 4, 834, 43436957);
+values (to_date('22-07-2019 06:10:56', 'dd-mm-yyyy hh24:mi:ss'), 419, 6, 20, 195, 52154939);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('14-10-2014 17:35:13', 'dd-mm-yyyy hh24:mi:ss'), 568, 9, 20, 901, 54985818);
+values (to_date('02-11-2018 01:37:46', 'dd-mm-yyyy hh24:mi:ss'), 420, 8, 42, 94, 37921065);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('18-08-2018 20:14:03', 'dd-mm-yyyy hh24:mi:ss'), 573, 5, 56, 612, 90824185);
+values (to_date('19-10-2024 19:04:04', 'dd-mm-yyyy hh24:mi:ss'), 421, 6, 18, 213, 25039816);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('22-10-2024 16:07:32', 'dd-mm-yyyy hh24:mi:ss'), 576, 7, 55, 73, 79260141);
+values (to_date('16-02-2017 00:53:25', 'dd-mm-yyyy hh24:mi:ss'), 422, 6, 42, 907, 37921065);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('26-03-2015 11:24:34', 'dd-mm-yyyy hh24:mi:ss'), 580, 10, 29, 73, 24414730);
+values (to_date('15-10-2015 19:21:30', 'dd-mm-yyyy hh24:mi:ss'), 423, 6, 23, 226, 79910635);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('13-02-2008 20:04:07', 'dd-mm-yyyy hh24:mi:ss'), 584, 7, 48, 653, 49478035);
+values (to_date('02-09-2015 20:06:51', 'dd-mm-yyyy hh24:mi:ss'), 424, 10, 96, 864, 19067900);
 commit;
 prompt 200 records committed...
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('20-03-2000 16:05:57', 'dd-mm-yyyy hh24:mi:ss'), 596, 9, 58, 94, 33915414);
+values (to_date('18-10-2013 10:12:51', 'dd-mm-yyyy hh24:mi:ss'), 425, 9, 21, 661, 88310865);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('15-04-2015 03:10:22', 'dd-mm-yyyy hh24:mi:ss'), 611, 10, 1, 763, 64660127);
+values (to_date('28-06-2008 12:49:23', 'dd-mm-yyyy hh24:mi:ss'), 426, 6, 47, 865, 8081255);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-05-2005 01:52:45', 'dd-mm-yyyy hh24:mi:ss'), 612, 7, 61, 3, 33449046);
+values (to_date('14-12-2016 12:37:26', 'dd-mm-yyyy hh24:mi:ss'), 427, 7, 75, 11, 82804437);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('07-09-2002 17:37:32', 'dd-mm-yyyy hh24:mi:ss'), 624, 8, 94, 932, 54757032);
+values (to_date('29-04-2024 19:41:31', 'dd-mm-yyyy hh24:mi:ss'), 428, 9, 54, 246, 63595783);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-12-2014 16:28:33', 'dd-mm-yyyy hh24:mi:ss'), 625, 7, 46, 570, 57601580);
+values (to_date('14-04-2006 00:05:28', 'dd-mm-yyyy hh24:mi:ss'), 429, 10, 35, 402, 29658657);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('07-02-2010 09:23:02', 'dd-mm-yyyy hh24:mi:ss'), 633, 8, 90, 651, 79192786);
+values (to_date('31-05-2016 05:32:03', 'dd-mm-yyyy hh24:mi:ss'), 430, 5, 87, 967, 20114821);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('07-02-2006 10:04:39', 'dd-mm-yyyy hh24:mi:ss'), 639, 6, 76, 758, 83376974);
+values (to_date('14-10-2019 19:38:12', 'dd-mm-yyyy hh24:mi:ss'), 431, 5, 4, 371, 11221464);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('22-11-2018 03:37:00', 'dd-mm-yyyy hh24:mi:ss'), 642, 9, 100, 254, 49908274);
+values (to_date('21-01-2004 04:34:01', 'dd-mm-yyyy hh24:mi:ss'), 432, 8, 4, 193, 2938480);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('19-10-2006 06:03:27', 'dd-mm-yyyy hh24:mi:ss'), 643, 7, 45, 610, 15992467);
+values (to_date('23-05-2003 15:18:34', 'dd-mm-yyyy hh24:mi:ss'), 433, 5, 22, 257, 50029824);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-10-2006 09:45:38', 'dd-mm-yyyy hh24:mi:ss'), 648, 6, 68, 371, 35548775);
+values (to_date('24-05-2012 11:15:38', 'dd-mm-yyyy hh24:mi:ss'), 434, 9, 47, 914, 8796425);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('07-01-2011 17:02:49', 'dd-mm-yyyy hh24:mi:ss'), 652, 6, 14, 389, 66242981);
+values (to_date('24-05-2002 14:42:43', 'dd-mm-yyyy hh24:mi:ss'), 435, 7, 98, 252, 42253574);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('30-12-2018 05:23:34', 'dd-mm-yyyy hh24:mi:ss'), 663, 9, 14, 363, 97813459);
+values (to_date('11-06-2001 16:01:20', 'dd-mm-yyyy hh24:mi:ss'), 436, 8, 30, 298, 50900940);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('26-06-2003 09:08:12', 'dd-mm-yyyy hh24:mi:ss'), 672, 8, 42, 164, 29203895);
+values (to_date('19-03-2018 18:41:54', 'dd-mm-yyyy hh24:mi:ss'), 437, 9, 58, 939, 70178481);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('27-04-2010 03:11:57', 'dd-mm-yyyy hh24:mi:ss'), 675, 10, 56, 930, 10854394);
+values (to_date('23-04-2007 14:11:19', 'dd-mm-yyyy hh24:mi:ss'), 438, 10, 82, 254, 91891117);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('22-09-2002 09:27:56', 'dd-mm-yyyy hh24:mi:ss'), 676, 10, 64, 324, 30463411);
+values (to_date('13-02-2019 10:52:45', 'dd-mm-yyyy hh24:mi:ss'), 439, 9, 33, 20, 57601580);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('23-01-2018 18:35:51', 'dd-mm-yyyy hh24:mi:ss'), 680, 6, 36, 806, 34375443);
+values (to_date('26-02-2014 13:20:12', 'dd-mm-yyyy hh24:mi:ss'), 440, 6, 82, 707, 54968773);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('08-01-2020 22:12:08', 'dd-mm-yyyy hh24:mi:ss'), 685, 8, 98, 674, 39725987);
+values (to_date('11-01-2017 18:18:08', 'dd-mm-yyyy hh24:mi:ss'), 441, 8, 94, 252, 9077728);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('30-12-2020 14:02:58', 'dd-mm-yyyy hh24:mi:ss'), 687, 9, 2, 582, 19067900);
+values (to_date('15-04-2024 02:51:38', 'dd-mm-yyyy hh24:mi:ss'), 442, 7, 97, 698, 52313162);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('03-01-2005 18:11:22', 'dd-mm-yyyy hh24:mi:ss'), 689, 6, 12, 659, 31471077);
+values (to_date('22-04-2001 17:19:49', 'dd-mm-yyyy hh24:mi:ss'), 443, 8, 84, 296, 71805490);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('21-08-2015 23:53:22', 'dd-mm-yyyy hh24:mi:ss'), 690, 6, 100, 11, 64027261);
+values (to_date('09-09-2021 06:49:49', 'dd-mm-yyyy hh24:mi:ss'), 444, 5, 32, 732, 35548775);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('10-07-2015 00:06:28', 'dd-mm-yyyy hh24:mi:ss'), 698, 5, 43, 183, 49478035);
+values (to_date('09-06-2012 02:33:47', 'dd-mm-yyyy hh24:mi:ss'), 445, 10, 11, 226, 88239853);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('21-12-2013 06:41:11', 'dd-mm-yyyy hh24:mi:ss'), 2, 6, 62, 864, 29658657);
+values (to_date('28-03-2021 03:45:56', 'dd-mm-yyyy hh24:mi:ss'), 446, 8, 84, 954, 73434651);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('09-10-2009 16:08:41', 'dd-mm-yyyy hh24:mi:ss'), 4, 5, 87, 83, 32846918);
+values (to_date('08-10-2013 07:24:14', 'dd-mm-yyyy hh24:mi:ss'), 447, 9, 13, 698, 66242981);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('07-06-2012 01:41:22', 'dd-mm-yyyy hh24:mi:ss'), 5, 6, 45, 764, 8796425);
+values (to_date('21-06-2012 04:38:47', 'dd-mm-yyyy hh24:mi:ss'), 448, 7, 74, 530, 32846918);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('27-01-2024 19:28:59', 'dd-mm-yyyy hh24:mi:ss'), 7, 6, 4, 758, 70178481);
+values (to_date('24-01-2011 11:52:56', 'dd-mm-yyyy hh24:mi:ss'), 449, 5, 22, 914, 30411578);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('29-08-2002 03:51:41', 'dd-mm-yyyy hh24:mi:ss'), 17, 8, 98, 10, 33449046);
+values (to_date('10-12-2007 20:42:51', 'dd-mm-yyyy hh24:mi:ss'), 450, 6, 21, 129, 43049144);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('06-02-2019 07:09:41', 'dd-mm-yyyy hh24:mi:ss'), 29, 8, 63, 653, 66242981);
+values (to_date('04-08-2022 06:12:14', 'dd-mm-yyyy hh24:mi:ss'), 451, 7, 85, 946, 94625728);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-05-2022 03:51:41', 'dd-mm-yyyy hh24:mi:ss'), 31, 6, 91, 941, 88634045);
+values (to_date('18-10-2017 12:54:17', 'dd-mm-yyyy hh24:mi:ss'), 452, 10, 7, 763, 730279);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('21-03-2003 23:06:34', 'dd-mm-yyyy hh24:mi:ss'), 32, 8, 90, 653, 54638372);
+values (to_date('26-11-2024 14:35:31', 'dd-mm-yyyy hh24:mi:ss'), 453, 10, 45, 517, 35042992);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('08-10-2008 06:09:21', 'dd-mm-yyyy hh24:mi:ss'), 34, 9, 83, 806, 29207505);
+values (to_date('11-11-2008 02:40:33', 'dd-mm-yyyy hh24:mi:ss'), 454, 8, 38, 806, 32846918);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('27-02-2005 12:00:51', 'dd-mm-yyyy hh24:mi:ss'), 40, 8, 38, 758, 730279);
+values (to_date('29-07-2011 05:00:14', 'dd-mm-yyyy hh24:mi:ss'), 455, 10, 50, 972, 19067900);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('12-01-2000 07:34:45', 'dd-mm-yyyy hh24:mi:ss'), 46, 9, 6, 183, 96970243);
+values (to_date('01-06-2019 22:50:44', 'dd-mm-yyyy hh24:mi:ss'), 456, 7, 78, 815, 27803037);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('26-01-2013 12:41:19', 'dd-mm-yyyy hh24:mi:ss'), 47, 5, 41, 570, 51948030);
+values (to_date('19-06-2011 05:33:04', 'dd-mm-yyyy hh24:mi:ss'), 457, 6, 61, 188, 54638372);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('23-03-2006 08:00:05', 'dd-mm-yyyy hh24:mi:ss'), 54, 6, 16, 254, 78118267);
+values (to_date('02-02-2004 16:38:12', 'dd-mm-yyyy hh24:mi:ss'), 458, 9, 1, 939, 22432753);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('20-05-2019 19:13:00', 'dd-mm-yyyy hh24:mi:ss'), 55, 9, 24, 954, 63595783);
+values (to_date('30-07-2015 15:32:15', 'dd-mm-yyyy hh24:mi:ss'), 459, 6, 13, 188, 64027261);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('07-09-2011 11:25:00', 'dd-mm-yyyy hh24:mi:ss'), 57, 6, 80, 658, 8081255);
+values (to_date('03-11-2003 20:35:05', 'dd-mm-yyyy hh24:mi:ss'), 460, 8, 2, 96, 79192786);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('21-09-2011 21:25:29', 'dd-mm-yyyy hh24:mi:ss'), 63, 6, 87, 939, 44623593);
+values (to_date('06-04-2014 07:26:15', 'dd-mm-yyyy hh24:mi:ss'), 461, 9, 92, 20, 730279);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('21-02-2018 12:42:46', 'dd-mm-yyyy hh24:mi:ss'), 66, 9, 95, 188, 47501817);
+values (to_date('19-02-2012 16:09:41', 'dd-mm-yyyy hh24:mi:ss'), 462, 9, 79, 967, 33449046);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('24-02-2023 07:20:03', 'dd-mm-yyyy hh24:mi:ss'), 70, 5, 51, 402, 8796425);
+values (to_date('13-05-2020 07:20:03', 'dd-mm-yyyy hh24:mi:ss'), 463, 7, 58, 564, 92566199);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('08-05-2022 16:24:48', 'dd-mm-yyyy hh24:mi:ss'), 82, 6, 95, 421, 30062117);
+values (to_date('28-08-2017 13:07:06', 'dd-mm-yyyy hh24:mi:ss'), 464, 5, 79, 854, 33449046);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('26-10-2017 04:58:56', 'dd-mm-yyyy hh24:mi:ss'), 83, 10, 91, 530, 91089992);
+values (to_date('02-05-2006 20:52:39', 'dd-mm-yyyy hh24:mi:ss'), 465, 8, 96, 3, 39997409);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('20-09-2022 16:25:23', 'dd-mm-yyyy hh24:mi:ss'), 89, 5, 6, 137, 67015963);
+values (to_date('12-06-2009 18:15:07', 'dd-mm-yyyy hh24:mi:ss'), 466, 10, 81, 193, 42253574);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-11-2007 10:10:50', 'dd-mm-yyyy hh24:mi:ss'), 90, 5, 61, 591, 54968773);
+values (to_date('11-11-2009 05:09:53', 'dd-mm-yyyy hh24:mi:ss'), 467, 7, 14, 954, 13611451);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('03-07-2003 18:23:36', 'dd-mm-yyyy hh24:mi:ss'), 94, 9, 71, 732, 35042992);
+values (to_date('08-05-2009 22:11:51', 'dd-mm-yyyy hh24:mi:ss'), 468, 9, 68, 298, 65058862);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('03-01-2020 10:39:21', 'dd-mm-yyyy hh24:mi:ss'), 95, 10, 30, 659, 63595783);
+values (to_date('26-10-2020 23:31:55', 'dd-mm-yyyy hh24:mi:ss'), 469, 7, 60, 865, 2450269);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('30-03-2021 15:55:00', 'dd-mm-yyyy hh24:mi:ss'), 98, 7, 88, 815, 31471077);
+values (to_date('08-11-2012 19:07:23', 'dd-mm-yyyy hh24:mi:ss'), 470, 5, 89, 249, 25112977);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('09-08-2013 00:44:47', 'dd-mm-yyyy hh24:mi:ss'), 99, 9, 50, 96, 89122501);
+values (to_date('02-12-2022 05:48:28', 'dd-mm-yyyy hh24:mi:ss'), 471, 8, 61, 612, 2450269);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('10-06-2000 02:05:51', 'dd-mm-yyyy hh24:mi:ss'), 101, 6, 18, 129, 41518918);
+values (to_date('15-07-2024 03:40:53', 'dd-mm-yyyy hh24:mi:ss'), 472, 6, 91, 865, 44623593);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('15-12-2003 06:50:15', 'dd-mm-yyyy hh24:mi:ss'), 104, 8, 52, 698, 91703316);
+values (to_date('09-10-2008 04:16:19', 'dd-mm-yyyy hh24:mi:ss'), 473, 10, 22, 854, 53483220);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('17-09-2002 11:42:43', 'dd-mm-yyyy hh24:mi:ss'), 113, 8, 49, 294, 29203895);
+values (to_date('05-05-2007 17:33:47', 'dd-mm-yyyy hh24:mi:ss'), 474, 5, 26, 941, 45505216);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('14-07-2007 20:51:12', 'dd-mm-yyyy hh24:mi:ss'), 115, 7, 33, 570, 54985818);
+values (to_date('20-11-2012 03:10:30', 'dd-mm-yyyy hh24:mi:ss'), 475, 9, 34, 703, 67015963);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('03-09-2000 15:18:00', 'dd-mm-yyyy hh24:mi:ss'), 119, 8, 40, 177, 25039816);
+values (to_date('02-07-2002 16:01:29', 'dd-mm-yyyy hh24:mi:ss'), 476, 7, 84, 939, 29658657);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('24-04-2009 16:58:13', 'dd-mm-yyyy hh24:mi:ss'), 120, 5, 86, 946, 50900940);
+values (to_date('11-10-2020 00:34:33', 'dd-mm-yyyy hh24:mi:ss'), 477, 5, 63, 854, 32846918);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('12-12-2004 19:27:24', 'dd-mm-yyyy hh24:mi:ss'), 121, 10, 63, 914, 79192786);
+values (to_date('30-10-2007 16:26:15', 'dd-mm-yyyy hh24:mi:ss'), 478, 8, 15, 519, 67015963);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('09-03-2011 10:44:06', 'dd-mm-yyyy hh24:mi:ss'), 122, 7, 19, 94, 52313162);
+values (to_date('21-09-2009 08:58:59', 'dd-mm-yyyy hh24:mi:ss'), 479, 7, 64, 907, 31471077);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('10-02-2017 16:00:28', 'dd-mm-yyyy hh24:mi:ss'), 128, 8, 71, 391, 79910635);
+values (to_date('13-07-2003 07:29:34', 'dd-mm-yyyy hh24:mi:ss'), 480, 5, 6, 564, 42322889);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('11-01-2012 15:52:42', 'dd-mm-yyyy hh24:mi:ss'), 134, 7, 54, 626, 79693276);
+values (to_date('02-01-2015 17:14:38', 'dd-mm-yyyy hh24:mi:ss'), 481, 10, 59, 193, 10951186);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-10-2021 12:22:10', 'dd-mm-yyyy hh24:mi:ss'), 136, 10, 83, 577, 39725987);
+values (to_date('22-11-2024 23:01:58', 'dd-mm-yyyy hh24:mi:ss'), 482, 5, 45, 653, 45505216);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('24-11-2016 09:51:24', 'dd-mm-yyyy hh24:mi:ss'), 137, 8, 3, 854, 41060366);
+values (to_date('13-05-2015 10:03:56', 'dd-mm-yyyy hh24:mi:ss'), 483, 6, 57, 930, 27719925);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-04-2024 02:13:03', 'dd-mm-yyyy hh24:mi:ss'), 139, 8, 27, 363, 63990543);
+values (to_date('16-05-2002 13:44:58', 'dd-mm-yyyy hh24:mi:ss'), 484, 7, 84, 750, 64027261);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('26-02-2013 22:03:47', 'dd-mm-yyyy hh24:mi:ss'), 141, 5, 61, 577, 26290962);
+values (to_date('13-10-2000 22:34:53', 'dd-mm-yyyy hh24:mi:ss'), 485, 8, 70, 591, 45505216);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('15-09-2020 19:22:48', 'dd-mm-yyyy hh24:mi:ss'), 153, 7, 59, 255, 7673525);
+values (to_date('30-07-2010 02:48:02', 'dd-mm-yyyy hh24:mi:ss'), 486, 7, 36, 402, 70178481);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-03-2024 02:43:09', 'dd-mm-yyyy hh24:mi:ss'), 156, 5, 47, 865, 29203895);
+values (to_date('24-07-2019 01:27:15', 'dd-mm-yyyy hh24:mi:ss'), 487, 7, 15, 610, 20103782);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('11-02-2003 13:28:59', 'dd-mm-yyyy hh24:mi:ss'), 160, 5, 52, 249, 47501817);
+values (to_date('24-10-2014 03:26:38', 'dd-mm-yyyy hh24:mi:ss'), 488, 6, 47, 647, 29658657);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('17-04-2016 14:39:33', 'dd-mm-yyyy hh24:mi:ss'), 174, 10, 65, 244, 8081255);
+values (to_date('12-11-2007 08:10:27', 'dd-mm-yyyy hh24:mi:ss'), 489, 5, 2, 932, 91089992);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-08-2018 19:08:49', 'dd-mm-yyyy hh24:mi:ss'), 189, 7, 13, 939, 10854394);
+values (to_date('28-09-2016 11:10:10', 'dd-mm-yyyy hh24:mi:ss'), 490, 9, 62, 371, 8796425);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('17-02-2004 04:48:08', 'dd-mm-yyyy hh24:mi:ss'), 190, 7, 16, 879, 26290962);
+values (to_date('03-07-2004 00:22:27', 'dd-mm-yyyy hh24:mi:ss'), 491, 6, 32, 703, 11221464);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('16-11-2002 03:38:09', 'dd-mm-yyyy hh24:mi:ss'), 192, 9, 25, 651, 37865911);
+values (to_date('08-04-2005 07:24:23', 'dd-mm-yyyy hh24:mi:ss'), 492, 8, 84, 254, 25112977);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('28-05-2002 22:50:00', 'dd-mm-yyyy hh24:mi:ss'), 195, 8, 29, 732, 54985818);
+values (to_date('03-11-2002 08:21:50', 'dd-mm-yyyy hh24:mi:ss'), 493, 5, 96, 758, 51948030);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-01-2020 22:51:44', 'dd-mm-yyyy hh24:mi:ss'), 196, 5, 40, 390, 91089992);
+values (to_date('06-08-2004 14:02:32', 'dd-mm-yyyy hh24:mi:ss'), 494, 7, 93, 766, 96970243);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('08-03-2016 16:32:00', 'dd-mm-yyyy hh24:mi:ss'), 198, 9, 7, 389, 67015963);
+values (to_date('14-11-2012 00:14:41', 'dd-mm-yyyy hh24:mi:ss'), 495, 5, 41, 83, 4370439);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('02-12-2012 07:02:03', 'dd-mm-yyyy hh24:mi:ss'), 202, 5, 68, 854, 58647622);
+values (to_date('25-10-2004 21:04:53', 'dd-mm-yyyy hh24:mi:ss'), 496, 6, 26, 946, 25602009);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('05-05-2004 16:23:31', 'dd-mm-yyyy hh24:mi:ss'), 205, 10, 81, 94, 2450269);
+values (to_date('27-07-2005 05:34:30', 'dd-mm-yyyy hh24:mi:ss'), 497, 10, 96, 502, 4370439);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('29-10-2001 01:15:44', 'dd-mm-yyyy hh24:mi:ss'), 206, 7, 37, 11, 10854394);
+values (to_date('13-05-2000 17:35:13', 'dd-mm-yyyy hh24:mi:ss'), 498, 6, 46, 647, 88239853);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('11-09-2014 08:14:55', 'dd-mm-yyyy hh24:mi:ss'), 207, 10, 51, 653, 2505457);
+values (to_date('29-01-2010 21:49:58', 'dd-mm-yyyy hh24:mi:ss'), 499, 6, 75, 750, 81865150);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('10-10-2000 11:09:44', 'dd-mm-yyyy hh24:mi:ss'), 211, 5, 39, 864, 78118267);
+values (to_date('04-02-2000 15:50:32', 'dd-mm-yyyy hh24:mi:ss'), 500, 9, 26, 763, 30062117);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('14-11-2016 11:27:36', 'dd-mm-yyyy hh24:mi:ss'), 213, 6, 35, 255, 45505216);
+values (to_date('10-06-2014 13:34:36', 'dd-mm-yyyy hh24:mi:ss'), 501, 5, 21, 96, 87891090);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('01-10-2024 11:12:28', 'dd-mm-yyyy hh24:mi:ss'), 216, 8, 71, 610, 46639839);
+values (to_date('23-03-2023 05:57:59', 'dd-mm-yyyy hh24:mi:ss'), 502, 8, 70, 674, 71805490);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('19-06-2006 17:18:40', 'dd-mm-yyyy hh24:mi:ss'), 219, 8, 48, 564, 79192786);
+values (to_date('26-12-2002 16:41:31', 'dd-mm-yyyy hh24:mi:ss'), 503, 7, 71, 164, 50029824);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-07-2000 13:08:24', 'dd-mm-yyyy hh24:mi:ss'), 224, 10, 77, 252, 92566199);
+values (to_date('10-12-2009 16:47:16', 'dd-mm-yyyy hh24:mi:ss'), 504, 6, 12, 830, 42322889);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('17-03-2024 19:01:03', 'dd-mm-yyyy hh24:mi:ss'), 230, 10, 37, 389, 2450269);
+values (to_date('24-10-2005 12:51:41', 'dd-mm-yyyy hh24:mi:ss'), 505, 9, 45, 879, 50029824);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('26-06-2018 23:54:14', 'dd-mm-yyyy hh24:mi:ss'), 233, 10, 7, 164, 43049144);
+values (to_date('11-12-2017 07:36:20', 'dd-mm-yyyy hh24:mi:ss'), 506, 10, 97, 582, 24290738);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('21-03-2017 15:37:17', 'dd-mm-yyyy hh24:mi:ss'), 236, 10, 86, 532, 51948030);
+values (to_date('05-04-2008 07:59:13', 'dd-mm-yyyy hh24:mi:ss'), 507, 5, 52, 763, 30062117);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('06-04-2015 12:19:35', 'dd-mm-yyyy hh24:mi:ss'), 244, 6, 69, 73, 20103782);
+values (to_date('24-10-2022 18:39:36', 'dd-mm-yyyy hh24:mi:ss'), 508, 9, 16, 431, 83376974);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-09-2020 22:47:16', 'dd-mm-yyyy hh24:mi:ss'), 245, 6, 72, 324, 43049144);
+values (to_date('05-02-2004 18:12:40', 'dd-mm-yyyy hh24:mi:ss'), 509, 7, 39, 806, 2591817);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('17-08-2015 23:16:04', 'dd-mm-yyyy hh24:mi:ss'), 248, 8, 19, 390, 63595783);
+values (to_date('22-12-2005 16:40:04', 'dd-mm-yyyy hh24:mi:ss'), 510, 5, 37, 409, 25039816);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('26-07-2009 08:26:18', 'dd-mm-yyyy hh24:mi:ss'), 251, 8, 10, 11, 7860731);
+values (to_date('16-02-2020 19:50:52', 'dd-mm-yyyy hh24:mi:ss'), 511, 7, 33, 879, 89122501);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('01-03-2024 21:31:06', 'dd-mm-yyyy hh24:mi:ss'), 252, 7, 56, 787, 2376368);
+values (to_date('28-03-2024 21:30:05', 'dd-mm-yyyy hh24:mi:ss'), 512, 9, 6, 519, 2505457);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('05-08-2014 04:12:51', 'dd-mm-yyyy hh24:mi:ss'), 262, 7, 8, 612, 22657272);
+values (to_date('02-03-2000 12:36:51', 'dd-mm-yyyy hh24:mi:ss'), 513, 7, 54, 188, 87218298);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('28-05-2014 17:21:33', 'dd-mm-yyyy hh24:mi:ss'), 263, 5, 11, 732, 64027261);
+values (to_date('07-10-2024 06:18:34', 'dd-mm-yyyy hh24:mi:ss'), 514, 8, 93, 213, 64660127);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('29-07-2003 12:33:07', 'dd-mm-yyyy hh24:mi:ss'), 270, 5, 99, 674, 25039816);
+values (to_date('18-04-2008 00:21:36', 'dd-mm-yyyy hh24:mi:ss'), 515, 10, 53, 766, 46639839);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('18-01-2018 08:16:13', 'dd-mm-yyyy hh24:mi:ss'), 272, 9, 6, 830, 40091598);
+values (to_date('03-12-2024 17:40:59', 'dd-mm-yyyy hh24:mi:ss'), 516, 5, 81, 907, 88726887);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('09-06-2009 15:58:45', 'dd-mm-yyyy hh24:mi:ss'), 273, 10, 80, 703, 30062117);
+values (to_date('26-02-2002 15:37:35', 'dd-mm-yyyy hh24:mi:ss'), 517, 6, 37, 659, 74889890);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('09-08-2017 10:52:01', 'dd-mm-yyyy hh24:mi:ss'), 276, 8, 58, 371, 88239853);
+values (to_date('30-07-2006 12:22:19', 'dd-mm-yyyy hh24:mi:ss'), 518, 6, 42, 391, 92566199);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('22-06-2024 17:16:48', 'dd-mm-yyyy hh24:mi:ss'), 281, 7, 79, 582, 34375443);
+values (to_date('20-03-2008 21:21:18', 'dd-mm-yyyy hh24:mi:ss'), 519, 5, 40, 967, 30062117);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('07-07-2016 03:58:10', 'dd-mm-yyyy hh24:mi:ss'), 282, 7, 45, 363, 54638372);
+values (to_date('19-03-2006 07:55:03', 'dd-mm-yyyy hh24:mi:ss'), 520, 6, 13, 195, 50900940);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('16-02-2003 17:08:09', 'dd-mm-yyyy hh24:mi:ss'), 283, 7, 66, 854, 41518918);
+values (to_date('21-10-2008 08:20:32', 'dd-mm-yyyy hh24:mi:ss'), 521, 5, 2, 661, 35965202);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('06-08-2011 19:16:01', 'dd-mm-yyyy hh24:mi:ss'), 292, 10, 45, 532, 37865911);
+values (to_date('29-03-2004 08:08:09', 'dd-mm-yyyy hh24:mi:ss'), 522, 5, 84, 244, 25039816);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('24-01-2020 13:40:39', 'dd-mm-yyyy hh24:mi:ss'), 294, 6, 69, 787, 88310865);
+values (to_date('29-12-2021 12:04:19', 'dd-mm-yyyy hh24:mi:ss'), 523, 10, 35, 564, 87218298);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('06-10-2022 17:12:20', 'dd-mm-yyyy hh24:mi:ss'), 298, 8, 36, 626, 6603015);
+values (to_date('21-01-2006 09:53:51', 'dd-mm-yyyy hh24:mi:ss'), 524, 8, 20, 129, 74889890);
 commit;
 prompt 300 records committed...
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('05-04-2009 12:40:19', 'dd-mm-yyyy hh24:mi:ss'), 299, 10, 58, 726, 65058862);
+values (to_date('25-11-2001 19:03:04', 'dd-mm-yyyy hh24:mi:ss'), 525, 9, 11, 612, 54638372);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('26-01-2001 13:20:03', 'dd-mm-yyyy hh24:mi:ss'), 306, 6, 89, 661, 23041511);
+values (to_date('06-06-2002 16:44:58', 'dd-mm-yyyy hh24:mi:ss'), 526, 10, 66, 653, 25039816);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('15-01-2005 17:31:03', 'dd-mm-yyyy hh24:mi:ss'), 307, 5, 77, 3, 49537257);
+values (to_date('20-07-2004 17:51:21', 'dd-mm-yyyy hh24:mi:ss'), 527, 7, 53, 830, 13611451);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('16-01-2002 06:00:34', 'dd-mm-yyyy hh24:mi:ss'), 315, 10, 79, 94, 63595783);
+values (to_date('08-09-2024 05:10:45', 'dd-mm-yyyy hh24:mi:ss'), 528, 6, 33, 363, 64027261);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('20-09-2012 09:30:57', 'dd-mm-yyyy hh24:mi:ss'), 317, 8, 46, 137, 23041511);
+values (to_date('08-07-2010 07:45:07', 'dd-mm-yyyy hh24:mi:ss'), 529, 9, 39, 390, 46344277);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('15-07-2024 14:33:56', 'dd-mm-yyyy hh24:mi:ss'), 320, 8, 45, 226, 42253574);
+values (to_date('16-06-2009 01:57:21', 'dd-mm-yyyy hh24:mi:ss'), 530, 10, 47, 901, 35965202);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('23-12-2001 15:04:10', 'dd-mm-yyyy hh24:mi:ss'), 323, 6, 22, 421, 71805490);
+values (to_date('05-01-2016 12:59:54', 'dd-mm-yyyy hh24:mi:ss'), 531, 7, 52, 972, 11221464);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('02-03-2014 10:14:52', 'dd-mm-yyyy hh24:mi:ss'), 327, 8, 7, 253, 79260141);
+values (to_date('08-08-2010 15:54:51', 'dd-mm-yyyy hh24:mi:ss'), 532, 7, 72, 421, 82804437);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('09-12-2018 20:07:26', 'dd-mm-yyyy hh24:mi:ss'), 333, 10, 39, 500, 97813459);
+values (to_date('02-01-2006 09:36:43', 'dd-mm-yyyy hh24:mi:ss'), 533, 5, 8, 924, 6603015);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('27-05-2004 04:02:03', 'dd-mm-yyyy hh24:mi:ss'), 347, 9, 34, 830, 49053838);
+values (to_date('20-09-2005 19:45:41', 'dd-mm-yyyy hh24:mi:ss'), 534, 6, 31, 294, 2938480);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('27-08-2018 14:41:08', 'dd-mm-yyyy hh24:mi:ss'), 349, 7, 83, 815, 13663159);
+values (to_date('22-03-2002 06:51:50', 'dd-mm-yyyy hh24:mi:ss'), 535, 8, 28, 732, 24414730);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('06-02-2001 06:08:55', 'dd-mm-yyyy hh24:mi:ss'), 355, 7, 45, 255, 79192786);
+values (to_date('07-09-2018 05:05:42', 'dd-mm-yyyy hh24:mi:ss'), 536, 7, 50, 244, 49908274);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-04-2002 19:48:34', 'dd-mm-yyyy hh24:mi:ss'), 357, 10, 86, 183, 43436957);
+values (to_date('24-01-2018 19:31:00', 'dd-mm-yyyy hh24:mi:ss'), 537, 10, 30, 532, 15992467);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('15-10-2024 19:07:32', 'dd-mm-yyyy hh24:mi:ss'), 370, 10, 61, 647, 88726887);
+values (to_date('07-04-2006 15:38:44', 'dd-mm-yyyy hh24:mi:ss'), 538, 7, 5, 577, 63595783);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('07-01-2012 05:32:21', 'dd-mm-yyyy hh24:mi:ss'), 371, 9, 65, 530, 20114821);
+values (to_date('23-12-2021 12:23:54', 'dd-mm-yyyy hh24:mi:ss'), 539, 8, 69, 864, 42322889);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('13-09-2008 22:25:23', 'dd-mm-yyyy hh24:mi:ss'), 373, 8, 42, 659, 2938480);
+values (to_date('20-05-2013 19:54:37', 'dd-mm-yyyy hh24:mi:ss'), 540, 7, 81, 193, 86272100);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('05-12-2007 01:41:05', 'dd-mm-yyyy hh24:mi:ss'), 378, 9, 23, 246, 1282269);
+values (to_date('07-04-2018 17:50:12', 'dd-mm-yyyy hh24:mi:ss'), 541, 6, 99, 972, 88634045);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('26-02-2018 08:39:07', 'dd-mm-yyyy hh24:mi:ss'), 380, 5, 52, 502, 54968773);
+values (to_date('22-01-2001 01:57:56', 'dd-mm-yyyy hh24:mi:ss'), 542, 8, 62, 815, 31471077);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('24-02-2014 12:16:42', 'dd-mm-yyyy hh24:mi:ss'), 383, 7, 89, 703, 2938480);
+values (to_date('23-05-2020 04:10:07', 'dd-mm-yyyy hh24:mi:ss'), 543, 10, 36, 296, 33449046);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('13-09-2004 04:10:24', 'dd-mm-yyyy hh24:mi:ss'), 389, 5, 30, 954, 19067900);
+values (to_date('05-06-2021 19:50:18', 'dd-mm-yyyy hh24:mi:ss'), 544, 6, 31, 659, 38125788);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('20-03-2012 06:02:52', 'dd-mm-yyyy hh24:mi:ss'), 397, 9, 64, 659, 2450269);
+values (to_date('02-11-2023 15:31:49', 'dd-mm-yyyy hh24:mi:ss'), 545, 10, 8, 854, 87891090);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('14-04-2014 01:57:56', 'dd-mm-yyyy hh24:mi:ss'), 412, 8, 89, 249, 37921065);
+values (to_date('29-12-2017 12:09:38', 'dd-mm-yyyy hh24:mi:ss'), 546, 6, 85, 83, 42322889);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('08-10-2022 17:09:36', 'dd-mm-yyyy hh24:mi:ss'), 414, 7, 96, 530, 14658929);
+values (to_date('21-05-2004 23:03:33', 'dd-mm-yyyy hh24:mi:ss'), 547, 9, 48, 193, 32846918);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('14-03-2017 17:51:04', 'dd-mm-yyyy hh24:mi:ss'), 422, 8, 44, 907, 25602009);
+values (to_date('08-06-2019 13:06:05', 'dd-mm-yyyy hh24:mi:ss'), 548, 5, 75, 324, 88239853);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('03-10-2007 21:48:31', 'dd-mm-yyyy hh24:mi:ss'), 431, 8, 31, 748, 91089992);
+values (to_date('02-09-2005 02:41:16', 'dd-mm-yyyy hh24:mi:ss'), 549, 10, 87, 651, 8081255);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('21-08-2020 15:44:29', 'dd-mm-yyyy hh24:mi:ss'), 435, 10, 31, 750, 70178481);
+values (to_date('11-09-2009 02:22:07', 'dd-mm-yyyy hh24:mi:ss'), 550, 5, 13, 972, 4370439);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('16-04-2011 16:22:13', 'dd-mm-yyyy hh24:mi:ss'), 440, 7, 24, 164, 43049144);
+values (to_date('13-05-2007 14:43:17', 'dd-mm-yyyy hh24:mi:ss'), 551, 5, 80, 865, 23041511);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('11-01-2003 13:05:48', 'dd-mm-yyyy hh24:mi:ss'), 449, 10, 44, 196, 8081255);
+values (to_date('16-05-2023 03:08:29', 'dd-mm-yyyy hh24:mi:ss'), 552, 5, 25, 336, 34375443);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('07-04-2022 10:18:20', 'dd-mm-yyyy hh24:mi:ss'), 450, 9, 38, 854, 29207505);
+values (to_date('20-10-2015 02:41:16', 'dd-mm-yyyy hh24:mi:ss'), 553, 8, 84, 564, 29742651);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('31-12-2000 09:48:05', 'dd-mm-yyyy hh24:mi:ss'), 462, 5, 87, 502, 25602009);
+values (to_date('28-08-2021 21:07:46', 'dd-mm-yyyy hh24:mi:ss'), 554, 6, 47, 941, 54638372);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('13-10-2006 16:05:05', 'dd-mm-yyyy hh24:mi:ss'), 463, 6, 63, 555, 10951186);
+values (to_date('16-05-2011 02:56:32', 'dd-mm-yyyy hh24:mi:ss'), 555, 9, 28, 946, 67015963);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('28-11-2020 23:50:38', 'dd-mm-yyyy hh24:mi:ss'), 473, 8, 20, 519, 50029824);
+values (to_date('18-10-2002 20:40:16', 'dd-mm-yyyy hh24:mi:ss'), 556, 6, 45, 698, 64027261);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('06-01-2021 04:43:14', 'dd-mm-yyyy hh24:mi:ss'), 479, 5, 6, 967, 88649232);
+values (to_date('12-10-2005 08:03:07', 'dd-mm-yyyy hh24:mi:ss'), 557, 8, 46, 834, 90824185);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-01-2015 07:59:22', 'dd-mm-yyyy hh24:mi:ss'), 484, 5, 74, 498, 15992467);
+values (to_date('10-04-2005 13:44:15', 'dd-mm-yyyy hh24:mi:ss'), 558, 10, 38, 901, 57601580);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('05-04-2013 01:12:08', 'dd-mm-yyyy hh24:mi:ss'), 492, 6, 95, 555, 2505457);
+values (to_date('27-06-2001 05:01:32', 'dd-mm-yyyy hh24:mi:ss'), 559, 9, 76, 787, 49478035);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('05-03-2018 04:18:20', 'dd-mm-yyyy hh24:mi:ss'), 493, 10, 78, 336, 30411578);
+values (to_date('14-04-2024 19:00:37', 'dd-mm-yyyy hh24:mi:ss'), 560, 9, 78, 255, 6603015);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('04-02-2011 09:09:30', 'dd-mm-yyyy hh24:mi:ss'), 495, 6, 17, 764, 32128888);
+values (to_date('19-10-2013 12:08:12', 'dd-mm-yyyy hh24:mi:ss'), 561, 8, 63, 530, 91891117);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('16-04-2011 21:03:27', 'dd-mm-yyyy hh24:mi:ss'), 498, 5, 70, 65, 79693276);
+values (to_date('13-10-2020 01:55:03', 'dd-mm-yyyy hh24:mi:ss'), 562, 5, 67, 431, 13663159);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('09-05-2002 23:21:07', 'dd-mm-yyyy hh24:mi:ss'), 500, 7, 42, 726, 13663159);
+values (to_date('11-03-2008 14:19:06', 'dd-mm-yyyy hh24:mi:ss'), 563, 10, 76, 45, 91891117);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('15-06-2009 21:18:51', 'dd-mm-yyyy hh24:mi:ss'), 503, 6, 4, 658, 29658657);
+values (to_date('07-06-2009 16:14:44', 'dd-mm-yyyy hh24:mi:ss'), 564, 9, 38, 246, 99375320);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('15-10-2008 03:33:59', 'dd-mm-yyyy hh24:mi:ss'), 505, 9, 26, 255, 58647622);
+values (to_date('25-05-2004 20:47:02', 'dd-mm-yyyy hh24:mi:ss'), 565, 10, 84, 371, 22657272);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-03-2004 02:18:40', 'dd-mm-yyyy hh24:mi:ss'), 509, 6, 43, 94, 91703316);
+values (to_date('12-03-2006 17:25:35', 'dd-mm-yyyy hh24:mi:ss'), 566, 9, 30, 391, 38125788);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('13-10-2002 03:54:51', 'dd-mm-yyyy hh24:mi:ss'), 512, 9, 100, 502, 50900940);
+values (to_date('04-11-2024 21:01:26', 'dd-mm-yyyy hh24:mi:ss'), 567, 5, 27, 129, 88649232);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('19-08-2019 14:30:28', 'dd-mm-yyyy hh24:mi:ss'), 514, 5, 36, 612, 45505216);
+values (to_date('11-06-2024 09:55:26', 'dd-mm-yyyy hh24:mi:ss'), 568, 8, 49, 651, 51397792);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('05-02-2024 05:28:01', 'dd-mm-yyyy hh24:mi:ss'), 518, 5, 26, 830, 30411578);
+values (to_date('18-02-2001 06:03:18', 'dd-mm-yyyy hh24:mi:ss'), 569, 8, 12, 498, 14658929);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('14-04-2018 23:27:01', 'dd-mm-yyyy hh24:mi:ss'), 519, 7, 85, 390, 45412385);
+values (to_date('05-10-2019 14:12:28', 'dd-mm-yyyy hh24:mi:ss'), 570, 6, 68, 255, 54757032);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('24-02-2020 08:19:32', 'dd-mm-yyyy hh24:mi:ss'), 520, 10, 69, 246, 88634045);
+values (to_date('27-08-2018 00:24:11', 'dd-mm-yyyy hh24:mi:ss'), 571, 10, 21, 703, 30062117);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-10-2012 08:52:04', 'dd-mm-yyyy hh24:mi:ss'), 521, 7, 2, 296, 88726887);
+values (to_date('19-02-2024 11:49:55', 'dd-mm-yyyy hh24:mi:ss'), 572, 9, 44, 834, 49908274);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('01-11-2007 10:05:48', 'dd-mm-yyyy hh24:mi:ss'), 522, 5, 68, 244, 40091598);
+values (to_date('31-07-2008 10:11:51', 'dd-mm-yyyy hh24:mi:ss'), 573, 7, 49, 591, 13663159);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('17-06-2007 14:43:00', 'dd-mm-yyyy hh24:mi:ss'), 523, 5, 30, 137, 4370439);
+values (to_date('27-06-2019 13:43:14', 'dd-mm-yyyy hh24:mi:ss'), 574, 9, 7, 787, 47501817);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('23-11-2000 07:05:13', 'dd-mm-yyyy hh24:mi:ss'), 536, 9, 87, 177, 2376368);
+values (to_date('02-10-2009 19:29:51', 'dd-mm-yyyy hh24:mi:ss'), 575, 6, 74, 3, 10951186);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('13-09-2011 01:45:07', 'dd-mm-yyyy hh24:mi:ss'), 537, 6, 21, 698, 49537257);
+values (to_date('27-10-2004 04:32:00', 'dd-mm-yyyy hh24:mi:ss'), 576, 10, 29, 806, 27719925);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('18-07-2010 04:21:56', 'dd-mm-yyyy hh24:mi:ss'), 540, 6, 56, 626, 1282269);
+values (to_date('21-06-2001 13:54:37', 'dd-mm-yyyy hh24:mi:ss'), 577, 7, 45, 253, 45412385);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('29-09-2005 09:06:20', 'dd-mm-yyyy hh24:mi:ss'), 543, 8, 32, 20, 44715352);
+values (to_date('12-10-2024 00:05:11', 'dd-mm-yyyy hh24:mi:ss'), 578, 6, 14, 402, 24414730);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('09-07-2020 11:23:16', 'dd-mm-yyyy hh24:mi:ss'), 560, 10, 50, 502, 11221464);
+values (to_date('22-03-2024 19:30:25', 'dd-mm-yyyy hh24:mi:ss'), 579, 9, 75, 610, 49537257);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('19-08-2015 18:16:24', 'dd-mm-yyyy hh24:mi:ss'), 562, 9, 60, 294, 87218298);
+values (to_date('16-07-2001 11:16:30', 'dd-mm-yyyy hh24:mi:ss'), 580, 9, 2, 324, 730279);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('23-06-2018 00:43:37', 'dd-mm-yyyy hh24:mi:ss'), 568, 10, 58, 431, 34375443);
+values (to_date('09-12-2014 05:06:08', 'dd-mm-yyyy hh24:mi:ss'), 581, 6, 57, 183, 20114821);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('08-06-2014 03:26:38', 'dd-mm-yyyy hh24:mi:ss'), 570, 6, 28, 500, 41518918);
+values (to_date('08-04-2011 23:39:07', 'dd-mm-yyyy hh24:mi:ss'), 582, 7, 59, 83, 13663159);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('09-06-2021 13:27:41', 'dd-mm-yyyy hh24:mi:ss'), 580, 9, 97, 409, 64660127);
+values (to_date('16-02-2008 12:56:44', 'dd-mm-yyyy hh24:mi:ss'), 583, 6, 25, 530, 67015963);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-04-2024 04:50:52', 'dd-mm-yyyy hh24:mi:ss'), 583, 7, 11, 502, 86272100);
+values (to_date('30-05-2021 20:52:13', 'dd-mm-yyyy hh24:mi:ss'), 584, 5, 72, 914, 42253574);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('25-03-2004 10:46:50', 'dd-mm-yyyy hh24:mi:ss'), 584, 6, 47, 255, 81865150);
+values (to_date('20-01-2001 18:13:14', 'dd-mm-yyyy hh24:mi:ss'), 585, 10, 46, 246, 43217671);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('22-02-2009 19:36:28', 'dd-mm-yyyy hh24:mi:ss'), 588, 6, 55, 188, 35548775);
+values (to_date('24-04-2021 17:36:48', 'dd-mm-yyyy hh24:mi:ss'), 586, 10, 61, 371, 11221464);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('29-08-2006 00:41:28', 'dd-mm-yyyy hh24:mi:ss'), 592, 9, 85, 249, 7673525);
+values (to_date('19-01-2021 00:40:36', 'dd-mm-yyyy hh24:mi:ss'), 587, 6, 28, 659, 46639839);
 insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
-values (to_date('31-01-2012 21:59:11', 'dd-mm-yyyy hh24:mi:ss'), 593, 10, 13, 972, 2591817);
+values (to_date('23-03-2011 19:13:09', 'dd-mm-yyyy hh24:mi:ss'), 588, 6, 7, 806, 86272100);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('06-04-2023 16:18:02', 'dd-mm-yyyy hh24:mi:ss'), 589, 5, 53, 11, 48536850);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('15-10-2003 14:19:32', 'dd-mm-yyyy hh24:mi:ss'), 590, 8, 51, 939, 32128888);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('30-07-2008 23:59:25', 'dd-mm-yyyy hh24:mi:ss'), 591, 8, 76, 164, 43436957);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('16-07-2013 01:02:55', 'dd-mm-yyyy hh24:mi:ss'), 592, 6, 29, 519, 78118267);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('30-03-2016 21:49:58', 'dd-mm-yyyy hh24:mi:ss'), 593, 6, 26, 626, 42253574);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('04-03-2003 13:54:11', 'dd-mm-yyyy hh24:mi:ss'), 594, 10, 64, 582, 41003550);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('29-09-2009 04:49:26', 'dd-mm-yyyy hh24:mi:ss'), 595, 5, 31, 96, 65058862);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('18-10-2021 09:32:49', 'dd-mm-yyyy hh24:mi:ss'), 596, 6, 18, 324, 31661429);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('17-06-2020 20:37:06', 'dd-mm-yyyy hh24:mi:ss'), 597, 10, 8, 246, 54985818);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('29-12-2023 11:45:27', 'dd-mm-yyyy hh24:mi:ss'), 598, 6, 79, 834, 9077728);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('25-05-2011 17:15:12', 'dd-mm-yyyy hh24:mi:ss'), 599, 9, 1, 659, 88239853);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('20-04-2001 17:27:53', 'dd-mm-yyyy hh24:mi:ss'), 600, 5, 92, 610, 10854394);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('05-05-2006 08:40:42', 'dd-mm-yyyy hh24:mi:ss'), 601, 8, 99, 864, 91089992);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('17-02-2003 01:41:57', 'dd-mm-yyyy hh24:mi:ss'), 602, 5, 32, 402, 34375443);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('27-12-2017 07:22:48', 'dd-mm-yyyy hh24:mi:ss'), 603, 9, 53, 402, 67015963);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('10-02-2024 21:20:44', 'dd-mm-yyyy hh24:mi:ss'), 604, 5, 85, 806, 83376974);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('24-10-2009 06:24:37', 'dd-mm-yyyy hh24:mi:ss'), 605, 8, 41, 972, 31661429);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('30-08-2003 17:11:45', 'dd-mm-yyyy hh24:mi:ss'), 606, 8, 88, 612, 82804437);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('16-04-2011 00:45:12', 'dd-mm-yyyy hh24:mi:ss'), 607, 6, 26, 941, 39997409);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('17-01-2022 06:30:05', 'dd-mm-yyyy hh24:mi:ss'), 608, 7, 37, 183, 42322889);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('06-10-2006 14:02:32', 'dd-mm-yyyy hh24:mi:ss'), 609, 7, 6, 396, 27803037);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('30-01-2000 15:27:38', 'dd-mm-yyyy hh24:mi:ss'), 610, 6, 52, 164, 50900940);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('11-12-2005 18:25:29', 'dd-mm-yyyy hh24:mi:ss'), 611, 7, 24, 500, 54985818);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('10-07-2018 22:21:04', 'dd-mm-yyyy hh24:mi:ss'), 612, 5, 66, 391, 51948030);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('09-07-2010 08:34:48', 'dd-mm-yyyy hh24:mi:ss'), 613, 7, 77, 674, 53737541);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('26-02-2006 14:56:58', 'dd-mm-yyyy hh24:mi:ss'), 614, 8, 41, 20, 13663159);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('21-12-2012 08:47:45', 'dd-mm-yyyy hh24:mi:ss'), 615, 10, 96, 865, 2505457);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('12-11-2005 13:44:24', 'dd-mm-yyyy hh24:mi:ss'), 616, 8, 82, 658, 49478035);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('01-07-2007 16:19:29', 'dd-mm-yyyy hh24:mi:ss'), 617, 7, 55, 941, 37865911);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('19-10-2002 14:55:49', 'dd-mm-yyyy hh24:mi:ss'), 618, 7, 60, 530, 91703316);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('07-07-2004 12:20:09', 'dd-mm-yyyy hh24:mi:ss'), 619, 5, 59, 661, 91703316);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('16-03-2016 19:54:11', 'dd-mm-yyyy hh24:mi:ss'), 620, 8, 67, 939, 43217671);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('30-07-2002 13:05:57', 'dd-mm-yyyy hh24:mi:ss'), 621, 10, 32, 3, 6603015);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('23-08-2004 23:43:09', 'dd-mm-yyyy hh24:mi:ss'), 622, 10, 45, 298, 44623593);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('23-07-2004 14:21:41', 'dd-mm-yyyy hh24:mi:ss'), 623, 10, 1, 137, 58647622);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('05-04-2015 14:38:41', 'dd-mm-yyyy hh24:mi:ss'), 624, 9, 42, 188, 61751644);
 commit;
-prompt 364 records loaded
+prompt 400 records committed...
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('18-11-2001 10:19:03', 'dd-mm-yyyy hh24:mi:ss'), 625, 9, 5, 500, 33449046);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('26-03-2010 00:13:23', 'dd-mm-yyyy hh24:mi:ss'), 626, 8, 72, 389, 70178481);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('12-05-2011 02:55:32', 'dd-mm-yyyy hh24:mi:ss'), 627, 10, 64, 254, 35965202);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('12-07-2004 11:24:00', 'dd-mm-yyyy hh24:mi:ss'), 628, 9, 73, 73, 43436957);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('22-12-2016 19:00:46', 'dd-mm-yyyy hh24:mi:ss'), 629, 7, 34, 137, 73434651);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('21-12-2011 23:25:26', 'dd-mm-yyyy hh24:mi:ss'), 630, 8, 38, 94, 29207505);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('05-10-2013 11:00:23', 'dd-mm-yyyy hh24:mi:ss'), 631, 9, 10, 389, 47501817);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('29-09-2023 06:47:05', 'dd-mm-yyyy hh24:mi:ss'), 632, 7, 1, 591, 33449046);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('13-09-2005 21:57:18', 'dd-mm-yyyy hh24:mi:ss'), 633, 8, 67, 519, 43436957);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('13-05-2023 02:23:42', 'dd-mm-yyyy hh24:mi:ss'), 634, 6, 71, 946, 63990543);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('06-10-2019 00:04:53', 'dd-mm-yyyy hh24:mi:ss'), 635, 5, 18, 522, 73434651);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('03-07-2001 14:15:30', 'dd-mm-yyyy hh24:mi:ss'), 636, 6, 99, 213, 96970243);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('05-03-2021 17:57:59', 'dd-mm-yyyy hh24:mi:ss'), 637, 9, 71, 941, 34375443);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('11-01-2012 21:31:40', 'dd-mm-yyyy hh24:mi:ss'), 638, 9, 23, 502, 43436957);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('21-11-2021 00:14:06', 'dd-mm-yyyy hh24:mi:ss'), 639, 5, 59, 253, 20114821);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('05-08-2008 13:31:52', 'dd-mm-yyyy hh24:mi:ss'), 640, 7, 81, 336, 27719925);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('04-08-2021 16:35:28', 'dd-mm-yyyy hh24:mi:ss'), 641, 6, 55, 296, 53483220);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('21-08-2008 21:31:32', 'dd-mm-yyyy hh24:mi:ss'), 642, 7, 48, 20, 38125788);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('19-04-2005 15:54:17', 'dd-mm-yyyy hh24:mi:ss'), 643, 10, 43, 73, 43217671);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('17-04-2024 07:20:47', 'dd-mm-yyyy hh24:mi:ss'), 644, 6, 33, 244, 14725165);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('08-12-2024 11:12:46', 'dd-mm-yyyy hh24:mi:ss'), 645, 8, 74, 402, 89122501);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('25-09-2017 18:52:07', 'dd-mm-yyyy hh24:mi:ss'), 646, 8, 71, 865, 88634045);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('09-09-2010 04:24:31', 'dd-mm-yyyy hh24:mi:ss'), 647, 5, 45, 530, 30062117);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('27-08-2007 23:14:55', 'dd-mm-yyyy hh24:mi:ss'), 648, 6, 21, 255, 11221464);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('29-09-2023 12:45:38', 'dd-mm-yyyy hh24:mi:ss'), 649, 10, 48, 498, 2376368);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('26-12-2012 08:17:48', 'dd-mm-yyyy hh24:mi:ss'), 650, 7, 4, 830, 11221464);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('05-05-2020 00:21:36', 'dd-mm-yyyy hh24:mi:ss'), 651, 10, 52, 502, 49908274);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('04-10-2021 23:57:41', 'dd-mm-yyyy hh24:mi:ss'), 652, 9, 2, 294, 41060366);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('06-06-2006 16:07:49', 'dd-mm-yyyy hh24:mi:ss'), 653, 7, 27, 854, 24414730);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('15-07-2005 18:59:28', 'dd-mm-yyyy hh24:mi:ss'), 654, 7, 66, 591, 92566199);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('28-12-2016 09:07:29', 'dd-mm-yyyy hh24:mi:ss'), 655, 9, 83, 196, 58647622);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('24-02-2015 08:01:06', 'dd-mm-yyyy hh24:mi:ss'), 656, 8, 62, 924, 87891090);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('12-12-2012 17:26:35', 'dd-mm-yyyy hh24:mi:ss'), 657, 10, 98, 834, 91089992);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('26-04-2005 09:03:53', 'dd-mm-yyyy hh24:mi:ss'), 658, 5, 2, 806, 54985818);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('24-04-2021 18:24:11', 'dd-mm-yyyy hh24:mi:ss'), 659, 6, 76, 555, 24290738);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('16-02-2021 12:15:50', 'dd-mm-yyyy hh24:mi:ss'), 660, 6, 26, 972, 13663159);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('08-09-2008 14:14:47', 'dd-mm-yyyy hh24:mi:ss'), 661, 5, 11, 363, 48536850);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('09-07-2001 08:57:59', 'dd-mm-yyyy hh24:mi:ss'), 662, 8, 20, 195, 92566199);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('22-02-2020 03:06:37', 'dd-mm-yyyy hh24:mi:ss'), 663, 9, 50, 914, 48536850);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('12-08-2016 21:49:40', 'dd-mm-yyyy hh24:mi:ss'), 664, 8, 38, 20, 39725987);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('09-12-2016 22:49:52', 'dd-mm-yyyy hh24:mi:ss'), 665, 8, 64, 570, 34375443);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('09-09-2019 18:27:04', 'dd-mm-yyyy hh24:mi:ss'), 666, 7, 82, 254, 30062117);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('28-10-2003 20:37:58', 'dd-mm-yyyy hh24:mi:ss'), 667, 9, 77, 879, 26290962);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('28-08-2013 15:14:32', 'dd-mm-yyyy hh24:mi:ss'), 668, 6, 94, 763, 67015963);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('02-05-2006 08:44:09', 'dd-mm-yyyy hh24:mi:ss'), 669, 6, 82, 421, 41518918);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('12-01-2019 07:43:40', 'dd-mm-yyyy hh24:mi:ss'), 670, 10, 32, 787, 20114821);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('10-04-2012 19:37:03', 'dd-mm-yyyy hh24:mi:ss'), 671, 8, 20, 183, 1055314);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('16-11-2012 18:16:42', 'dd-mm-yyyy hh24:mi:ss'), 672, 10, 76, 519, 2505457);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('13-01-2011 16:35:54', 'dd-mm-yyyy hh24:mi:ss'), 673, 10, 76, 11, 30411578);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('12-12-2024 19:24:31', 'dd-mm-yyyy hh24:mi:ss'), 674, 10, 26, 732, 46344277);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('05-08-2020 23:25:09', 'dd-mm-yyyy hh24:mi:ss'), 675, 8, 40, 626, 30463411);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('26-05-2004 22:09:33', 'dd-mm-yyyy hh24:mi:ss'), 676, 9, 35, 732, 99375320);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('26-08-2017 23:27:27', 'dd-mm-yyyy hh24:mi:ss'), 677, 8, 71, 324, 24414730);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('21-11-2022 13:53:28', 'dd-mm-yyyy hh24:mi:ss'), 678, 6, 12, 183, 13663159);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('24-05-2001 11:18:14', 'dd-mm-yyyy hh24:mi:ss'), 679, 6, 62, 661, 2450269);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('31-01-2008 11:46:45', 'dd-mm-yyyy hh24:mi:ss'), 680, 9, 96, 498, 30463411);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('09-02-2009 05:39:33', 'dd-mm-yyyy hh24:mi:ss'), 681, 5, 31, 930, 91703316);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('28-12-2020 18:47:57', 'dd-mm-yyyy hh24:mi:ss'), 682, 7, 81, 73, 30411578);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('01-03-2007 02:33:47', 'dd-mm-yyyy hh24:mi:ss'), 683, 5, 47, 907, 10854394);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('11-01-2001 19:30:34', 'dd-mm-yyyy hh24:mi:ss'), 684, 9, 3, 758, 7673525);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('17-12-2011 19:27:07', 'dd-mm-yyyy hh24:mi:ss'), 685, 9, 27, 914, 20114821);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('03-03-2020 21:05:36', 'dd-mm-yyyy hh24:mi:ss'), 686, 9, 59, 389, 79260141);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('05-04-2022 14:38:15', 'dd-mm-yyyy hh24:mi:ss'), 687, 8, 33, 914, 61751644);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('20-10-2011 06:16:24', 'dd-mm-yyyy hh24:mi:ss'), 688, 5, 22, 879, 50968404);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('17-11-2024 05:26:09', 'dd-mm-yyyy hh24:mi:ss'), 689, 6, 25, 582, 51397792);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('26-07-2011 06:29:13', 'dd-mm-yyyy hh24:mi:ss'), 690, 7, 44, 653, 91089992);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('15-06-2015 04:24:57', 'dd-mm-yyyy hh24:mi:ss'), 691, 10, 27, 763, 1055314);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('17-09-2016 01:28:16', 'dd-mm-yyyy hh24:mi:ss'), 692, 5, 65, 901, 88726887);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('18-04-2012 16:57:47', 'dd-mm-yyyy hh24:mi:ss'), 693, 6, 85, 20, 89122501);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('15-07-2002 04:48:25', 'dd-mm-yyyy hh24:mi:ss'), 694, 7, 90, 707, 4370439);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('25-01-2005 03:46:13', 'dd-mm-yyyy hh24:mi:ss'), 695, 7, 51, 570, 63990543);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('06-03-2005 03:24:46', 'dd-mm-yyyy hh24:mi:ss'), 696, 5, 2, 363, 13611451);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('23-06-2003 18:37:43', 'dd-mm-yyyy hh24:mi:ss'), 697, 8, 6, 806, 53483220);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('16-08-2003 05:53:39', 'dd-mm-yyyy hh24:mi:ss'), 698, 10, 94, 3, 30411578);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('11-02-2005 18:31:58', 'dd-mm-yyyy hh24:mi:ss'), 699, 9, 98, 815, 99887779);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('14-01-2012 11:51:12', 'dd-mm-yyyy hh24:mi:ss'), 700, 8, 92, 20, 49537257);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('19-07-2017 20:59:08', 'dd-mm-yyyy hh24:mi:ss'), 1, 8, 43, 930, 2591817);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('30-08-2001 22:39:56', 'dd-mm-yyyy hh24:mi:ss'), 2, 5, 73, 582, 31471077);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('22-07-2021 17:13:20', 'dd-mm-yyyy hh24:mi:ss'), 3, 6, 1, 177, 31471077);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('04-11-2013 18:29:57', 'dd-mm-yyyy hh24:mi:ss'), 4, 7, 19, 610, 2505457);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('13-12-2008 15:15:59', 'dd-mm-yyyy hh24:mi:ss'), 5, 7, 9, 530, 35965202);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('21-06-2019 09:38:35', 'dd-mm-yyyy hh24:mi:ss'), 6, 8, 33, 246, 7673525);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('07-03-2015 20:03:07', 'dd-mm-yyyy hh24:mi:ss'), 7, 7, 82, 703, 90824185);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('26-09-2011 22:48:43', 'dd-mm-yyyy hh24:mi:ss'), 8, 10, 14, 698, 88634045);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('22-02-2016 16:36:28', 'dd-mm-yyyy hh24:mi:ss'), 9, 6, 55, 806, 40091598);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('06-03-2018 08:29:02', 'dd-mm-yyyy hh24:mi:ss'), 10, 9, 50, 10, 37865911);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('29-04-2014 09:07:46', 'dd-mm-yyyy hh24:mi:ss'), 11, 6, 20, 570, 63595783);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('30-05-2005 20:48:37', 'dd-mm-yyyy hh24:mi:ss'), 12, 6, 16, 73, 15992467);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('23-10-2021 08:34:04', 'dd-mm-yyyy hh24:mi:ss'), 13, 5, 81, 972, 37865911);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('21-06-2023 03:10:48', 'dd-mm-yyyy hh24:mi:ss'), 14, 6, 68, 402, 2376368);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('09-02-2022 18:43:37', 'dd-mm-yyyy hh24:mi:ss'), 15, 6, 48, 517, 8081255);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('16-09-2023 07:06:40', 'dd-mm-yyyy hh24:mi:ss'), 16, 5, 12, 907, 11221464);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('14-11-2020 19:39:38', 'dd-mm-yyyy hh24:mi:ss'), 17, 8, 44, 787, 50968404);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('25-01-2009 13:00:54', 'dd-mm-yyyy hh24:mi:ss'), 18, 10, 90, 249, 81865150);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('07-10-2015 14:30:02', 'dd-mm-yyyy hh24:mi:ss'), 19, 9, 35, 764, 25602009);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('29-10-2022 02:07:17', 'dd-mm-yyyy hh24:mi:ss'), 20, 7, 94, 707, 71805490);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('06-12-2017 16:30:34', 'dd-mm-yyyy hh24:mi:ss'), 21, 6, 91, 787, 14725165);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('04-02-2017 13:12:43', 'dd-mm-yyyy hh24:mi:ss'), 22, 10, 88, 854, 81865150);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('07-08-2011 20:36:48', 'dd-mm-yyyy hh24:mi:ss'), 23, 5, 22, 830, 63990543);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('26-04-2016 09:16:33', 'dd-mm-yyyy hh24:mi:ss'), 24, 5, 43, 254, 46344277);
+commit;
+prompt 500 records committed...
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('05-09-2002 01:23:57', 'dd-mm-yyyy hh24:mi:ss'), 25, 9, 35, 787, 82804437);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('15-06-2017 05:10:01', 'dd-mm-yyyy hh24:mi:ss'), 26, 9, 38, 787, 30411578);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('16-07-2001 13:14:52', 'dd-mm-yyyy hh24:mi:ss'), 27, 6, 13, 732, 13611451);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('05-03-2000 23:23:34', 'dd-mm-yyyy hh24:mi:ss'), 28, 10, 25, 196, 49537257);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('26-10-2017 11:01:58', 'dd-mm-yyyy hh24:mi:ss'), 29, 8, 82, 764, 2938480);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('10-01-2020 10:50:00', 'dd-mm-yyyy hh24:mi:ss'), 30, 7, 25, 254, 88634045);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('03-12-2010 19:39:12', 'dd-mm-yyyy hh24:mi:ss'), 31, 6, 90, 924, 25602009);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('20-05-2002 11:45:44', 'dd-mm-yyyy hh24:mi:ss'), 32, 7, 33, 647, 9077728);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('20-03-2022 14:37:49', 'dd-mm-yyyy hh24:mi:ss'), 33, 8, 89, 907, 30411578);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('08-07-2009 11:55:49', 'dd-mm-yyyy hh24:mi:ss'), 34, 5, 11, 907, 81276702);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('29-04-2008 03:49:23', 'dd-mm-yyyy hh24:mi:ss'), 35, 10, 35, 294, 1055314);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('01-06-2017 11:37:06', 'dd-mm-yyyy hh24:mi:ss'), 36, 9, 27, 10, 23041511);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('14-04-2008 03:29:48', 'dd-mm-yyyy hh24:mi:ss'), 37, 8, 38, 834, 52154939);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('07-03-2004 04:34:36', 'dd-mm-yyyy hh24:mi:ss'), 38, 7, 99, 914, 30411578);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('13-08-2004 13:57:30', 'dd-mm-yyyy hh24:mi:ss'), 39, 6, 74, 195, 10854394);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('28-07-2017 13:35:19', 'dd-mm-yyyy hh24:mi:ss'), 40, 6, 54, 707, 34375443);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('01-11-2013 18:09:12', 'dd-mm-yyyy hh24:mi:ss'), 41, 8, 55, 196, 27719925);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('13-10-2020 09:57:44', 'dd-mm-yyyy hh24:mi:ss'), 42, 9, 17, 577, 81276702);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('12-07-2009 16:50:09', 'dd-mm-yyyy hh24:mi:ss'), 43, 7, 68, 972, 24414730);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('09-02-2014 02:46:01', 'dd-mm-yyyy hh24:mi:ss'), 44, 7, 45, 651, 51948030);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('03-11-2024 09:12:14', 'dd-mm-yyyy hh24:mi:ss'), 45, 7, 28, 763, 88726887);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('13-07-2009 07:44:15', 'dd-mm-yyyy hh24:mi:ss'), 46, 5, 97, 363, 23041511);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('21-05-2020 02:10:53', 'dd-mm-yyyy hh24:mi:ss'), 47, 5, 27, 766, 99887779);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('01-07-2022 07:02:12', 'dd-mm-yyyy hh24:mi:ss'), 48, 9, 36, 748, 90824185);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('24-11-2021 10:01:12', 'dd-mm-yyyy hh24:mi:ss'), 49, 5, 89, 188, 2505457);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('21-11-2003 04:39:38', 'dd-mm-yyyy hh24:mi:ss'), 50, 6, 44, 612, 19067900);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('06-11-2023 10:12:43', 'dd-mm-yyyy hh24:mi:ss'), 51, 10, 20, 703, 41003550);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('12-05-2017 08:14:29', 'dd-mm-yyyy hh24:mi:ss'), 52, 8, 40, 748, 26290962);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('10-05-2004 01:24:23', 'dd-mm-yyyy hh24:mi:ss'), 53, 5, 67, 659, 45505216);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('26-05-2011 01:12:43', 'dd-mm-yyyy hh24:mi:ss'), 54, 9, 5, 188, 10951186);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('13-10-2022 05:25:43', 'dd-mm-yyyy hh24:mi:ss'), 55, 6, 100, 188, 33449046);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('21-11-2018 09:51:59', 'dd-mm-yyyy hh24:mi:ss'), 56, 7, 82, 196, 45505216);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('02-05-2007 06:19:00', 'dd-mm-yyyy hh24:mi:ss'), 57, 5, 22, 659, 83376974);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('23-12-2002 08:44:26', 'dd-mm-yyyy hh24:mi:ss'), 58, 5, 89, 530, 29658657);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('10-08-2006 05:49:46', 'dd-mm-yyyy hh24:mi:ss'), 59, 7, 76, 402, 53737541);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('29-09-2008 08:49:55', 'dd-mm-yyyy hh24:mi:ss'), 60, 10, 79, 177, 41003550);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('03-02-2008 22:49:52', 'dd-mm-yyyy hh24:mi:ss'), 61, 8, 25, 924, 57601580);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('15-05-2014 11:48:28', 'dd-mm-yyyy hh24:mi:ss'), 62, 5, 96, 431, 33915414);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('27-09-2014 18:38:00', 'dd-mm-yyyy hh24:mi:ss'), 63, 10, 94, 532, 25039816);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('26-10-2004 09:00:51', 'dd-mm-yyyy hh24:mi:ss'), 64, 5, 95, 924, 51397792);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('29-07-2024 09:24:54', 'dd-mm-yyyy hh24:mi:ss'), 65, 5, 45, 421, 37865911);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('09-08-2004 16:19:03', 'dd-mm-yyyy hh24:mi:ss'), 66, 7, 55, 94, 37921065);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('19-12-2023 11:39:15', 'dd-mm-yyyy hh24:mi:ss'), 67, 9, 14, 177, 30463411);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('24-04-2005 04:09:59', 'dd-mm-yyyy hh24:mi:ss'), 68, 6, 43, 659, 63990543);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('25-12-2014 22:41:22', 'dd-mm-yyyy hh24:mi:ss'), 69, 9, 48, 766, 92566199);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('03-10-2022 18:05:19', 'dd-mm-yyyy hh24:mi:ss'), 70, 9, 79, 65, 45505216);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('24-11-2021 11:27:18', 'dd-mm-yyyy hh24:mi:ss'), 71, 9, 92, 564, 41518918);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('29-12-2018 07:47:25', 'dd-mm-yyyy hh24:mi:ss'), 72, 9, 98, 647, 50029824);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('01-10-2018 13:44:41', 'dd-mm-yyyy hh24:mi:ss'), 73, 7, 30, 193, 26290962);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('01-04-2015 20:28:53', 'dd-mm-yyyy hh24:mi:ss'), 74, 7, 97, 834, 70178481);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('06-11-2009 17:23:08', 'dd-mm-yyyy hh24:mi:ss'), 75, 6, 4, 766, 97813459);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('25-08-2004 21:40:01', 'dd-mm-yyyy hh24:mi:ss'), 76, 10, 28, 564, 40091598);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('08-04-2010 19:11:34', 'dd-mm-yyyy hh24:mi:ss'), 77, 7, 27, 519, 71805490);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('08-08-2012 19:41:48', 'dd-mm-yyyy hh24:mi:ss'), 78, 10, 100, 764, 1055314);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('22-09-2009 02:39:59', 'dd-mm-yyyy hh24:mi:ss'), 79, 10, 74, 3, 7860731);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('29-01-2024 08:35:31', 'dd-mm-yyyy hh24:mi:ss'), 80, 6, 79, 532, 43049144);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('25-03-2018 01:03:04', 'dd-mm-yyyy hh24:mi:ss'), 81, 8, 87, 213, 13611451);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('03-05-2015 02:22:50', 'dd-mm-yyyy hh24:mi:ss'), 82, 7, 30, 296, 96970243);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('17-10-2005 15:35:42', 'dd-mm-yyyy hh24:mi:ss'), 83, 10, 88, 183, 20103782);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('12-01-2019 13:00:02', 'dd-mm-yyyy hh24:mi:ss'), 84, 8, 60, 94, 1055314);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('09-06-2019 11:34:22', 'dd-mm-yyyy hh24:mi:ss'), 85, 5, 90, 907, 88726887);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('18-04-2005 06:10:22', 'dd-mm-yyyy hh24:mi:ss'), 86, 6, 98, 226, 50900940);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('27-06-2008 16:02:55', 'dd-mm-yyyy hh24:mi:ss'), 87, 8, 11, 651, 14725165);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('18-02-2004 03:05:28', 'dd-mm-yyyy hh24:mi:ss'), 88, 8, 23, 530, 29203895);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('15-06-2022 21:10:39', 'dd-mm-yyyy hh24:mi:ss'), 89, 9, 48, 659, 88726887);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('17-11-2014 11:47:19', 'dd-mm-yyyy hh24:mi:ss'), 90, 7, 90, 129, 33449046);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('10-07-2008 00:22:01', 'dd-mm-yyyy hh24:mi:ss'), 91, 10, 38, 914, 46639839);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('01-08-2023 22:02:03', 'dd-mm-yyyy hh24:mi:ss'), 92, 6, 15, 647, 86272100);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('16-06-2012 01:35:28', 'dd-mm-yyyy hh24:mi:ss'), 93, 6, 27, 763, 51948030);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('06-09-2017 17:17:57', 'dd-mm-yyyy hh24:mi:ss'), 94, 9, 25, 517, 22432753);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('03-01-2021 13:46:33', 'dd-mm-yyyy hh24:mi:ss'), 95, 6, 42, 764, 81276702);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('01-02-2001 17:57:33', 'dd-mm-yyyy hh24:mi:ss'), 96, 10, 67, 500, 67015963);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('06-02-2010 22:18:46', 'dd-mm-yyyy hh24:mi:ss'), 97, 6, 76, 255, 45505216);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('26-08-2010 03:11:48', 'dd-mm-yyyy hh24:mi:ss'), 98, 10, 51, 830, 37921065);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('14-05-2000 15:26:29', 'dd-mm-yyyy hh24:mi:ss'), 99, 5, 3, 806, 37865911);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('25-07-2018 00:17:08', 'dd-mm-yyyy hh24:mi:ss'), 100, 8, 43, 763, 63990543);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('11-05-2003 04:33:18', 'dd-mm-yyyy hh24:mi:ss'), 101, 9, 44, 564, 57601580);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('16-10-2013 06:55:00', 'dd-mm-yyyy hh24:mi:ss'), 102, 10, 10, 834, 39997409);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('23-03-2013 23:18:40', 'dd-mm-yyyy hh24:mi:ss'), 103, 9, 33, 500, 74889890);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('11-04-2015 00:03:10', 'dd-mm-yyyy hh24:mi:ss'), 104, 8, 50, 932, 2376368);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('20-07-2017 06:45:56', 'dd-mm-yyyy hh24:mi:ss'), 105, 10, 21, 707, 49908274);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('03-12-2019 03:22:53', 'dd-mm-yyyy hh24:mi:ss'), 106, 8, 97, 726, 29742651);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('10-07-2012 11:50:55', 'dd-mm-yyyy hh24:mi:ss'), 107, 6, 27, 726, 41060366);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('01-09-2005 13:52:36', 'dd-mm-yyyy hh24:mi:ss'), 108, 8, 1, 65, 51948030);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('03-02-2020 01:50:44', 'dd-mm-yyyy hh24:mi:ss'), 109, 5, 53, 732, 24414730);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('09-02-2008 14:15:12', 'dd-mm-yyyy hh24:mi:ss'), 110, 7, 93, 946, 46344277);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('12-08-2012 01:47:34', 'dd-mm-yyyy hh24:mi:ss'), 111, 10, 11, 195, 88649232);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('03-01-2020 21:07:29', 'dd-mm-yyyy hh24:mi:ss'), 112, 9, 72, 213, 32846918);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('23-08-2012 08:13:46', 'dd-mm-yyyy hh24:mi:ss'), 113, 9, 91, 498, 88634045);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('02-10-2015 10:28:59', 'dd-mm-yyyy hh24:mi:ss'), 114, 6, 58, 249, 41060366);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('23-01-2021 19:03:30', 'dd-mm-yyyy hh24:mi:ss'), 115, 6, 57, 941, 2591817);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('06-06-2003 01:59:13', 'dd-mm-yyyy hh24:mi:ss'), 116, 5, 91, 834, 40293735);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('16-09-2019 02:54:40', 'dd-mm-yyyy hh24:mi:ss'), 117, 8, 89, 815, 30463411);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('29-05-2020 18:45:56', 'dd-mm-yyyy hh24:mi:ss'), 118, 9, 4, 196, 24290738);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('10-05-2014 13:55:37', 'dd-mm-yyyy hh24:mi:ss'), 119, 6, 92, 967, 30411578);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('11-04-2015 10:01:03', 'dd-mm-yyyy hh24:mi:ss'), 120, 7, 62, 517, 79910635);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('22-10-2013 10:33:01', 'dd-mm-yyyy hh24:mi:ss'), 121, 8, 62, 254, 65058862);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('17-11-2013 08:35:31', 'dd-mm-yyyy hh24:mi:ss'), 122, 7, 90, 363, 20114821);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('24-10-2000 05:36:48', 'dd-mm-yyyy hh24:mi:ss'), 123, 8, 27, 519, 43217671);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('16-08-2001 22:48:34', 'dd-mm-yyyy hh24:mi:ss'), 124, 9, 4, 498, 88649232);
+commit;
+prompt 600 records committed...
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('17-11-2023 00:48:14', 'dd-mm-yyyy hh24:mi:ss'), 125, 5, 60, 763, 44623593);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('22-02-2007 06:26:38', 'dd-mm-yyyy hh24:mi:ss'), 126, 8, 4, 409, 41003550);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('17-05-2020 03:22:45', 'dd-mm-yyyy hh24:mi:ss'), 127, 6, 74, 577, 63990543);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('14-06-2020 20:23:08', 'dd-mm-yyyy hh24:mi:ss'), 128, 9, 52, 658, 41060366);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('06-06-2004 23:59:08', 'dd-mm-yyyy hh24:mi:ss'), 129, 5, 23, 246, 99887779);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('16-02-2011 01:49:00', 'dd-mm-yyyy hh24:mi:ss'), 130, 10, 23, 658, 33449046);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('13-01-2012 05:16:30', 'dd-mm-yyyy hh24:mi:ss'), 131, 8, 26, 363, 86272100);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('28-10-2004 03:00:00', 'dd-mm-yyyy hh24:mi:ss'), 132, 7, 70, 764, 32128888);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('05-09-2024 13:10:59', 'dd-mm-yyyy hh24:mi:ss'), 133, 8, 29, 73, 730279);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('02-06-2019 07:39:38', 'dd-mm-yyyy hh24:mi:ss'), 134, 7, 79, 967, 49537257);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('23-02-2011 21:40:01', 'dd-mm-yyyy hh24:mi:ss'), 135, 9, 25, 254, 13611451);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('31-01-2006 01:52:45', 'dd-mm-yyyy hh24:mi:ss'), 136, 10, 51, 164, 79693276);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('10-08-2017 06:58:27', 'dd-mm-yyyy hh24:mi:ss'), 137, 9, 42, 257, 1282269);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('26-05-2000 19:52:27', 'dd-mm-yyyy hh24:mi:ss'), 138, 9, 56, 389, 15992467);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('14-11-2019 04:39:30', 'dd-mm-yyyy hh24:mi:ss'), 139, 7, 44, 3, 2938480);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('03-12-2014 22:37:55', 'dd-mm-yyyy hh24:mi:ss'), 140, 8, 16, 164, 79260141);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('27-09-2010 16:50:18', 'dd-mm-yyyy hh24:mi:ss'), 141, 9, 25, 336, 79192786);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('26-06-2012 10:29:16', 'dd-mm-yyyy hh24:mi:ss'), 142, 10, 97, 244, 29742651);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('10-05-2000 02:32:29', 'dd-mm-yyyy hh24:mi:ss'), 143, 7, 46, 502, 63990543);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('28-09-2014 10:51:27', 'dd-mm-yyyy hh24:mi:ss'), 144, 5, 35, 177, 31661429);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('17-02-2016 17:24:25', 'dd-mm-yyyy hh24:mi:ss'), 145, 8, 73, 500, 40091598);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('02-04-2012 23:09:01', 'dd-mm-yyyy hh24:mi:ss'), 146, 8, 15, 83, 91891117);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('02-09-2021 00:22:53', 'dd-mm-yyyy hh24:mi:ss'), 147, 6, 6, 865, 14725165);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('16-10-2002 07:39:04', 'dd-mm-yyyy hh24:mi:ss'), 148, 9, 30, 296, 90824185);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('29-08-2013 15:41:36', 'dd-mm-yyyy hh24:mi:ss'), 149, 5, 87, 555, 48536850);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('11-11-2006 13:32:00', 'dd-mm-yyyy hh24:mi:ss'), 150, 10, 11, 879, 58647622);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('02-05-2022 17:53:22', 'dd-mm-yyyy hh24:mi:ss'), 151, 8, 14, 658, 20103782);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('04-12-2020 20:35:22', 'dd-mm-yyyy hh24:mi:ss'), 152, 10, 36, 255, 1055314);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('13-11-2017 17:22:59', 'dd-mm-yyyy hh24:mi:ss'), 153, 10, 88, 502, 52154939);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('21-12-2007 19:17:54', 'dd-mm-yyyy hh24:mi:ss'), 154, 5, 63, 296, 8796425);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('02-02-2007 09:41:36', 'dd-mm-yyyy hh24:mi:ss'), 155, 10, 79, 787, 10854394);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('21-12-2018 05:49:37', 'dd-mm-yyyy hh24:mi:ss'), 156, 9, 27, 195, 14658929);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('07-10-2024 02:20:24', 'dd-mm-yyyy hh24:mi:ss'), 157, 8, 40, 658, 29658657);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('14-12-2000 02:15:21', 'dd-mm-yyyy hh24:mi:ss'), 158, 6, 28, 390, 49053838);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('24-04-2002 07:06:57', 'dd-mm-yyyy hh24:mi:ss'), 159, 8, 11, 854, 27719925);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('19-01-2005 02:57:15', 'dd-mm-yyyy hh24:mi:ss'), 160, 9, 37, 363, 88634045);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('27-05-2016 03:28:30', 'dd-mm-yyyy hh24:mi:ss'), 161, 6, 43, 83, 15992467);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('14-04-2024 07:18:02', 'dd-mm-yyyy hh24:mi:ss'), 162, 7, 70, 924, 89122501);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('04-01-2001 10:37:37', 'dd-mm-yyyy hh24:mi:ss'), 163, 9, 63, 707, 70178481);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('31-05-2018 14:12:02', 'dd-mm-yyyy hh24:mi:ss'), 164, 5, 27, 371, 61751644);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('28-02-2007 05:02:06', 'dd-mm-yyyy hh24:mi:ss'), 165, 9, 99, 83, 87218298);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('08-04-2010 16:48:17', 'dd-mm-yyyy hh24:mi:ss'), 166, 5, 25, 834, 43049144);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('13-07-2009 12:02:18', 'dd-mm-yyyy hh24:mi:ss'), 167, 7, 31, 939, 61751644);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('25-06-2016 17:38:58', 'dd-mm-yyyy hh24:mi:ss'), 168, 6, 82, 612, 91703316);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('30-12-2021 06:30:31', 'dd-mm-yyyy hh24:mi:ss'), 169, 5, 74, 901, 86272100);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('31-07-2019 13:03:12', 'dd-mm-yyyy hh24:mi:ss'), 170, 10, 34, 257, 67015963);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('11-04-2014 03:37:52', 'dd-mm-yyyy hh24:mi:ss'), 171, 7, 69, 253, 13611451);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('26-04-2024 06:03:01', 'dd-mm-yyyy hh24:mi:ss'), 172, 9, 38, 389, 4370439);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('12-02-2003 04:13:43', 'dd-mm-yyyy hh24:mi:ss'), 173, 6, 7, 396, 37865911);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('09-03-2008 23:20:58', 'dd-mm-yyyy hh24:mi:ss'), 174, 8, 31, 941, 14725165);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('06-02-2018 05:16:39', 'dd-mm-yyyy hh24:mi:ss'), 175, 5, 66, 213, 44715352);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('14-08-2000 20:53:31', 'dd-mm-yyyy hh24:mi:ss'), 176, 8, 78, 213, 44623593);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('15-11-2022 08:48:46', 'dd-mm-yyyy hh24:mi:ss'), 177, 9, 28, 763, 88239853);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('22-09-2021 00:26:47', 'dd-mm-yyyy hh24:mi:ss'), 178, 10, 62, 363, 91891117);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('19-03-2002 02:43:17', 'dd-mm-yyyy hh24:mi:ss'), 179, 10, 70, 555, 2376368);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('29-12-2005 13:20:03', 'dd-mm-yyyy hh24:mi:ss'), 180, 9, 40, 972, 88239853);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('30-09-2011 06:34:24', 'dd-mm-yyyy hh24:mi:ss'), 181, 7, 5, 865, 29742651);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('23-04-2018 20:53:39', 'dd-mm-yyyy hh24:mi:ss'), 182, 8, 59, 658, 67015963);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('13-09-2000 08:08:35', 'dd-mm-yyyy hh24:mi:ss'), 183, 9, 81, 658, 32846918);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('02-02-2015 17:37:14', 'dd-mm-yyyy hh24:mi:ss'), 184, 8, 19, 45, 37921065);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('22-10-2016 18:59:36', 'dd-mm-yyyy hh24:mi:ss'), 185, 9, 18, 750, 41003550);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('01-06-2002 17:56:24', 'dd-mm-yyyy hh24:mi:ss'), 186, 8, 10, 409, 2505457);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('11-01-2006 04:06:23', 'dd-mm-yyyy hh24:mi:ss'), 187, 8, 36, 879, 1055314);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('31-10-2020 00:38:35', 'dd-mm-yyyy hh24:mi:ss'), 188, 10, 83, 65, 61751644);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('31-12-2011 12:26:38', 'dd-mm-yyyy hh24:mi:ss'), 189, 10, 30, 396, 29207505);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('28-04-2008 23:37:14', 'dd-mm-yyyy hh24:mi:ss'), 190, 5, 93, 564, 37865911);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('15-02-2005 18:02:00', 'dd-mm-yyyy hh24:mi:ss'), 191, 9, 60, 764, 43217671);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('06-12-2009 05:11:54', 'dd-mm-yyyy hh24:mi:ss'), 192, 5, 3, 865, 46639839);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('16-01-2013 16:11:51', 'dd-mm-yyyy hh24:mi:ss'), 193, 5, 14, 653, 43217671);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('17-02-2003 04:38:29', 'dd-mm-yyyy hh24:mi:ss'), 194, 6, 69, 806, 88649232);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('13-12-2001 04:20:21', 'dd-mm-yyyy hh24:mi:ss'), 195, 6, 54, 707, 51948030);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('08-04-2020 10:39:47', 'dd-mm-yyyy hh24:mi:ss'), 196, 6, 87, 389, 1282269);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('23-12-2005 20:56:49', 'dd-mm-yyyy hh24:mi:ss'), 197, 6, 46, 73, 11221464);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('03-07-2010 14:42:25', 'dd-mm-yyyy hh24:mi:ss'), 198, 10, 38, 257, 43436957);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('29-07-2013 09:19:09', 'dd-mm-yyyy hh24:mi:ss'), 199, 9, 45, 96, 91891117);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('01-12-2021 20:37:06', 'dd-mm-yyyy hh24:mi:ss'), 200, 5, 63, 726, 9077728);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('27-06-2004 03:52:24', 'dd-mm-yyyy hh24:mi:ss'), 201, 10, 70, 11, 2505457);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('31-07-2012 23:52:56', 'dd-mm-yyyy hh24:mi:ss'), 202, 7, 21, 294, 8796425);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('20-03-2008 19:57:21', 'dd-mm-yyyy hh24:mi:ss'), 203, 7, 25, 431, 730279);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('23-11-2019 05:07:17', 'dd-mm-yyyy hh24:mi:ss'), 204, 7, 46, 183, 97813459);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('28-07-2007 00:26:47', 'dd-mm-yyyy hh24:mi:ss'), 205, 9, 9, 257, 25039816);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('10-09-2018 15:39:36', 'dd-mm-yyyy hh24:mi:ss'), 206, 7, 18, 658, 37865911);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('20-10-2009 07:43:58', 'dd-mm-yyyy hh24:mi:ss'), 207, 9, 44, 815, 90824185);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('20-11-2007 03:12:05', 'dd-mm-yyyy hh24:mi:ss'), 208, 5, 100, 661, 24414730);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('04-04-2010 05:02:58', 'dd-mm-yyyy hh24:mi:ss'), 209, 9, 70, 939, 43436957);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('20-10-2020 12:18:08', 'dd-mm-yyyy hh24:mi:ss'), 210, 6, 41, 396, 6603015);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('18-11-2024 12:36:43', 'dd-mm-yyyy hh24:mi:ss'), 211, 6, 41, 500, 53483220);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('22-07-2008 01:14:09', 'dd-mm-yyyy hh24:mi:ss'), 212, 7, 47, 647, 64660127);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('11-05-2001 16:34:19', 'dd-mm-yyyy hh24:mi:ss'), 213, 5, 57, 517, 1055314);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('28-11-2011 07:08:32', 'dd-mm-yyyy hh24:mi:ss'), 214, 9, 39, 409, 91703316);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('29-01-2004 22:16:01', 'dd-mm-yyyy hh24:mi:ss'), 215, 5, 28, 661, 49908274);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('28-02-2017 00:48:31', 'dd-mm-yyyy hh24:mi:ss'), 216, 6, 28, 879, 33915414);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('04-07-2013 23:04:59', 'dd-mm-yyyy hh24:mi:ss'), 217, 9, 14, 183, 52154939);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('28-09-2024 04:25:14', 'dd-mm-yyyy hh24:mi:ss'), 218, 5, 57, 409, 50029824);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('25-05-2006 07:43:49', 'dd-mm-yyyy hh24:mi:ss'), 219, 5, 50, 188, 61751644);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('29-07-2021 23:40:59', 'dd-mm-yyyy hh24:mi:ss'), 220, 7, 83, 11, 20114821);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('26-11-2021 13:43:49', 'dd-mm-yyyy hh24:mi:ss'), 221, 6, 36, 252, 10854394);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('26-06-2004 13:18:11', 'dd-mm-yyyy hh24:mi:ss'), 222, 8, 98, 195, 13663159);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('14-12-2015 02:33:21', 'dd-mm-yyyy hh24:mi:ss'), 223, 5, 8, 658, 23041511);
+insert into LESSON (lessondate, lessonid, rating, classid, roomnum, personid)
+values (to_date('05-01-2003 23:32:03', 'dd-mm-yyyy hh24:mi:ss'), 224, 10, 18, 972, 13663159);
+commit;
+prompt 700 records loaded
 prompt Loading PERSON_PHONE...
 insert into PERSON_PHONE (phone, personid)
 values ('057-8049172', 5654694);
@@ -7272,17 +7950,1019 @@ commit;
 prompt 703 records loaded
 prompt Loading TAKES_LESSON...
 insert into TAKES_LESSON (lessonid, classid, personid)
-values (32, 90, 98257068);
+values (646, 71, 34899411);
 insert into TAKES_LESSON (lessonid, classid, personid)
-values (95, 30, 41003550);
+values (672, 76, 17922070);
 insert into TAKES_LESSON (lessonid, classid, personid)
-values (192, 25, 79127574);
+values (107, 27, 30174663);
 insert into TAKES_LESSON (lessonid, classid, personid)
-values (272, 6, 98257068);
+values (43, 68, 70178481);
 insert into TAKES_LESSON (lessonid, classid, personid)
-values (440, 24, 45697419);
+values (9, 55, 66242981);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (220, 83, 23041511);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (61, 25, 99588313);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (38, 99, 22010069);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (197, 46, 35448349);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (146, 15, 58227833);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (409, 67, 60383864);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (486, 36, 95620746);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (644, 33, 57848591);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (152, 36, 79693276);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (95, 42, 44938507);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (296, 89, 29203895);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (498, 46, 23020212);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (457, 61, 11451089);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (456, 78, 49478035);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (352, 32, 99988900);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (367, 97, 36378696);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (522, 84, 58302395);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (530, 47, 20114821);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (495, 41, 34375443);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (243, 71, 90372109);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (199, 45, 29995549);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (461, 92, 25039816);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (596, 18, 10775180);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (437, 58, 53483220);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (150, 11, 99203358);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (428, 54, 65058862);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (232, 52, 55252246);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (385, 11, 96098746);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (343, 90, 53815807);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (590, 51, 91891117);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (419, 20, 48277353);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (180, 40, 87218298);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (191, 60, 50968404);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (260, 8, 15164192);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (600, 92, 10481000);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (266, 12, 11534770);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (497, 96, 19894147);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (683, 47, 99434739);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (699, 98, 41060366);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (694, 90, 29742651);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (651, 52, 90717124);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (10, 50, 1055314);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (14, 68, 84018267);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (693, 85, 35114555);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (55, 100, 17739277);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (646, 71, 87218298);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (13, 81, 50968404);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (624, 42, 91282035);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (675, 40, 73038198);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (449, 22, 33300460);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (141, 25, 53109927);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (231, 95, 96511274);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (483, 57, 33915414);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (259, 43, 86453357);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (117, 89, 67461875);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (501, 21, 8796425);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (570, 68, 26290962);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (576, 29, 25128415);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (691, 27, 86755439);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (63, 94, 68928002);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (600, 92, 50885464);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (376, 74, 24290738);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (658, 2, 37780928);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (67, 14, 81005094);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (440, 82, 58302395);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (178, 62, 83376974);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (167, 31, 2303105);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (354, 61, 88634045);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (294, 59, 1402178);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (601, 99, 64820168);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (523, 35, 79260141);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (528, 33, 64820168);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (570, 68, 67503959);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (9, 55, 79910635);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (524, 20, 96970243);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (444, 32, 30434462);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (339, 83, 8752121);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (682, 81, 42253574);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (405, 40, 16134366);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (377, 15, 6717674);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (655, 83, 31471077);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (95, 42, 81677750);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (514, 93, 82804437);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (482, 45, 7488761);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (457, 61, 48084398);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (486, 36, 98877580);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (73, 30, 72046835);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (513, 54, 85383287);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (323, 62, 5654694);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (141, 25, 65058862);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (258, 8, 24504822);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (500, 26, 38614060);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (609, 6, 31874543);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (594, 64, 6505329);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (678, 12, 67503959);
 commit;
-prompt 5 records loaded
+prompt 100 records committed...
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (689, 25, 61586151);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (671, 20, 30241470);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (145, 73, 3691273);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (202, 21, 21293730);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (467, 14, 54638372);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (180, 40, 10481000);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (561, 63, 99887779);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (608, 37, 31874543);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (590, 51, 75966451);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (176, 78, 22920110);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (663, 50, 65011242);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (619, 59, 75033915);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (454, 38, 27425173);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (457, 61, 61751644);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (114, 58, 64070950);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (609, 6, 10517860);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (532, 72, 27449638);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (588, 7, 8421656);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (71, 92, 32313288);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (384, 23, 64975686);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (86, 98, 51193500);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (333, 4, 47501817);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (538, 5, 66340561);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (291, 9, 46344277);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (550, 13, 33915414);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (370, 36, 12760864);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (505, 45, 59560586);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (545, 8, 8796425);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (100, 43, 11798215);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (531, 52, 2376368);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (492, 84, 41518918);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (398, 81, 60078010);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (189, 30, 91703316);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (41, 55, 91349986);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (590, 51, 76641085);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (129, 23, 63595783);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (336, 51, 72046835);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (696, 2, 45080144);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (118, 4, 10775180);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (578, 14, 20114821);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (225, 37, 4027718);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (396, 35, 81238413);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (637, 71, 53663079);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (510, 37, 89421322);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (27, 13, 46327250);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (355, 31, 27449638);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (392, 29, 7673525);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (192, 3, 88649232);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (646, 71, 30899206);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (368, 56, 19894147);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (459, 13, 47501817);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (90, 90, 13736563);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (615, 96, 21552259);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (36, 27, 83635789);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (291, 9, 22920110);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (666, 82, 70753258);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (125, 60, 58647622);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (609, 6, 25039816);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (74, 97, 91416453);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (158, 28, 27425173);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (420, 42, 30174663);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (431, 4, 40573112);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (248, 14, 70753258);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (677, 71, 25128415);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (249, 10, 13356721);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (366, 26, 54138899);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (447, 13, 76960313);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (443, 84, 86272012);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (51, 20, 31033551);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (220, 83, 7299036);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (195, 54, 26290962);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (657, 98, 79776408);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (644, 33, 22799537);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (5, 9, 67503959);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (648, 21, 70424737);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (93, 27, 29742651);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (212, 47, 22682672);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (372, 69, 23386909);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (99, 3, 27035808);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (620, 67, 51193500);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (85, 90, 35448349);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (451, 85, 99504749);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (63, 94, 18340976);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (244, 43, 27611255);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (466, 81, 22820514);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (540, 81, 39385617);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (622, 45, 4370439);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (550, 13, 26603974);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (67, 14, 81946276);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (292, 30, 54761032);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (518, 42, 45505216);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (526, 66, 45080144);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (268, 11, 99956255);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (308, 84, 34241869);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (166, 25, 67653817);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (336, 51, 13356721);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (514, 93, 77487007);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (466, 81, 48536850);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (293, 7, 67461875);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (655, 83, 9669009);
+commit;
+prompt 200 records committed...
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (190, 93, 72778564);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (595, 31, 99956255);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (31, 90, 50683846);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (466, 81, 3267255);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (5, 9, 50900940);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (533, 8, 49053838);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (418, 80, 2450269);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (516, 81, 66781374);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (38, 99, 24168528);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (167, 31, 25602009);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (60, 79, 23114002);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (626, 72, 37921065);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (609, 6, 76364758);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (351, 53, 91089992);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (533, 8, 21317536);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (579, 75, 15164192);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (453, 45, 99887779);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (532, 72, 97400551);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (336, 51, 33449046);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (34, 11, 55252246);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (652, 2, 81024259);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (642, 48, 21293730);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (163, 63, 57848591);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (640, 81, 5179001);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (229, 59, 92676944);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (352, 32, 76641085);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (338, 32, 75363400);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (148, 30, 70595940);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (131, 26, 62214926);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (593, 26, 19067900);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (371, 10, 79476002);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (467, 14, 19099801);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (29, 82, 35965202);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (657, 98, 26278207);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (509, 39, 25112977);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (27, 13, 81946276);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (490, 62, 29724492);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (268, 11, 73049091);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (305, 58, 22920110);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (524, 20, 42322889);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (418, 80, 6603015);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (242, 66, 35965202);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (560, 78, 13081784);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (268, 11, 21293730);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (534, 31, 78118267);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (679, 62, 64070950);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (543, 36, 30241470);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (603, 53, 66340561);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (95, 42, 6292018);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (676, 35, 23412617);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (676, 35, 75033915);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (402, 16, 30899206);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (50, 44, 32410121);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (229, 59, 2505457);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (464, 79, 20103782);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (605, 41, 84377393);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (515, 53, 20767492);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (700, 92, 64820168);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (676, 35, 39385617);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (302, 40, 21837118);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (535, 28, 11612959);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (56, 82, 81654249);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (55, 100, 46532727);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (651, 52, 70363242);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (344, 60, 50550367);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (685, 27, 18340976);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (544, 31, 69408426);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (599, 1, 9077728);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (211, 41, 314024);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (311, 4, 52313162);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (288, 8, 60383864);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (513, 54, 96970243);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (71, 92, 54968773);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (46, 97, 74889890);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (572, 44, 86453357);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (329, 8, 76734801);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (54, 5, 49478035);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (426, 47, 33449046);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (687, 33, 69408426);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (22, 88, 71263062);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (674, 26, 10517860);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (217, 14, 26603974);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (190, 93, 29203895);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (113, 91, 81325843);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (338, 32, 81884643);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (522, 84, 62531988);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (318, 51, 90824185);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (25, 35, 49908274);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (587, 28, 45968098);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (644, 33, 24414730);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (259, 43, 53483220);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (20, 94, 23071061);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (315, 64, 96973892);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (186, 10, 55478450);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (689, 25, 19894147);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (340, 30, 25602009);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (623, 1, 62531988);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (70, 79, 58302395);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (444, 32, 90372030);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (210, 41, 27803037);
+commit;
+prompt 300 records committed...
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (315, 64, 23491578);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (247, 24, 79776408);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (256, 37, 61698245);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (72, 98, 58647622);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (667, 77, 29203895);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (363, 85, 37099706);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (599, 1, 70595940);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (657, 98, 22179745);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (251, 81, 16134366);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (17, 44, 1601841);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (168, 82, 22934957);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (432, 4, 92676944);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (497, 96, 88239853);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (525, 11, 16134366);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (557, 46, 78118267);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (631, 10, 79776408);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (73, 30, 9754733);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (296, 89, 22642135);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (28, 25, 79192786);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (577, 45, 25112977);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (338, 32, 27803037);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (447, 13, 73038198);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (408, 18, 66107157);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (464, 79, 98257068);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (543, 36, 27449638);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (83, 88, 75033915);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (589, 53, 42253574);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (583, 25, 42253574);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (190, 93, 21837118);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (597, 8, 8039183);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (481, 59, 54757032);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (455, 50, 11798215);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (531, 52, 32313288);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (308, 84, 34375443);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (627, 64, 66588970);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (147, 6, 48277353);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (359, 52, 66340561);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (658, 2, 76734801);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (326, 78, 36833753);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (14, 68, 30884206);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (618, 60, 13010901);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (139, 44, 88061228);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (164, 27, 62846464);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (443, 84, 41003550);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (423, 23, 32128888);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (59, 76, 58660984);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (147, 6, 24414730);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (422, 42, 4245084);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (90, 90, 33915414);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (18, 90, 23386909);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (336, 51, 61498790);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (480, 6, 22819264);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (173, 7, 97695307);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (67, 14, 99887779);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (472, 91, 25310202);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (105, 21, 25310202);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (496, 26, 45080144);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (147, 6, 35548775);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (518, 42, 21837118);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (542, 62, 4370439);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (199, 45, 8752121);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (587, 28, 58647622);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (50, 44, 25039816);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (55, 100, 38289354);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (681, 31, 8421656);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (280, 70, 19894147);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (465, 96, 27611255);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (449, 22, 19067900);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (696, 2, 48536850);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (368, 56, 8752121);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (543, 36, 61886377);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (76, 28, 73049091);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (78, 100, 30845995);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (472, 91, 24504822);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (448, 74, 99988900);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (41, 55, 75363400);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (208, 100, 11534770);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (99, 3, 57601580);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (555, 28, 97813459);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (166, 25, 58227833);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (559, 76, 69838192);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (111, 11, 40573112);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (363, 85, 38289354);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (615, 96, 6628587);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (10, 50, 19099801);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (354, 61, 88310865);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (452, 7, 76734801);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (102, 10, 54467502);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (175, 66, 76641085);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (209, 70, 96098746);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (111, 11, 47501817);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (366, 26, 47501817);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (101, 44, 45412385);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (7, 82, 35548775);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (13, 81, 31393240);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (628, 73, 23114002);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (658, 2, 30104584);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (308, 84, 46327250);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (559, 76, 62214926);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (460, 2, 48536850);
+commit;
+prompt 400 records committed...
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (642, 48, 15164192);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (576, 29, 31874543);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (139, 44, 83635789);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (92, 15, 54761032);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (349, 72, 87891090);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (671, 20, 8081255);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (463, 58, 90372109);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (668, 94, 40293735);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (622, 45, 67887328);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (397, 9, 14432183);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (99, 3, 45505216);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (167, 31, 26603974);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (21, 91, 30062117);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (339, 83, 22682672);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (638, 23, 94625728);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (606, 88, 37099706);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (357, 49, 66588970);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (90, 90, 25112977);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (411, 82, 29724492);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (397, 9, 67887328);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (104, 50, 38066771);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (588, 7, 88634045);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (616, 82, 9228447);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (525, 11, 11451089);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (260, 8, 73593804);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (443, 84, 42688439);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (377, 15, 93842287);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (32, 33, 75363400);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (614, 41, 41407116);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (640, 81, 50885464);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (278, 16, 68928002);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (644, 33, 67481341);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (198, 38, 28702001);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (131, 26, 77425508);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (252, 52, 81884643);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (576, 29, 62213084);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (355, 31, 60383864);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (300, 96, 8796425);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (12, 16, 75003632);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (474, 26, 23890659);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (456, 78, 46861565);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (361, 74, 314024);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (547, 48, 67481341);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (82, 30, 7860731);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (454, 38, 30411578);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (504, 12, 13356721);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (348, 45, 13081784);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (566, 30, 62214926);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (99, 3, 46339943);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (143, 46, 23386909);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (100, 43, 63990543);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (171, 69, 30899206);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (69, 48, 36349653);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (629, 34, 37099706);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (346, 35, 81024259);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (378, 28, 49478035);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (591, 76, 57848591);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (211, 41, 10517860);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (626, 72, 94174046);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (437, 58, 79260141);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (310, 55, 39658357);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (301, 16, 67443455);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (173, 7, 23041511);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (582, 59, 70178481);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (211, 41, 59413980);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (326, 78, 23412617);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (529, 39, 71989689);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (611, 24, 70389865);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (500, 26, 79776408);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (520, 13, 2303105);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (266, 12, 6484710);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (496, 26, 67503959);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (425, 21, 17739277);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (604, 85, 59560586);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (231, 95, 69335813);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (200, 63, 23041511);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (215, 28, 41407116);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (444, 32, 65755336);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (466, 81, 88726887);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (215, 28, 54968773);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (107, 27, 11221464);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (694, 90, 38614060);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (132, 70, 28260775);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (533, 8, 55252246);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (295, 77, 10573645);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (49, 89, 34375443);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (335, 60, 63532139);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (463, 58, 80691820);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (559, 76, 19099801);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (289, 35, 81005094);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (615, 96, 46339943);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (380, 29, 730279);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (646, 71, 24504822);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (502, 70, 54315940);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (436, 30, 62213084);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (118, 4, 91089992);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (411, 82, 2591817);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (203, 25, 19099801);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (411, 82, 90717124);
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (527, 53, 54033988);
+commit;
+prompt 500 records committed...
+insert into TAKES_LESSON (lessonid, classid, personid)
+values (478, 15, 55996197);
+commit;
+prompt 501 records loaded
 prompt Enabling foreign key constraints for GYM_CLASS_MEDICAL_CONSTRAINS...
 alter table GYM_CLASS_MEDICAL_CONSTRAINS enable constraint SYS_C00706158;
 prompt Enabling foreign key constraints for GYM_MEMBER...
@@ -7292,14 +8972,14 @@ alter table GYM_MEMBER_MEDICAL_CONSTRAINS enable constraint SYS_C00709992;
 prompt Enabling foreign key constraints for TRAINER...
 alter table TRAINER enable constraint SYS_C00706149;
 prompt Enabling foreign key constraints for LESSON...
-alter table LESSON enable constraint SYS_C00710010;
-alter table LESSON enable constraint SYS_C00710011;
-alter table LESSON enable constraint SYS_C00710012;
+alter table LESSON enable constraint SYS_C00711879;
+alter table LESSON enable constraint SYS_C00711880;
+alter table LESSON enable constraint SYS_C00711881;
 prompt Enabling foreign key constraints for PERSON_PHONE...
 alter table PERSON_PHONE enable constraint SYS_C00706162;
 prompt Enabling foreign key constraints for TAKES_LESSON...
-alter table TAKES_LESSON enable constraint SYS_C00710017;
-alter table TAKES_LESSON enable constraint SYS_C00710018;
+alter table TAKES_LESSON enable constraint SYS_C00711886;
+alter table TAKES_LESSON enable constraint SYS_C00711887;
 prompt Enabling triggers for GYM_CLASS...
 alter table GYM_CLASS enable all triggers;
 prompt Enabling triggers for GYM_CLASS_MEDICAL_CONSTRAINS...
