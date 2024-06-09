@@ -15,6 +15,14 @@
     - [הכנסת נתונים ע"י Data Generator](#הכנסת-נתונים-עי-data-generator)
     - [הכנסת נתונים ע"י תוכנית Python](#הכנסת-נתונים-עי-תוכנית-python)
   - [יצירת קובץ הגיבוי](#יצירת-קובץ-הגיבוי)
+- [שלב ב](#שלב-ב)
+  - [הרצת השאילתות](#הרצת-השאילתות)
+    - [הרצת שאילתות ללא פרמטרים](#הרצת-שאילתות-ללא-פרמטרים)
+    - [הרצת שאילתות עם פרמטרים](#הרצת-שאילתות-עם-פרמטרים)
+    - [הרצת שאילתות עדכון](#הרצת-שאילתות-עדכון)
+    - [הרצת שאילתות מחיקה](#הרצת-שאילתות-מחיקה)
+  - [הוספת constrains](#הוספת-constrains)
+
 
 ## שלב א 
 
@@ -194,3 +202,85 @@ CREATE TABLE Takes_Lesson
 
 ### שחזור קובץ הגיבוי:
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/87d94d92-8f1f-4896-a6c3-470c4eaf2699)
+
+## שלב ב
+
+## הרצת השאילתות
+### הרצת שאילתות ללא פרמטרים
+  - שאילתא למציאת כל השיעורים שהשתתפו בהם 6 משתתפים או יותר ופרטי כל שיעור:
+    ![צילום מסך 2024-06-09 135709](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/189fdbd8-a768-4100-bcff-6f7737b1dc01)
+  - שאילתא למציאת כל החברים במכון הכושר שהשתתפו לפחות בשיעור אחד מכל כיתה: (החברים המצטיינים)
+    ![צילום מסך 2024-06-09 135742](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/fdaa260c-1565-484f-a57e-3d3c2bb9c039)
+  - שאילתא למציאת כל הסדנאות שדירוגן הממוצע זהה או קטן מדירוג כל המאמנים שמעבירים את אותה סדנא:
+    ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/167e310b-e906-444d-842e-fcca58971192)
+  - שאילתא למציאת מספר המאמנים בכל רמת נסיון:
+![צילום מסך 2024-06-09 124931](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/aeecbeaa-9328-49be-ae6b-ce2432af5e60)
+
+### הרצת שאילתות עם פרמטרים
+- שאילתא להצגת המשתתפים שיש להם יום הולדת בחודש הנבחר והשתתפו לפחות בשיעור אחד בשנה החולפת:
+  - הרצה:
+![צילום מסך 2024-06-09 125047](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/7f29a1a1-4c31-4602-bbb1-2e9ae2314d78)
+  - תוצאה:
+  ![צילום מסך 2024-06-09 125239](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/af5d2762-e572-4922-b9dd-04144e166360)
+- שאילתא להצגת מספר השיעורים שמאמן מסוים העביר בחודש ספציפי:
+  - הרצה:
+![צילום מסך 2024-06-09 130048](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/43d48110-8b31-4582-82fd-b0522bd442c7)
+  - תוצאה:
+![צילום מסך 2024-06-09 130119](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/78c0928a-7550-436e-87df-eca7a8b387ff)
+- שאילתא להצגת כל הסדנאות המתאימות לטווח גילאים מסויים:
+  - הרצה:
+![צילום מסך 2024-06-09 130236](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/45e7c59a-f86a-40d3-982c-6dc3673edd83)
+  - תוצאה:
+![צילום מסך 2024-06-09 130324](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/04ac770a-b55a-431b-8ea4-956fe4a68fb7)
+- שאילתא להצגת השיעורים שנערכו בתאריך מסויים ואת מספר המשתתפים בכל שיעור:
+  - הרצה:
+![צילום מסך 2024-06-09 130324](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/0e779c90-7ab3-47de-a224-d3cbb1c39f12)
+  - תוצאה:
+![צילום מסך 2024-06-09 130641](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/77a8dd36-e20f-4a60-834a-b67d427fe421)
+
+### הרצת שאילתות עדכון
+- שאילתא לעדכון (הגדלת) נסיון המאמנים שהעבירו לפחות שיעור אחד בשנה החולפת:
+ ![צילום מסך 2024-06-09 140429](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/49566749-2324-4d77-8d77-4f7a4d6bf0d6)
+  - בסיס הנתונים לפני העדכון:
+![צילום מסך 2024-06-09 140332](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/5057b5eb-2af8-418a-8620-e92afab1a302)
+  - בסיס הנתונים אחרי העדכון:
+![צילום מסך 2024-06-09 140540](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/64a431b1-fb0e-4e77-af8c-ded4c8f27d33)
+
+- שאילתא לעדכון תאריך העזיבה של החברים שלא השתתפו באף שיעור בשנה החולפת לתאריך הנוכחי:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/5c00a790-b46e-4d7a-9f04-5ec20f92adbf)
+  - בסיס הנתונים לפני העדכון:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/ab082430-672e-42c5-ad76-c85bee908d93)
+  - בסיס הנתונים אחרי העדכון:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/556b199c-a1c4-490a-a2ae-71910545cb4a)
+
+### הרצת שאילתות מחיקה
+- שאילתא למחיקת מאמנים עם פחות משנה נסיון שלא העבירו שום שיעור בשנה האחרונה:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/f3cf1e82-6c76-4a0e-bfde-cc38419b8c37)
+  - בסיס הנתונים לפני העדכון:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/2f8893df-130b-4e43-9db0-fb2e4bd90884)
+  - בסיס הנתונים אחרי העדכון:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/64787287-afa9-444d-8e82-daf782e0612b)
+
+- שאילתא למחיקת המשתתפים שעזבו לפני שנתיים או יותר ולא הצטרפו מאז:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/04060c10-12cc-4702-a478-d4274e7b2c04)
+  - בסיס הנתונים לפני העדכון:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/8e94f07a-9d2b-43e0-b8df-2e4ddd98dfd4)
+  - בסיס הנתונים אחרי העדכון:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/c9ed1d80-2094-47d7-9f14-286d90f9c517)
+
+## הוספת constrains
+- תנאי לבדיקה שגיל המינימום לסדנא קטן מגיל המקסימום:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/2f4748a9-be09-4e29-b6c3-b11f1b86a6d4)
+ - הפרת התנאי:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/7043e1a2-d65c-4184-98d8-3c0c0de361a0)
+
+- תנאי להשמת ערך ברירת מחדל "Unknown" במקרה ולא הוכנס ערך לשדה עיר:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/cbf81699-753c-49f7-a9d3-61f5fdd8cd59)
+ - ביצוע התנאי:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/cda90164-cce5-4dc6-8ed7-15ce3f009d03)
+
+- תנאי לבדיקה שסוג החדר בטבלת ROOM אינו NULL:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/d2ecd492-e7f0-4a0e-a745-3de4b4a4de90)
+- הפרת התנאי:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/98e2b3c2-77d8-4159-aa1a-901ea800c916)
+
