@@ -296,10 +296,30 @@ CREATE TABLE Takes_Lesson
 ## שלב ג
 ## תוכנית א
 ### תיאור התוכנית
-תוכנית זו מיועדת לרישום מתאמן לקורס מסוים ביום מסוים. התכנית קוראת לפונקציה שמוודאת שלמשתתף אין מגבלה רפואית המתנגשת עם מגבלה רפואית שמהווה הגבלה לרישום לקורס, אם אין פונה לפרוצדורה שמוסיפה את המשתתף לשיעור באותו יום (אם קיים כזה שיעור בתפוסה לא מלאה).
+תוכנית זו מיועדת לרישום מתאמן לקורס מסוים ביום מסוים. התכנית קוראת לפונקציה שמוודאת שלמשתתף אין הגבלת גיל או מגבלה רפואית המתנגשת עם מגבלה רפואית שמהווה הגבלה לרישום לקורס, אם אין פונה לפרוצדורה שמוסיפה את המשתתף לשיעור באותו יום (אם קיים כזה שיעור בתפוסה לא מלאה).
 ### קוד התוכנית
+- התוכנית הראשית:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/b9a6cacb-c468-4f02-ba70-485c8e1a9f68)
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/690066e2-7790-4472-a383-45b42cf4302f)
+
+- פונקציה לבדיקת התאמת הגיל ואי חפיפה של המגבלות הרפואיות:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/7e57364c-d412-4624-89a3-9dfc4335a6bd)
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/0db75f82-b139-4538-9fd0-b4d5d0e6bf3e)
+
+- פרוצדורה להוספת המתאמן לשיעור שתפוסתו אינה מלאה:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/b25824e1-7525-49e3-9939-9277677fb453)
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/baaa0bef-d815-4dc5-8d3d-c787adc65c7c)
 
 ### הרצת התוכנית
+- הנתונים לפני ביצוע הטסט:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/2c65b7e1-293a-4b80-945e-3e0acb1e765b)
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/660c6bfb-f8ad-40e5-a57d-71a8f882c9be)
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/c0b21390-3394-467d-800b-73ece0349e4b)
+- הרצת הטסט:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/24f1a0a2-1785-4e76-b306-51afa8432f7e)
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/278f4255-2fd2-4944-981e-63d54bda2124)
+- בסיס הנתונים לאחר ביצוע הטסט:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/9583534c-56d8-4bb7-86e9-49cef3c5e568)
 
 ## תוכנית ב
 ### תיאור התכנית
