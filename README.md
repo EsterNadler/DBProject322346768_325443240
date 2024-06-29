@@ -302,40 +302,50 @@ CREATE TABLE Takes_Lesson
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/b9a6cacb-c468-4f02-ba70-485c8e1a9f68)
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/690066e2-7790-4472-a383-45b42cf4302f)
 
-- פונקציה לבדיקת התאמת הגיל ואי חפיפה של המגבלות הרפואיות:
+#### פונקציה לבדיקת התאמת הגיל ואי חפיפה של המגבלות הרפואיות:
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/7e57364c-d412-4624-89a3-9dfc4335a6bd)
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/0db75f82-b139-4538-9fd0-b4d5d0e6bf3e)
 
-- פרוצדורה להוספת המתאמן לשיעור שתפוסתו אינה מלאה:
+#### פרוצדורה להוספת המתאמן לשיעור שתפוסתו אינה מלאה:
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/b25824e1-7525-49e3-9939-9277677fb453)
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/baaa0bef-d815-4dc5-8d3d-c787adc65c7c)
 
 ### הרצת התוכנית
-- הנתונים לפני ביצוע הטסט:
+#### הנתונים לפני ביצוע הטסט:
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/2c65b7e1-293a-4b80-945e-3e0acb1e765b)
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/660c6bfb-f8ad-40e5-a57d-71a8f882c9be)
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/c0b21390-3394-467d-800b-73ece0349e4b)
-- הרצת הטסט:
+#### הרצת הטסט:
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/24f1a0a2-1785-4e76-b306-51afa8432f7e)
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/278f4255-2fd2-4944-981e-63d54bda2124)
-- בסיס הנתונים לאחר ביצוע הטסט:
+#### בסיס הנתונים לאחר ביצוע הטסט:
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/9583534c-56d8-4bb7-86e9-49cef3c5e568)
 
 ## תוכנית ב
 ### תיאור התכנית
 תוכנית זו מיועדת למקרה שמאמן נצרך לקחת יום מחלה או חופשה. התכנית תקרא לפרוצדורה שתעבור על כל השיעורים של אותו מאמן לאותו תאריך ותבדוק ע"י קריאה לפונקציה האם קיים מאמן פנוי היכול להחליף את המאמן הנ"ל, אם קיים הפרוצדורה תעדכן את בסיס הנתונים בהתאם (תחליף את המאמן בשיעורים הרלוונטים) אם לא נמצאו מאמניים חלופיים לכל השיעורים של אותו מאמן, לא יתאפשר למאמן להיעדר באותו יום.
 ### קוד התכנית
-- התוכנית הראשית:
+#### התוכנית הראשית:
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/7866db9c-8aaa-426c-8062-ff50fb4dd606)
 
-- פרוצדורה למציאת ועדכון כל שיעורי המאמן באותו תאריך:
+#### פרוצדורה למציאת ועדכון כל שיעורי המאמן באותו תאריך:
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/8006549f-f06f-4e3a-831a-e1e5c9c6aef6)
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/6fe36eb4-fac6-46ac-bcae-d053bf60d3fe)
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/8b5e9bb9-c7ac-45bb-aba1-71b682490578)
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/1866ff8d-4d94-4368-bbcf-38a174f65d9b)
 
-- פונקציה למציאת מאמן זמין עבור ההחלפה:
+#### פונקציה למציאת מאמן זמין עבור ההחלפה:
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/29897e30-466f-4a6b-89a8-a96cbbd487e3)
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/930578d1-8d3d-49d2-ab5f-0741602c14c7)
 
 ### הרצת התכנית
+#### הנתונים לפני ביצוע הטסט:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/8ed750ae-786b-4e21-b81e-f32a9fda5807)
+#### הרצת הטסט:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/dc65b89d-2466-42a8-8fd8-3644ae0ebbb8)
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/15ea1c28-e4a9-4365-98ec-922a3c455450)
+
+#### בסיס הנתונים אחרי ביצוע הטסט:
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/2ee934fc-09e0-49e4-b0b3-ef0867e2f631)
+![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/25427c57-0f02-4083-b9fa-a6a08295f00b)
+הנתונים עודכנו בהצלחה!
