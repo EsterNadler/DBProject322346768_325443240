@@ -356,3 +356,6 @@ CREATE TABLE Takes_Lesson
 ![image](https://github.com/user-attachments/assets/74718af9-3511-4cb6-bc9b-ba2a0c7f2ca5)
 ![image](https://github.com/user-attachments/assets/4e62f24a-9348-4ed0-8c0f-d0398c0bfd62)
 
+## דיאגרמת ERD:
+![image (13)](https://github.com/user-attachments/assets/106a6adf-5f18-4d1b-848c-9aa42ce79b01)
+
