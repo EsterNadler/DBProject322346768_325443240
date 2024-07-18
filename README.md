@@ -349,3 +349,10 @@ CREATE TABLE Takes_Lesson
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/2ee934fc-09e0-49e4-b0b3-ef0867e2f631)
 ![image](https://github.com/EsterNadler/DBProject322346768_325443240/assets/116155777/25427c57-0f02-4083-b9fa-a6a08295f00b)
 הנתונים עודכנו בהצלחה!
+
+
+## שלב 4
+### דיאגרמת DSD:
+![image](https://github.com/user-attachments/assets/74718af9-3511-4cb6-bc9b-ba2a0c7f2ca5)
+![image](https://github.com/user-attachments/assets/4e62f24a-9348-4ed0-8c0f-d0398c0bfd62)
+
