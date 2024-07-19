@@ -356,14 +356,30 @@ CREATE TABLE Takes_Lesson
 ![image](https://github.com/user-attachments/assets/74718af9-3511-4cb6-bc9b-ba2a0c7f2ca5)
 ![image](https://github.com/user-attachments/assets/4e62f24a-9348-4ed0-8c0f-d0398c0bfd62)
 
-## דיאגרמת ERD:
+### דיאגרמת ERD:
 ![image (13)](https://github.com/user-attachments/assets/106a6adf-5f18-4d1b-848c-9aa42ce79b01)
-## דיאגרמת הERD המשולב:
+### דיאגרמת הERD המשולב:
 ![image (15)](https://github.com/user-attachments/assets/d449b69f-6862-4b3d-ba4d-8b2c6986074d)
 
-### הנחות שנעשו:
+#### הנחות שנעשו:
 - ראינו בתרשים הDSD שיש טבלה person_another_phones והסקנו שבתרשים הERD יהיה מדובר בתכונה בעלת ערכים מרובים.
 -	השארנו את תכונת הCOST ביישות אימון אישי מאחר שכל מאמן במכון נותן מספר מסויים של שיעורים קבוצתיים ומקבל על כך משכורת גלובאלית בכל חודש. בנוסף לכך יש למאמן אפשרות למסור גם אימונים אישיים ועל כך הוא מקבל הכנסה נוספת וזה מחושב לפי האימונים האישיים שמסר באותו החודש. ולכן גם הפכנו את התכונה SALARY  אצל מאמן לתכונה מחושבת.
 -	 ליישות אימון אישי יש תכונה בשם LOCATION , אימון אישי יכול להיערך במקומות כמו בית, פארק, חצר, שפת הים, חדר ייעודי בחדר הכושר עבור אימונים אישיים, ועוד.
 -	הפכנו את תכונת הHealthCondition  של מתאמן לאוסף מגבלות רפואיות, שבהתאם לו יש מגבלות רפואיות על השיעורים. 
 -	כל שיעור קבוצתי / אימון אישי הם מסוג GymClass  כלשהו, שמקושר בקשר של רבים לרבים למכשירים שישתמשו בהם בשיעור.
+  
+### איחוד הנתונים ושינויים בטבלאות:
+#### טבלאות OUR_PERSON ו-PERSON לפני השינויים:
+![image](https://github.com/user-attachments/assets/1db49a79-7a0a-4678-a5d9-412c14128f68)
+#### לאחר השינויים:
+![image](https://github.com/user-attachments/assets/ad71d84a-8eeb-44a0-91c4-4d60cb83bee5)
+#### הכנסת הנתונים:
+![image](https://github.com/user-attachments/assets/05e01174-a551-480c-8125-9e25323487b8)
+![image](https://github.com/user-attachments/assets/ee0dcd4a-20e9-4908-b9e0-7d82a6ebe205)
+
+
+
+#### טבלאות OUR_TRAINER ו-TRAINER לפני השינויים:
+![image](https://github.com/user-attachments/assets/489a830f-03c2-4a04-9669-46fb737966e5)
+
+
