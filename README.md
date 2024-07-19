@@ -381,5 +381,11 @@ CREATE TABLE Takes_Lesson
 
 #### טבלאות OUR_TRAINER ו-TRAINER לפני השינויים:
 ![image](https://github.com/user-attachments/assets/489a830f-03c2-4a04-9669-46fb737966e5)
+#### לאחר השינויים:
+![image](https://github.com/user-attachments/assets/82d1772d-8c3f-4329-a3e5-5200006c7ce5)
+#### הכנסת הנתונים:
+![image](https://github.com/user-attachments/assets/1762b5a1-17e5-4d43-b0d9-341897ec9474)
 
+#### הכנסת הנתונים מTRAINEE לGYM_MEMBER:
+![image](https://github.com/user-attachments/assets/3cee5e0a-55e1-4db7-bfd0-b3732739c300)
 
