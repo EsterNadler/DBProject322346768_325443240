@@ -388,4 +388,8 @@ CREATE TABLE Takes_Lesson
 
 #### הכנסת הנתונים מTRAINEE לGYM_MEMBER:
 ![image](https://github.com/user-attachments/assets/3cee5e0a-55e1-4db7-bfd0-b3732739c300)
+#### הכנסת הנתונים מTRAINING לGYM_CLASS:
+![image](https://github.com/user-attachments/assets/b6e2ea43-1fe4-4692-9e05-1a7d8a9edf91)
+#### הוספת המגבלות המתאימות לGYM_CLASS_MEDICAL_CONSTRAINS:
+![image](https://github.com/user-attachments/assets/e8b3cf49-17c6-4376-bc16-08305b845901)
 
