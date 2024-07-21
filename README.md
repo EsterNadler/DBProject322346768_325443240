@@ -31,7 +31,13 @@
     - [תיאור התוכנית](#תיאור-התכנית)
     - [קוד התוכנית](#קוד-התכנית)
     - [הרצת התוכנית](#הרצת-התכנית)
-
+  - [שלב ד](#שלב-ד)
+    - [דיאגרמת DSD(#דיאגרמת-dsd)
+    - [דיאגרמת ERD](#דיאגרמת-erd)
+    - [דיאגרמת הERD המשולב](#דיאגרמת-הerd-המשולב)
+    - [איחוד הנתונים ושינויים בטבלאות](#איחוד-הנתונים-ושינויים-בטבלאות)
+    - [הוספת VIEWS](#הוספת-views)
+   
 
 ## שלב א 
 
@@ -351,14 +357,14 @@ CREATE TABLE Takes_Lesson
 הנתונים עודכנו בהצלחה!
 
 
-## שלב 4
-### דיאגרמת DSD:
+## שלב ד
+### דיאגרמת DSD
 ![image](https://github.com/user-attachments/assets/74718af9-3511-4cb6-bc9b-ba2a0c7f2ca5)
 ![image](https://github.com/user-attachments/assets/4e62f24a-9348-4ed0-8c0f-d0398c0bfd62)
 
-### דיאגרמת ERD:
+### דיאגרמת ERD
 ![image (13)](https://github.com/user-attachments/assets/106a6adf-5f18-4d1b-848c-9aa42ce79b01)
-### דיאגרמת הERD המשולב:
+### דיאגרמת הERD המשולב
 ![image (15)](https://github.com/user-attachments/assets/d449b69f-6862-4b3d-ba4d-8b2c6986074d)
 
 #### הנחות שנעשו:
@@ -368,7 +374,7 @@ CREATE TABLE Takes_Lesson
 -	הפכנו את תכונת הHealthCondition  של מתאמן לאוסף מגבלות רפואיות, שבהתאם לו יש מגבלות רפואיות על השיעורים. 
 -	כל שיעור קבוצתי / אימון אישי הם מסוג GymClass  כלשהו, שמקושר בקשר של רבים לרבים למכשירים שישתמשו בהם בשיעור.
   
-### איחוד הנתונים ושינויים בטבלאות:
+### איחוד הנתונים ושינויים בטבלאות
 #### טבלאות OUR_PERSON ו-PERSON לפני השינויים:
 ![image](https://github.com/user-attachments/assets/1db49a79-7a0a-4678-a5d9-412c14128f68)
 #### לאחר השינויים:
@@ -385,7 +391,6 @@ CREATE TABLE Takes_Lesson
 ![image](https://github.com/user-attachments/assets/82d1772d-8c3f-4329-a3e5-5200006c7ce5)
 #### הכנסת הנתונים:
 ![image](https://github.com/user-attachments/assets/1762b5a1-17e5-4d43-b0d9-341897ec9474)
-
 #### הכנסת הנתונים מTRAINEE לGYM_MEMBER:
 ![image](https://github.com/user-attachments/assets/3cee5e0a-55e1-4db7-bfd0-b3732739c300)
 #### הכנסת הנתונים מTRAINING לGYM_CLASS:
@@ -396,4 +401,13 @@ CREATE TABLE Takes_Lesson
 ![image](https://github.com/user-attachments/assets/119429a5-0c6d-4de5-93ed-4d72b0f701e7)
 #### הוספת המפתחות הזרים הרלוונטיים לטבלה:
 ![image](https://github.com/user-attachments/assets/f8cb6449-cb66-41dc-9318-1a547e48bddf)
-
+#### שינויים בטבלת ITEM:
+![image](https://github.com/user-attachments/assets/e7e27269-13c5-42bc-9ebb-c8f7d6d4163d)
+#### הוספת מפתחות זרים מתאימים בטבלה USES:
+![image](https://github.com/user-attachments/assets/ca7d4817-b8fc-43cb-b760-9483ea18acfc)
+#### מחיקת הטבלאות המיותרות (שהנתונים מהן כבר אוחדו):
+![image](https://github.com/user-attachments/assets/5ee6d181-efb5-4f32-a76e-0b8b31e73f22)
+#### שינוי השם בחזרה לטבלאות המקוריות:
+![image](https://github.com/user-attachments/assets/8730fa9b-9398-47e3-bad0-95871b7bb0fa)
+#### הנתונים אוחדו בהצלחה!
+### הוספת VIEWS
