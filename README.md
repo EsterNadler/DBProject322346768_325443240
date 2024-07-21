@@ -32,8 +32,8 @@
     - [קוד התוכנית](#קוד-התכנית)
     - [הרצת התוכנית](#הרצת-התכנית)
   - [שלב ד](#שלב-ד)
-    - [דיאגרמת DSD](#דיאגרמת-dsd:)
-    - [דיאגרמת ERD](#דיאגרמת-erd:)
+    - [דיאגרמת DSD](#דיאגרמת-dsd-של-המערכת-לשיעורים-פרטיים)
+    - [דיאגרמת ERD](#דיאגרמת-erd-של-המערכת-לשיעורים-פרטיים)
     - [דיאגרמת הERD המשולב](#דיאגרמת-הerd-המשולב)
     - [איחוד הנתונים ושינויים בטבלאות](#איחוד-הנתונים-ושינויים-בטבלאות)
     - [הוספת VIEWS](#הוספת-views)
@@ -358,11 +358,11 @@ CREATE TABLE Takes_Lesson
 
 
 ## שלב ד
-### דיאגרמת DSD:
+### דיאגרמת DSD של המערכת לשיעורים פרטיים
 ![image](https://github.com/user-attachments/assets/74718af9-3511-4cb6-bc9b-ba2a0c7f2ca5)
 ![image](https://github.com/user-attachments/assets/4e62f24a-9348-4ed0-8c0f-d0398c0bfd62)
 
-### דיאגרמת ERD:
+### דיאגרמת ERD של המערכת לשיעורים פרטיים
 ![image (13)](https://github.com/user-attachments/assets/106a6adf-5f18-4d1b-848c-9aa42ce79b01)
 ### דיאגרמת הERD המשולב
 ![image (15)](https://github.com/user-attachments/assets/d449b69f-6862-4b3d-ba4d-8b2c6986074d)
