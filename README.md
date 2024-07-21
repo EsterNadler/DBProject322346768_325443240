@@ -410,4 +410,19 @@ CREATE TABLE Takes_Lesson
 #### שינוי השם בחזרה לטבלאות המקוריות:
 ![image](https://github.com/user-attachments/assets/8730fa9b-9398-47e3-bad0-95871b7bb0fa)
 #### הנתונים אוחדו בהצלחה!
-### הוספת VIEWS
+## הוספת VIEWS
+### הוספת VIEW עבור סיכום מידע על שיעורים ציבוריים:
+![image](https://github.com/user-attachments/assets/83e1897c-f931-4f87-bd35-39a0d7f36d4e)
+#### שאילתה למציאת הסדנא הפופולרית ביותר: (לפי מספר שיעורים שנערכו ודירוג ממוצע)
+![image](https://github.com/user-attachments/assets/d00ed702-de6a-43e4-9ca0-288107259bae)
+#### שאילתה למציאת הסדנאות שייתכנו עבורן בעיות תפוסה (מבחינת מספר מאמנים עבור סך כל השיעורים או שיש בהן מספר נוכחים ממוצע נמוך מאד)
+![image](https://github.com/user-attachments/assets/11e22a54-67ee-4d13-b452-81b4239e30ee)
+
+### הוספת VIEW עבור סיכום מידע על אימונים פרטיים:
+![image](https://github.com/user-attachments/assets/0984bdc6-9439-4d3f-aefc-f9e8c636038b)
+#### שאילתה להצגת הסדנאות שעבור האימונים הפרטיים מסוגן צפוי הרווח הגדול ביותר:
+![image](https://github.com/user-attachments/assets/5e3e2fae-7554-4cc3-919c-186cc4b05573)
+#### שאילתה להצגת 10 הסדנאות הפופולריות ביותר עבור אימונים פרטיים:
+![image](https://github.com/user-attachments/assets/43ef9ffd-4a0f-431b-84f0-a99f0bb373cc)
+
+
